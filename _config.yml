@@ -1,6 +1,7 @@
 title: Sugar Labs
 markdown: kramdown
-url: "https://www.sugarlabs.org"
+url: "https://www.geekrypter.github.io"
+baseurl: "/sugar_labs_website"
 permalink: pretty
 description: "Sugar Labs is creator of the award-winning Sugar Learning Platform, which promotes collaborative learning through Sugar Activities"
 keywords: "sugar, sugar labs, learning, olpc, constructionism, education, community"

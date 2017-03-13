@@ -1,0 +1,107 @@
+---
+layout: default
+title: Press Information - Sugar Labs
+permalink: /press/index.html
+---
+     <section id="fh5co-home" data-section="home" style="background-image: url(/assets/bg1.png);" data-stellar-background-ratio="0.5">
+    <div class="gradient"></div>
+    <div class="container">
+       <div class="text-wrap">
+        <div class="text-inner">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h1 class="to-animate">Press Information</h1>
+          
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+      <section id="fh5co-pricing" data-section="home">
+    <div class="fh5co-pricing">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="price-box to-animate">
+              <h2 class="pricing-plan">Press releases</h2>
+             
+                  
+              <hr>
+              <ul class="pricing-info">
+                {% for post in site.posts %}<li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <i>{{ post.date | date: "%b %-d %Y" }}</i>
+  </li>{% endfor %}
+                
+              </ul>
+            </div>
+          </div>
+        
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="price-box to-animate">
+              <h2 class="pricing-plan">Contacts</h2>
+             
+                  
+              <hr>
+              <ul class="pricing-info">
+                <li>Sean Daly<br/>
+   Marketing Coordinator<br/>
+   <a href="mailto:pr@sugarlabs.org">pr@sugarlabs.org</a><br/>
+   <a href="tel:+1-617-500-9610">+1 (617) 500-9610</a></br>
+<address></li>
+                <li>Sugar Labs<br/>
+         c/o Software Freedom Conservancy<br/>
+         137 Montague Street, Suite 380<br/>
+         Brooklyn, NY 11201-3548<br/>
+         USA</address></li>
+                
+              </ul>
+            </div>
+          </div>
+
+        
+        </div>
+
+
+         </div>
+    </div>
+  </section>
+  <section id="fh5co-services" data-section="home">
+    <div class="fh5co-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 section-heading text-center">
+            <h1 class="to-animate">Resources</h1>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 subtext">
+                <h3 class="to-animate">Below is a collection of resources </br>
+  <a class="btn btn-primary" href="http://wiki.sugarlabs.org/go/Marketing_Team/Screen_Shots">High-resolution/vector screenshots</a>
+  <a class="btn btn-primary" href="http://wiki.sugarlabs.org/go/Marketing_Team/Logo">Logo materials</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+ {% include footer1.html %}
+
+
+
+
+
+
+
+
+
+
+
+
+

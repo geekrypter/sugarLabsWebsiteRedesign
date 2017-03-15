@@ -1,8 +1,8 @@
-#Redesign of "www.sugarlabs.org" for GSOC 2017 and as SugarLabs organisation contributor. 
+# Redesign of "www.sugarlabs.org" for GSOC 2017 and as SugarLabs organisation contributor. 
 Hosted using Github pages. 
 Website - https://geekrypter.github.io/sugarLabsWebsiteRedesign/
 
-##What makes this design more attractive?
+## What makes this design more attractive?
 
 This design supports responsive design which enables a more structured design frameo ultimately leading to an attractive view.
 
@@ -18,7 +18,7 @@ The colours used are very restricted which produces a simple,generic and elegant
 
 The appropriate background images allows display a pleasant view.
 
-##What makes this design easier to explore?
+## What makes this design easier to explore?
 
 This design concentrates on being more of a single-page web application(not completely) so most of the content is available in the index page itself. 
 
@@ -36,7 +36,7 @@ Headers in the navigation bar helps to guide the user to the appropriate section
 
 The responsive design allows for a hassle-free exploration of the website for both web and mobile platforms.
 
-#Original README.md file contents
+# Original README.md file contents
 ## SugarLabs.org Website Sources
 
 This website is created using Jekyll, Bootstrap, some plugins and pure jQuery.

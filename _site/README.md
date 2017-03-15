@@ -1,3 +1,8 @@
+#Redesign of "www.sugarlabs.org" for GSOC 2017 and as SugarLabs organisation contributor. 
+Hosted using Github pages. 
+Website - https://geekrypter.github.io/sugarLabsWebsiteRedesign/
+
+#Original README.md file contents
 ## SugarLabs.org Website Sources
 
 This website is created using Jekyll, Bootstrap, some plugins and pure jQuery.

@@ -451,11 +451,13 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-faq,
 #fh5co-team,
 #fh5co-trusted,
-#fh5co-footer,
 #fh5co-work,
 #fh5co-counters,
 #fh5co-pricing {
   padding: 4em 0;
+}
+#fh5co-footer{
+  padding: 1em 0;
 }
 #fh5co-blog {
   padding: 3em 0;
@@ -471,13 +473,15 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-faq,
   #fh5co-team,
   #fh5co-trusted,
-  #fh5co-footer,
   #fh5co-work,
   #fh5co-subscribe,
   #fh5co-counters,
   #fh5co-pricing,
   #fh5co-blog {
     padding: 3em 0;
+  }
+  #fh5co-footer{
+    padding: 0.5em 0;
   }
 }
 
@@ -1173,10 +1177,10 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 #fh5co-footer .section-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 6px;
 }
 #fh5co-footer .copy-right {
   position: relative;
@@ -1187,13 +1191,13 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.6);
 }
 #fh5co-footer .contact-info {
-  margin: 0 0 60px 0;
+  margin: 0 0 7px 0;
   padding: 0;
 }
 #fh5co-footer .contact-info li {
-  font-size: 16px;
+  font-size: 14px;
   list-style: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 7px 0;
   position: relative;
   padding-left: 40px;
 }
@@ -1201,7 +1205,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 22px;
+  font-size: 14px;
   color: #00ADB5;
 }
 #fh5co-footer .social-media {
@@ -1212,7 +1216,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 35px;
   margin-right: 10px;
 }
 #fh5co-footer .social-media li a {

@@ -16,19 +16,25 @@
 		</div>
 		</nav>
 		<div class="fluid-container">
+		<!-- <div class="logo">
+			{% include logo.svg %}
+		</div> -->
 			<nav class="navbar navbar-default">
 			
-				<div class="navbar-header">
+				<div class="navbar-header logo" style="height:70px;width:260px">
+					<!-- <div class="logo"> -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-					<img src="/logo.png" style="display: inline-block;" height="70px" width="260px">
+					<!-- <div class="logo" style="height:70px;width:260px"> -->
+					{% include logo.svg %}
+				<!-- </div> -->
 				</div>
-				<div id="navbar" class="navbar-collapse collapse">
+				<div id="navbar" class="navbar-collapse collapse" data-hover="dropdown" data-animations="fadeInDown">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#" data-nav-section="home"><span>Other Information</span></a></li>
-					
-					
 					</ul>
 				</div>
 			</nav>
 	  </div>
 	</header>
+
+	

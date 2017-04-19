@@ -570,6 +570,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-faq, 
 #fh5co-team, 
 #fh5co-trusted, 
+#fh5co-schedule,
 #fh5co-footer,
 #fh5co-work, 
 #fh5co-counters,
@@ -2373,3 +2374,179 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 }
+.fh5co-bg {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.fh5co-bg {
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	width: 100%;
+	float: left;
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, .5);
+		@include transition(.5s);
+	}
+}
+.fh5co-tabs {
+	width: 90%;
+	margin: 0 auto;
+	.fh5co-tab-nav {
+		clear: both;
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 100%;
+		background: rgba($brand-black,.3);
+		@include border-radius(4px);
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: 14.285%;
+			text-align: center;
+			list-style: none;
+			@include inline-block;
+			a {
+				padding: 10px;
+				width: 100%;
+				float: left;
+				@include border-radius(4px);
+				color: lighten($brand-black, 90%);
+				&:hover {
+					color: lighten($brand-black, 100%);
+				}
+			}
+			&.active {
+				a {
+					background: $brand-primary;
+					color: $brand-white;
+				}
+			}
+		}
+	}
+	.fh5co-tab-content-wrap {
+		clear: both;
+		position: relative;
+		.tab-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			opacity: 0;
+			visibility: hidden;
+			&.active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	.class-schedule{
+		width: 100%;
+		float: left;
+		margin: 0;
+		padding: 0;
+		li{
+			width: 25%;
+			float: left;
+			border-right: 1px solid rgba($brand-white,.02);
+			border-bottom: 1px solid rgba($brand-white,.02);
+			list-style: none;
+			padding: 20px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			@media screen and (max-width: $screen-sm){
+				width: 50%;
+			}
+			@media screen and (max-width: $screen-xs){
+				width: 100%;
+			}
+			&:first-child{
+				border-left: 1px solid rgba($brand-white,.02);
+			}
+			&:nth-child(5){
+				border-left: 1px solid rgba($brand-white,.02);
+			}
+			span{
+				display: block;
+				margin-bottom: 20px;
+				img{
+					width: 60px;
+					height: 60px;
+					margin: 0 auto;
+					// background: $brand-white;
+					// padding: 10px;
+				}
+			}
+			h4{
+				color: rgba($brand-white,.8);
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.time{
+				display: inline-block;
+				padding: 5px 12px;
+				background: $brand-primary;
+				color: $brand-white;
+				font-size: 13px;
+			}
+			small{
+
+			}
+		}
+	}
+}
+// SCHEDULE
+#fh5co-schedule{
+	.fh5co-heading {
+		h2 {
+			color: $brand-white;
+		}
+		p {
+			color: rgba($brand-white,.5);
+		}
+		span{
+			color: rgba($brand-white,.5);
+		}
+	}
+
+}
+.standardbox
+  clear: both
+  margin-top: $section-gap
+  padding: 1em
+  text-align: justify
+
+  &#about
+    margin-top: 0
+    background: $lime
+  &#what-is-sugarlabs
+    background: $blue
+    clear: both
+  &#activities
+    padding-bottom: 0
+    background: $yellow
+  &#contact
+    background: $lime
+  &#get-sugar
+    background: $orange
+    padding-bottom: 0
+
+  h1
+    margin-top: 0
+
+=colorClass($y, $cat, $rotate)
+  ul.activities > .activity.category-#{ $cat }
+    background-color: $y
+
+  ul.activities > .activity.category-#{ $cat }:hover
+    transform: scale(0.9) rotate($rotate / 5 + deg)

@@ -879,8 +879,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .span1 {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   display: inline-block;
   position: relative;
 /*  border: 2px solid rgba(0, 0, 0, 0.05);
@@ -1196,13 +1196,13 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.6);
 }
 #fh5co-footer .contact-info {
-  margin: 0 0 7px 0;
+  margin: 0 0 8px 0;
   padding: 0;
 }
 #fh5co-footer .contact-info li {
   font-size: 14px;
   list-style: none;
-  margin: 0 0 7px 0;
+  margin: 0 0 8px 0;
   position: relative;
   padding-left: 40px;
 }

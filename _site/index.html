@@ -117,28 +117,28 @@
 						<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
 						<li ><a href="#" data-nav-section="services"><span>About</span></a>
 						<ul class="dropdown dropdown-menu divider" >
-                <li><a href="more" >Culture and pedagogy</a></li>
+                <li><a href="more" onclick="javascript:window.location='more'">Culture and pedagogy</a></li>
                 <li class="divider"></li>
-                <li><a href="press" >Press</a></li>
+                <li><a href="press" onclick="javascript:window.location='press'" >Press</a></li>
                 <li class="divider"></li>
-                <li><a href="http://schoolserver.org/" >School Server resources</a></li>
+                <li><a href="http://schoolserver.org/" onclick="javascript:window.location='http://schoolserver.org/'">School Server resources</a></li>
             </ul>
 						</li>
 						<li><a href="#" data-nav-section="explore"><span>Activities</span></a>
 						<ul class="dropdown dropdown-menu">
-                <li><a href="https://activities.sugarlabs.org/" >Activities Library</a></li>
+                <li><a href="https://activities.sugarlabs.org/" onclick="javascript:window.location='https://activities.sugarlabs.org/'" >Activities Library</a></li>
             </ul>
             </li>
 						<li><a href="#" data-nav-section="pricing"><span>Inquiry/Use/Buy</span></a>
                         <ul class="dropdown dropdown-menu">
-                <li><a href="inquiry" >Inquiry</a></li>
+                <li><a href="inquiry" onclick="javascript:window.location='inquiry'" >Inquiry</a></li>
             </ul>
 						</li>
 						<li><a href="#" data-nav-section="team"><span>Download</span></a>
 <ul class="dropdown dropdown-menu">
-                <li><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">Create Sugar stick</a></li>
+                <li><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation" onclick="javascript:window.location='http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation'">Create Sugar stick</a></li>
                 <li class="divider"></li>
-                <li><a href="http://try.sugarizer.org">Try Sugarizer!</a>
+                <li><a href="http://try.sugarizer.org" onclick="javascript:window.location='http://try.sugarizer.org'">Try Sugarizer!</a>
 						</li>
                 
             </ul>
@@ -147,7 +147,7 @@
 							
 						<li><a href="#" data-nav-section="faq"><span>Join/Participate/Support</span></a>
 							<ul class="dropdown dropdown-menu">
-                <li><a href="https://socialhelp.sugarlabs.org/">Social help page</a></li>
+                <li><a href="https://socialhelp.sugarlabs.org/" onclick="javascript:window.location='https://socialhelp.sugarlabs.org/'">Social help page</a></li>
             </ul>
 						</li>
 					
@@ -314,7 +314,7 @@
           <li style="background-image: url(assets/home-screenshot.svg);">
             <div class="overlay-gradient"></div>
             <div class="container">
-              <div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text" >
+              <div class="col-md-6 col-md-offset-4 col-md-push-2 js-fullheight slider-text" >
                 <div class="slider-text-inner" >
                   <div class="desc"  style="background-color:#57bc90">
                     
@@ -333,7 +333,7 @@
           <li style="background-image: url(assets/neighbourhood-screenshot.svg);">
             <div class="overlay-gradient"></div>
             <div class="container">
-              <div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+              <div class="col-md-6 col-md-offset-4 col-md-push-2 js-fullheight slider-text">
                 <div class="slider-text-inner">
                   <div class="desc"   style="background-color:#57bc90">
                  
@@ -351,7 +351,7 @@
           <li style="background-image: url(assets/journal-detail-ss.png);">
             <div class="overlay-gradient"></div>
             <div class="container">
-              <div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+              <div class="col-md-6 col-md-offset-4 col-md-push-2 js-fullheight slider-text">
                 <div class="slider-text-inner">
                   <div class="desc"   style="background-color:#57bc90">
                     <p>The Sugar Journal records everything a learner does
@@ -490,10 +490,10 @@
       <div class="text-wrap">
         <div class="text-inner">
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="col-md-8 col-md-offset-2 text-center" >
               <h1 class="to-animate" style="font-size:30px">Social help</h1>
-              <h2 class="to-animate"  style="font-size:18px">This is a place where where you can discuss Sugar Activities. You can: Get Help, Share Your Creations, Report Bugs, Discuss Ideas for the Activity, Any Other Activity-Related Topic.
-              <p><a href="https://socialhelp.sugarlabs.org/" class="to-animate btn btn-primary abc">Check out our social help page!</a></p></h2>
+              <h2 class="to-animate"  style="font-size:18px">This is a place where where you can discuss Sugar Activities. You can: Get Help, Share Your Creations, Report Bugs, Discuss Ideas for the Activity, Any Other Activity-Related Topic.</br>
+              <!-- <p><a href="https://socialhelp.sugarlabs.org/" class="to-animate btn btn-primary abc">Social help page!</a></p> --></h2>
             </h2>
               <h1 class="to-animate" style="font-size:30px">Join the conversation</h1>
               <h2 class="to-animate" style="font-size:18px">Sugar Labs is an organization built around engaging people.  We strive
@@ -509,10 +509,9 @@
     </div>
   </section>
     <div id="fh5co-footer" role="contentinfo">
-    <div class="container">
+    <div class="container" style="margin:15px 0 0 0">
       <div class="row">
-      <div class="col-md-1">
-      </div>
+      
         <div class="col-md-2 to-animate">
           <ul class="contact-info">
             <li><a href="#"><span>Home</span></a></li>
@@ -547,7 +546,7 @@
              <li><a href="https://socialhelp.sugarlabs.org/">Social help page</a></li>
           </ul>
         </div>
-        <div class="col-md-2 to-animate">
+        <div class="col-md-2 to-animate" style="margin: 0 0 0 15px">
           <h3 class="section-title">Contact Us</h3>
           <ul class="contact-info">
             <li><i class="icon-map-marker"></i>Boston, MA, US</li>
@@ -556,7 +555,7 @@
             <li><i class="icon-globe2"></i><a href="#">https://www.sugarlabs.org</a></li>
           </ul>
         </div>
-        <div class="col-md-2 to-animate text-center">
+        <div class="col-md-2 to-animate" style="margin: 0 0 0 15px">
           <h3 class="section-title">Connect with Us</h3>
           <ul class="social-media">
             <li><a href="https://twitter.com/sugar_labs"><i class="icon-twitter"></i></a></li>
@@ -564,11 +563,13 @@
             <li><a href="https://github.com/sugarlabs"><i class="icon-github"></i></a></li>
           </ul>
         </div>
-        <div class="col-md-1">
-      </div>
+        
         </div>
         </br>
-<div class="row">
+
+    </div>
+    <div class="container">
+      <div class="row">
 <div class="col-md-12 to-animate">
               <p style="font-size:8px; text-align:center">
     Original Website: Copyright &copy; Sugar Labs&reg; Website Authors, available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC 4.0 license.</a></br>

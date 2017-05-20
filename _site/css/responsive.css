@@ -163,7 +163,7 @@ px      68    160    252    */
 					Index Start 
 -----------------------------------------------*/
   .heading {
-    padding-left: 0px;
+    padding-left: 0px; 
   }
   h2 {
     font-size: 18px;
@@ -171,10 +171,23 @@ px      68    160    252    */
   p {
     font-size: 13px;
   }
+  header {
+    background-color: #282828;
+  }
+  header .navbar-default{
+    background-color: #282828;
+  }
+  header.large img{
+    width: 200px; 
+    height: 100px;
+  }
   header .navbar-default .navbar-toggle {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+header .navbar-default .navbar-nav li a {
+  color: #ffffff;
+}
   #slider {
     padding-top: 90px;
     padding-bottom: 100px;

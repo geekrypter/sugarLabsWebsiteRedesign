@@ -160,8 +160,9 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 20px;
 }
 #intro .block img {
-  padding-left: 40px;
-  width: 100%;
+    width: 200px; /*the image width*/
+        height: 160px; /*the image height*/
+      /*  padding-left:100px;*/
 }
 #intro .section-title {
   margin-bottom: 0px;
@@ -795,7 +796,7 @@ footer p {
   color: #919191;
 }
 footer a {
-  color: #595959;
+  color: #ffffff;
 }
 footer .footer-manu {
   padding-bottom: 25px;

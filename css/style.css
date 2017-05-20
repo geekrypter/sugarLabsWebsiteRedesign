@@ -32,3 +32,21 @@
 .post-area a:hover {
   color: #0D0017;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #655E7A;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

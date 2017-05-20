@@ -48,10 +48,9 @@ $(document).ready(function(){
         delay: 10,
         time: 1000
     });
-
+		
 
 });
-
 
 
 

@@ -93,7 +93,7 @@
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right abc">
                 <li><a href="/">Home</a></li>
                 <li><a href="/work">About</a></li>
                 <li><a href="http://server.sugarizer.org">Try Now</a></li>
@@ -231,9 +231,28 @@ Labs am Stand 7.2a 110a zu sprechen.</p>
 <p><a href='/'>Return to main page</a></p>
 
 
- <footer  style="background-color:#686868">
-  <div class="container">
-    <div class="row">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+ <footer  style="background-color:#282828">
+  <div class="container" style="margin:15px 0 0 0">
+    <!-- <div class="row">
       <div class="col-md-12">
         <div class="footer-manu">
           <ul>
@@ -246,22 +265,84 @@ Labs am Stand 7.2a 110a zu sprechen.</p>
         </div>
         <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
       </div>
+    </div> -->
+        <div class="row">
+        <div class="col-md-2 to-animate">
+          <ul class="contact-info" style="text-align:left;color:#ffffff;margin-top:10px;">
+            <li><a href="#"><span>Home</span></a></li>
+            <li><a href="#fh5co-home" data-nav-section="services"><span>About</span></a></li>
+            <li><a href="#fh5co-services" data-section="explore"><span>Activities</span></a></li>
+            <li><a href="#fh5co-price" data-section="pricing"><span>Inquiry/Use/Buy</span></a></li>
+            <li><a href="#fh5co-pricing" data-section="team"><span>Download</span></a></li>
+            <li><a href="#fh5co-home" data-section="faq"><span>Join/Participate/Support</span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 to-animate">
+          <!-- <h3 class="section-title">Resources</h3> -->
+          <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
+            <li><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
+            <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
+            <li><a href="https://socialhelp.sugarlabs.org/">Social help page</a></li>
+            <li><a href="more" >Culture and pedagogy</a></li>
+                <li><a href="press" >Press</a></li>
+                <li><a href="http://schoolserver.org/" >School Server resources</a></li>
+              
+          </ul>
+        </div>
+        <div class="col-md-2 to-animate">
+          <!-- <h3 class="section-title">Resources</h3> -->
+          <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
+            
+                <li><a href="https://activities.sugarlabs.org/" >Activities Library</a></li>
+                <li><a href="inquiry" >Inquiry</a></li>
+                <li><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">Create</br>Sugar stick</a></li>
+                <li><a href="http://try.sugarizer.org">Try</br> Sugarizer!</a>
+            </li>
+             <li><a href="https://socialhelp.sugarlabs.org/">Social help page</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 to-animate">
+          <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
+            <li><u>Contact Us</u></li>
+            <li><i class="icon ion-ios-home"></i>Boston, MA, US</li>
+            <li><i class="icon ion-ios-telephone"></i>+1-415-343-5226</li>
+            <li><i class="icon ion-android-mail"></i>walter@sugarlabs.org</li>
+            <li>https://www.sugarlabs.org</li>
+          </ul>
+        </div>
+        <div class="col-md-3 to-animate" style="margin-top:10px;">
+          <div class="row">
+         <div class="ssk-group">
+<a href="https://github.com/sugarlabs" class="ssk ssk-icon ssk-github ssk"></a>
+    <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-icon ssk-facebook ssk"></a>
+     <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-icon ssk-instagram ssk"></a>
+    <a href="https://twitter.com/sugar_labs" class="ssk ssk-icon ssk-twitter ssk"></a>
+    
     </div>
-  </div>
-</footer>
-<footer   style="background-color:#282828;padding-top:5px;padding-bottom:0">
-  <div class="container">
-    <div class="row">
+    </br>
+   <div class="row">
+   <ul class="contact-info"  style="color:#ffffff;">
+            <li><u>Join our mailing list!</u></li>
+            </ul>
+    <a href="https://wiki.sugarlabs.org/go/Mailing_Lists" class="btn btn-view-works" style="background: #655E7A;color:#fff"><i class="icon ion-android-mail"></i>Subscribe</a>
+    </div>
+</div>
+        </div>
+        
+        </div>
+        </br>
+    <div class="row" >
       <div class="col-md-12">
-        <p style="font-size:8px; text-align:center">
+        <p style="font-size:8px; text-align:left">
     Original Website: Copyright &copy; Sugar Labs&reg; Website Authors, available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC 4.0 license.</a></br>
   
-    Redisgned Website: Copyright &copy; GeeKrypter <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;height:31px;width:88px" src="img/88x31.png" /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    Redisgned Website: Copyright &copy; GeeKrypter <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><!-- <img alt="Creative Commons License" style="border-width:0;height:31px;width:88px" src="img/88x31.png" /> --></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.
   </p>
       </div>
     </div>
   </div>
 </footer>
+
 <script type="text/javascript">
         $(document).on("scroll", function () {
             if ($(document).scrollTop() > 10) {

@@ -148,7 +148,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	wrapper Start
 --*/
 #intro {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 #intro .block h2 {
   padding-top: 35px;
@@ -160,8 +160,9 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 20px;
 }
 #intro .block img {
-    width: 200px; /*the image width*/
-        height: 160px; /*the image height*/
+    width: 100%; /*the image width*/
+        height: 350px;
+        margin-top: 33px; /*the image height*/
       /*  padding-left:100px;*/
 }
 #intro .section-title {
@@ -200,7 +201,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	call-to-action Start
 --*/
 #call-to-action {
-  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  /*background: url("../img/call-to-action-bg.jpg") no-repeat;*/
   background-size: cover;
   background-attachment: fixed;
   padding: 70px 0px;
@@ -282,6 +283,11 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #testimonial {
   padding: 100px 0;
+}
+ #testimonial .span1 {
+  /*padding-bottom: 38px;*/
+  width: 130px;
+  height: 130px;
 }
 #testimonial .block h2 {
   line-height: 27px;

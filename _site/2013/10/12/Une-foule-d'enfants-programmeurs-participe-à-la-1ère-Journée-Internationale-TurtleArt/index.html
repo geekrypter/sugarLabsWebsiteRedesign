@@ -54,6 +54,7 @@
 <link rel="stylesheet" href="css/animate.css" />
 <link rel="stylesheet" href="css/responsive.css" />
 <link rel="stylesheet" href="css/syntax.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
 <link rel="stylesheet" href="assets/dist/css/social-share-kit.css" type="text/css">
 
 <!-- Js -->
@@ -64,6 +65,8 @@
 <script src="js/plugins.js"></script>
 <script src="js/min/waypoints.min.js"></script>
 <script src="js/jquery.counterup.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/modernizr-2.6.2.min.js"></script>
 
 
 <script src="js/main.js"></script>
@@ -145,7 +148,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="">Blog Archive</a></li>
+                    <li><a href="http://planet.sugarlabs.org">Blog Archive</a></li>
                   </ul>
                 </li>
               </ul>
@@ -287,8 +290,10 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 </script>
+
  <footer  style="background-color:#282828">
-  <div class="container" style="margin:15px 0 0 0">
+ 
+  <div class="container fold_1" style="margin:15px 0 0 60px">
     <!-- <div class="row">
       <div class="col-md-12">
         <div class="footer-manu">
@@ -306,63 +311,62 @@ function topFunction() {
         <div class="row">
         <div class="col-md-2 to-animate">
           <ul class="contact-info" style="text-align:left;color:#ffffff;margin-top:10px;">
-            <li><a href="#"><span>Home</span></a></li>
-            <li><a href="#fh5co-home" data-nav-section="services"><span>About</span></a></li>
-            <li><a href="#fh5co-services" data-section="explore"><span>Activities</span></a></li>
-            <li><a href="#fh5co-price" data-section="pricing"><span>Inquiry/Use/Buy</span></a></li>
-            <li><a href="#fh5co-pricing" data-section="team"><span>Download</span></a></li>
-            <li><a href="#fh5co-home" data-section="faq"><span>Join/Participate/Support</span></a></li>
+            <li style="margin-bottom:14px;"><b>Sugar Labs</b></li>
+            <li style="margin-bottom:5px;"><a href="#">About Us</a></li>
+            <li style="margin-bottom:5px;"><a href="#">Get Involved</a></li>
+            <li style="margin-bottom:5px;"><a href="#">Support Sugar</a></li>
+            <li style="margin-bottom:5px;"><a href="#">Contact Us</a></li>
           </ul>
         </div>
         <div class="col-md-2 to-animate">
           <!-- <h3 class="section-title">Resources</h3> -->
           <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
-            <li><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
-            <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
-            <li><a href="https://socialhelp.sugarlabs.org/">Social help page</a></li>
-            <li><a href="more" >Culture and pedagogy</a></li>
-                <li><a href="press" >Press</a></li>
-                <li><a href="http://schoolserver.org/" >School Server resources</a></li>
-              
+          <li style="margin-bottom:14px;"><b>Development</b></li>
+            <li style="margin-bottom:5px;"><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
+            <li style="margin-bottom:5px;"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
+            <li style="margin-bottom:5px;"><a href="#">Documentation</a></li>
+            <li style="margin-bottom:5px;"><a href="#">IRC Channels</a></li>
+            <li style="margin-bottom:5px;"><a href="#">Bug Tracker</a></li>
+            <li style="margin-bottom:5px;"><a href="#">Development code</a></li>
+            <li style="margin-bottom:5px;"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
           </ul>
         </div>
         <div class="col-md-2 to-animate">
           <!-- <h3 class="section-title">Resources</h3> -->
           <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
-            
-                <li><a href="https://activities.sugarlabs.org/" >Activities Library</a></li>
-                <li><a href="inquiry" >Inquiry</a></li>
-                <li><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">Create</br>Sugar stick</a></li>
-                <li><a href="http://try.sugarizer.org">Try</br> Sugarizer!</a>
-            </li>
-             <li><a href="https://socialhelp.sugarlabs.org/">Social help page</a></li>
+              <li style="margin-bottom:14px;"><b>Resources</b></li>
+                <li style="margin-bottom:5px;"><a href="more" >Culture and pedagogy</a></li>
+                <li style="margin-bottom:5px;"><a href="press" >Press Resources</a></li>
+                <li style="margin-bottom:5px;"><a href="http://schoolserver.org/" >School Server Resources</a></li>
+                <li style="margin-bottom:5px;"><a href="http://planet.sugarlabs.org" >Planet Sugar Labs</a></li>
           </ul>
         </div>
         <div class="col-md-2 to-animate">
-          <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
+          <!-- <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
             <li><u>Contact Us</u></li>
             <li><i class="icon ion-ios-home"></i>Boston, MA, US</li>
             <li><i class="icon ion-ios-telephone"></i>+1-415-343-5226</li>
             <li><i class="icon ion-android-mail"></i>walter@sugarlabs.org</li>
             <li>https://www.sugarlabs.org</li>
-          </ul>
+          </ul> -->
         </div>
         <div class="col-md-3 to-animate" style="margin-top:10px;">
           <div class="row">
          <div class="ssk-group">
-<a href="https://github.com/sugarlabs" class="ssk ssk-icon ssk-github ssk"></a>
-    <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-icon ssk-facebook ssk"></a>
-     <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-icon ssk-instagram ssk"></a>
-    <a href="https://twitter.com/sugar_labs" class="ssk ssk-icon ssk-twitter ssk"></a>
+         <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-icon ssk-facebook ssk-lg"></a>
+<a href="https://github.com/sugarlabs" class="ssk ssk-icon ssk-github ssk-lg"></a>
+    <a href="https://twitter.com/sugar_labs" class="ssk ssk-icon ssk-twitter ssk-lg"></a>
+     <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-icon ssk-instagram ssk-lg"></a>
+    
     
     </div>
     </br>
-   <div class="row">
+   <!-- <div class="row">
    <ul class="contact-info"  style="color:#ffffff;">
             <li><u>Join our mailing list!</u></li>
             </ul>
     <a href="https://wiki.sugarlabs.org/go/Mailing_Lists" class="btn btn-view-works" style="background: #655E7A;color:#fff"><i class="icon ion-android-mail"></i>Subscribe</a>
-    </div>
+    </div> -->
 </div>
         </div>
         
@@ -378,7 +382,9 @@ function topFunction() {
       </div>
     </div>
   </div>
+  
 </footer>
+
 
 <script type="text/javascript">
         $(document).on("scroll", function () {

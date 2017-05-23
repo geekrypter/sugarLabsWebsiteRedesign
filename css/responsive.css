@@ -61,6 +61,14 @@ px      68    160    252    344    436    528    620    712    */
   footer .navbar-default .navbar-nav li a:hover {
     color: #000;
   }
+
+#intro .block img {
+    width: 200px; /*the image width*/
+        height: 350px;
+        margin-top: 33px; /*the image height*/
+      /*  padding-left:100px;*/
+}
+
   /*---------------------------------------------
 					Index Close 
 -----------------------------------------------*/
@@ -188,6 +196,7 @@ px      68    160    252    */
 header .navbar-default .navbar-nav li a {
   color: #ffffff;
 }
+header.large li{ margin-top: 0px; }
   #slider {
     padding-top: 90px;
     padding-bottom: 100px;
@@ -214,6 +223,7 @@ header .navbar-default .navbar-nav li a {
     padding-left: 0px;
     width: 100%;
   }
+  
   /*--
 	service Start 
 --*/

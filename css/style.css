@@ -50,3 +50,149 @@
 #myBtn:hover {
   background-color: #555;
 }
+#call-to-action .price-box {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+}
+#fh5co-hero {
+  width: 65%;
+  margin-bottom: 5em;
+  min-height: 700px;
+  background: #fff url(../images/loader.gif) no-repeat center center;
+  z-index: 1;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-hero {
+    width: 100%;
+  }
+}
+#fh5co-hero .btn {
+  font-size: 24px;
+}
+#fh5co-hero .btn.btn-primary {
+  padding: 14px 30px !important;
+}
+#fh5co-hero .flexslider {
+  border: none;
+  z-index: 1;
+  margin-bottom: 0;
+}
+#fh5co-hero .flexslider .slides {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .slides {
+    overflow: hidden;
+  }
+}
+#fh5co-hero .flexslider .slides li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 700px;
+  position: relative;
+}
+#fh5co-hero .flexslider .slides li:after {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+#fh5co-hero .flexslider .flex-control-nav {
+  position: absolute;
+  bottom: 1em;
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .flex-control-nav {
+    bottom: 1em;
+  }
+}
+#fh5co-hero .flexslider .flex-control-nav li a {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+#fh5co-hero .flexslider .flex-control-nav li a.flex-active {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+}
+#fh5co-hero .flexslider .flex-direction-nav {
+  display: none;
+}
+#fh5co-hero .flexslider .slider-text {
+  display: table;
+  opacity: 0;
+  height: 700px;
+  z-index: 9;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .slider-text {
+    text-align: center;
+  }
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  height: 700px;
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
+  font-size: 60px;
+  font-weight: 400;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
+    font-size: 40px;
+  }
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner p {
+  color: rgba(255, 255, 255, 0.8);
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner p .btn:hover {
+  color: #fff !important;
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner span {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead a {
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead a:hover {
+  text-decoration: none;
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner .desc {
+  padding: 5em;
+  background: rgba(83, 157, 219, 0.9);
+  -webkit-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 992px) {
+  #fh5co-hero .flexslider .slider-text > .slider-text-inner .desc {
+    padding: 0;
+    background: none;
+    -webkit-box-shadow: 0px 10px 30px -13px transparent;
+    -moz-box-shadow: 0px 10px 30px -13px transparent;
+    box-shadow: 0px 10px 30px -13px transparent;
+  }
+}

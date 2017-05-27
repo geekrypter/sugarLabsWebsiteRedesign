@@ -159,7 +159,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #7B7B7B;
   padding-top: 20px;
 }
-#intro .block img {
+#intro .block iframe {
     width: 100%; /*the image width*/
         height: 350px;
         margin-top: 33px; /*the image height*/
@@ -220,6 +220,7 @@ font header .navbar-default .navbar-nav li a:hover {
   height: 100%;
   background: #1d192c;
   opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 #call-to-action h2 {
   padding-bottom: 20px;
@@ -286,8 +287,8 @@ font header .navbar-default .navbar-nav li a:hover {
 }
  #testimonial .span1 {
   /*padding-bottom: 38px;*/
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
 }
 #testimonial .block h2 {
   line-height: 27px;
@@ -358,6 +359,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   border: 0px;
 }
+
 /*--
 	features Start
 --*/
@@ -804,6 +806,17 @@ footer p {
 footer a {
   color: #ffffff;
 }
+footer ul li{
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  footer ul li{
+  font-size: 100px;
+}
+footer p{
+  font-size: 80px;
+}
+  }
 footer .footer-manu {
   padding-bottom: 25px;
 }
@@ -822,4 +835,3 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
-

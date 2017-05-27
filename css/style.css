@@ -51,7 +51,7 @@
   background-color: #555;
 }
 #call-to-action .price-box {
-  border: 1px solid #000;
+  border: 1px solid #ffffff;
   text-align: center;
   padding: 30px;
   -webkit-border-radius: 5px;
@@ -196,3 +196,4 @@
     box-shadow: 0px 10px 30px -13px transparent;
   }
 }
+

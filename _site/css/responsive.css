@@ -56,7 +56,7 @@ px      68    160    252    344    436    528    620    712    */
   footer .navbar-default .navbar-nav li a {
     color: #494949;
     padding: 10px 10px;
-    font-size: 15px;
+    font-size: 100px;
   }
   footer .navbar-default .navbar-nav li a:hover {
     color: #000;
@@ -68,6 +68,7 @@ px      68    160    252    344    436    528    620    712    */
         margin-top: 33px; /*the image height*/
       /*  padding-left:100px;*/
 }
+
 
   /*---------------------------------------------
 					Index Close 
@@ -180,10 +181,12 @@ px      68    160    252    */
     font-size: 13px;
   }
   header {
-    background-color: #282828;
+    background-color: #1d192c;
+   /* opacity: 0.8;*/
   }
   header .navbar-default{
-    background-color: #282828;
+    background-color: #1d192c;
+    /*opacity: 0.8;*/
   }
   header.large img{
     width: 200px; 
@@ -196,6 +199,14 @@ px      68    160    252    */
 header .navbar-default .navbar-nav li a {
   color: #ffffff;
 }
+header .navbar-default .navbar-nav li a:hover {
+  color: #ffffff;
+}
+header .navbar-default .navbar-nav li ul li a{
+  color: #ffffff;
+}
+
+
 header.large li{ margin-top: 0px; }
   #slider {
     padding-top: 90px;

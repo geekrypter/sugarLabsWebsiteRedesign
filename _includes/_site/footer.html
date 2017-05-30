@@ -1,69 +1,206 @@
-    <footer id="footer-content" class="bg-grau">
-      <div id="footer">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+$(document).ready(function() {  
+  $( ".widget h2" ).click(
+    function() {
+      $(this).parent().toggleClass('active');
+    }
+  );      
+});
+</script>
+<footer  style="background-color:#282828">
+ 
+  <div class="container fold_1" style="margin:15px 0 0 60px">
+    <!-- <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="{{ site.baseurl }}/contact">Contact us</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+      </div>
+    </div> -->
         <div class="row">
-          <div class="medium-6 large-5 columns">
-            <h5 class="shadow-black">{{ site.data.language.info_website }}</h5>
+        <div class="col-md-2 widget">
+              <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;"><b>Sugar Labs</b></h4>
+                <article class="widget_content">
+                    <ul>
+                       <li style="margin-bottom:5px;font-size:15px;"><a href="#">About Us</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="#">Get Involved</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="#">Support Sugar</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="#">Contact Us</a></li>
+                 </ul>
+                 </article>
+        </div>
+            <div class="col-md-2 widget">
+             <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;"><b>Development</b></h4>
+                <article class="widget_content">
+                    <ul>
+                        <li style="margin-bottom:5px;font-size:15px;"><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="#">Documentation</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="#">IRC Channels</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="#">Bug Tracker</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="#">Development code</a></li>
+            <li style="margin-bottom:5px;font-size:15px;"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
+                 </ul>
+                 </article>
+        </div>
+            <div class="col-md-2 widget">
+                <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;"><b>Resources</b></h4>
+                <article class="widget_content">
+                <ul>
+                    <li style="margin-bottom:5px;font-size:15px;"><a href="more" >Culture and pedagogy</a></li>
+                <li style="margin-bottom:5px;font-size:15px;"><a href="press" >Press Resources</a></li>
+                <li style="margin-bottom:5px;font-size:15px;"><a href="http://schoolserver.org/" >School Server Resources</a></li>
+                <li style="margin-bottom:5px;font-size:15px;"><a href="http://planet.sugarlabs.org" >Planet Sugar Labs</a></li>
+                        </ul>
+                </article>
+        </div>
+        
+        <div class="col-md-2 to-animate">
+          <!-- <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
+            <li><u>Contact Us</u></li>
+            <li><i class="icon ion-ios-home"></i>Boston, MA, US</li>
+            <li><i class="icon ion-ios-telephone"></i>+1-415-343-5226</li>
+            <li><i class="icon ion-android-mail"></i>walter@sugarlabs.org</li>
+            <li>https://www.sugarlabs.org</li>
+          </ul> -->
+        </div>
+        <div class="col-md-3 to-animate" style="margin-top:10px;">
+          <div class="row">
+         <div class="ssk-group">
+         <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-icon ssk-facebook ssk-lg"></a>
+<a href="https://github.com/sugarlabs" class="ssk ssk-icon ssk-github ssk-lg"></a>
+    <a href="https://twitter.com/sugar_labs" class="ssk ssk-icon ssk-twitter ssk-lg"></a>
+     <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-icon ssk-instagram ssk-lg"></a>
+    <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-icon ssk-youtube ssk-lg">
 
-            <p class="shadow-black">
-              {{ site.description }}
-              <a href="{{ site.url }}{{ site.baseurl }}/info/">{{ site.data.language.more }}</a>
-            </p>
-          </div><!-- /.large-6.columns -->
+     </a>
+    
+    </div>
+    </br>
+   <!-- <div class="row">
+   <ul class="contact-info"  style="color:#ffffff;">
+            <li><u>Join our mailing list!</u></li>
+            </ul>
+    <a href="https://wiki.sugarlabs.org/go/Mailing_Lists" class="btn btn-view-works" style="background: #655E7A;color:#fff"><i class="icon ion-android-mail"></i>Subscribe</a>
+    </div> -->
+</div>
+        </div>
+        
+        </div>
+        </br>
+    <div class="row" >
+      <div class="col-md-12">
+        <p style="text-align:left">
+    Original Website: Copyright &copy; Sugar Labs&reg; Website Authors, available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC 4.0 license.</a></br>
+  
+    Redisgned Website: Copyright &copy; GeeKrypter <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><!-- <img alt="Creative Commons License" style="border-width:0;height:31px;width:88px" src="img/88x31.png" /> --></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.
+  </p>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+<!--  <footer  style="background-color:#282828">
+ 
+  
+  <div class="container-fluid">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="text-align:left">
+    <span class="sr-only">Toggle navigation</span>
+          ifcudfcedjlnkfcedj
+  </button>
+  <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+              <ul class="nav navbar-nav navbar-right abc">
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/work">About</a></li>
+                <li><a href="http://server.sugarizer.org">Try Now</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li ><a href="#" style="color:#0099FF">SOAS</a></li>
+                    <li ><a href="#" style="color:#0099FF">Chromebooks</a></li>
+                    <li ><a href="#" style="color:#0099FF">Linux Distros</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header"></li>
+                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
+                    <li><a href="#" style="color:#0099FF">Sugar Handbook</a></li>
 
+                    <li><a href="http://activities.sugarlabs.org" style="color:#0099FF">Activities Library</a></li>
 
-          <div class="small-6 medium-3 large-3 large-offset-1 columns">
-            {% for service_item in site.data.services %}
-              {% if forloop.first == true %}
-                <h5 class="shadow-black">{{ service_item.menu_name }}</h5>
-              {% endif %}
-            {% endfor %}
-
-              <ul class="no-bullet shadow-black">
-              {% for service_item in site.data.services %}
-                {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
-                  <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
-                    <a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
-                  </li>
-              {% endfor %}
-              </ul>
-          </div><!-- /.large-4.columns -->
-
-
-          <div class="small-6 medium-3 large-3 columns">
-            {% for network_item in site.data.network %}
-              {% if forloop.first == true %}
-                <h5 class="shadow-black">{{ network_item.menu_name }}</h5>
-              {% endif %}
-            {% endfor %}
-
-            <ul class="no-bullet shadow-black">
-            {% for network_item in site.data.network %}
-              {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
-                <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
-                  <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
+                    <li><a href="#" style="color:#0099FF">EBook Library</a></li>
+                  </ul>
                 </li>
-            {% endfor %}
-            </ul>
-          </div><!-- /.large-3.columns -->
-        </div><!-- /.row -->
+                <li><a href="http://server.sugarizer.org">Use</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://www.recycleusb.com" style="color:#0099FF">Sugar Sticks</a></li>
+                    <li><a href="#" style="color:#0099FF">Sugarizer Server (Raspberry Pi)</a></li>
+                    <li><a href="#" style="color:#0099FF">Pre-installed pi3 Desktops</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header"></li>
+                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
+                    <li><a href="#" style="color:#0099FF">Other Offers</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="" style="color:#0099FF">Community Mailing Lists</a></li>
+                    <li><a href="#" style="color:#0099FF">Developer's Guide</a></li>
+                    <li><a href="#" style="color:#0099FF">Start a local lab</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header"></li>
+                    <li><a href="#" style="color:#0099FF">Contribute to Translation</a></li>
+                    <li><a href="#" style="color:#0099FF">Contribute to Usability</a></li>
+                    <li><a href="#" style="color:#0099FF">Contribute to Software</a></li>
+                    <li><a href="#" style="color:#0099FF">Contribute to Central Organisation</a></li>
 
-      </div><!-- /#footer -->
+                    <li><a href="#" style="color:#0099FF">Related Projects</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://planet.sugarlabs.org" style="color:#0099FF">Blog Archive</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+</footer> -->
 
 
-      <div id="subfooter">
-        <nav class="row">
-          <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            {{ site.credits }}
-          </section>
-
-          <section id="subfooter-right" class="small-12 medium-6 columns">
-            <ul class="inline-list social-icons">
-            {% for social_item in site.data.socialmedia %}
-              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
-            {% endfor %}
-            </ul>
-          </section>
-        </nav>
-      </div><!-- /#subfooter -->
-    </footer>
-
+<script type="text/javascript">
+        $(document).on("scroll", function () {
+            if ($(document).scrollTop() > 10) {
+                $("header").removeClass("large").addClass("small");
+            } else {
+                $("header").removeClass("small").addClass("large");
+            }
+        });
+    </script>

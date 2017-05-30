@@ -190,11 +190,12 @@ px      68    160    252    */
   }
   header.large img{
     width: 200px; 
-    height: 100px;
+    height: 75px;
+    /*margin*/
   }
   header .navbar-default .navbar-toggle {
     margin-top: 20px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
 header .navbar-default .navbar-nav li a {
   color: #ffffff;

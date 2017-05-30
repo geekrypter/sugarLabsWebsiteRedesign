@@ -280,6 +280,13 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+$(document).ready(function() {  
+  $( ".widget h4" ).click(
+    function() {
+      $(this).parent().toggleClass('active');
+    }
+  );      
+});
 </script>
 <footer  style="background-color:#282828">
  
@@ -299,95 +306,43 @@ function topFunction() {
       </div>
     </div> -->
         <div class="row">
-        <div class="col-md-2 to-animate">
-          <!-- <ul class="contact-info" style="text-align:left;color:#ffffff;margin-top:10px;">
-            <li style="margin-bottom:14px;"><b>Sugar Labs</b></li>
-            <li style="margin-bottom:5px;"><a href="#">About Us</a></li>
-            <li style="margin-bottom:5px;"><a href="#">Get Involved</a></li>
-            <li style="margin-bottom:5px;"><a href="#">Support Sugar</a></li>
-            <li style="margin-bottom:5px;"><a href="#">Contact Us</a></li>
-          </ul> -->
-          <div class="container-fluid">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" >
-    <span class="sr-only">Toggle navigation</span>
-         <span style="color: #ffffff;text-align:left;font-size:18px">Sugar Labs</span>
-  </button>
-  <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
-              <ul class="abc"  style="text-align:left;color:#ffffff;margin-top:10px;">
-                <li style="margin-bottom:14px"><b>Sugar Labs</b></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="#">About Us</a></li>
+        <div class="col-md-2 widget">
+              <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;"><b>Sugar Labs</b></h4>
+                <article class="widget_content">
+                    <ul style="text-align:left;">
+                       <li style="margin-bottom:5px;font-size:15px;"><a href="#">About Us</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="#">Get Involved</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="#">Support Sugar</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="#">Contact Us</a></li>
-                
-                
-                
-              </ul>
-            </div><!-- /.navbar-collapse -->
-            </div>
+                 </ul>
+                 </article>
         </div>
-        <div class="col-md-2 to-animate">
-          <!-- <h3 class="section-title">Resources</h3> -->
-          <!-- <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
-          <li style="margin-bottom:14px;"><b>Development</b></li>
-            <li style="margin-bottom:5px;"><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
-            <li style="margin-bottom:5px;"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
-            <li style="margin-bottom:5px;"><a href="#">Documentation</a></li>
-            <li style="margin-bottom:5px;"><a href="#">IRC Channels</a></li>
-            <li style="margin-bottom:5px;"><a href="#">Bug Tracker</a></li>
-            <li style="margin-bottom:5px;"><a href="#">Development code</a></li>
-            <li style="margin-bottom:5px;"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
-          </ul> -->
-          <div class="container-fluid">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" >
-    <span class="sr-only">Toggle navigation</span>
-         <span style="color: #ffffff;text-align:left;font-size:18px">Development</span>
-  </button>
-  <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-3">
-              <ul class="abc"  style="text-align:left;color:#ffffff;margin-top:10px;">
-              <li style="margin-bottom:14px;"><b>Development</b></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
+            <div class="col-md-2 widget">
+             <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;text-align:left;"><b>Development</b></h4>
+                <article class="widget_content">
+                   <ul style="text-align:left;">
+                        <li style="margin-bottom:5px;font-size:15px;"><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="#">Documentation</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="#">IRC Channels</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="#">Bug Tracker</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="#">Development code</a></li>
             <li style="margin-bottom:5px;font-size:15px;"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
-                
-                
-                
-              </ul>
-            </div><!-- /.navbar-collapse -->
-            </div>
+                 </ul>
+                 </article>
         </div>
-        <div class="col-md-2 to-animate">
-          <!-- <h3 class="section-title">Resources</h3> -->
-          <!-- <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
-              <li style="margin-bottom:14px;"><b>Resources</b></li>
-                <li style="margin-bottom:5px;"><a href="more" >Culture and pedagogy</a></li>
-                <li style="margin-bottom:5px;"><a href="press" >Press Resources</a></li>
-                <li style="margin-bottom:5px;"><a href="http://schoolserver.org/" >School Server Resources</a></li>
-                <li style="margin-bottom:5px;"><a href="http://planet.sugarlabs.org" >Planet Sugar Labs</a></li>
-          </ul> -->
-          <div class="container-fluid">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4" >
-    <span class="sr-only">Toggle navigation</span>
-         <span style="color: #ffffff;text-align:left;font-size:18px">Resources</span>
-  </button>
-  <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-4">
-              <ul style="text-align:left;color:#ffffff;margin-top:10px;">
-              <li style="margin-bottom:14px;"><b>Resources</b></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="more" >Culture and pedagogy</a></li>
+            <div class="col-md-2 widget">
+                <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;"><b>Resources</b></h4>
+                <article class="widget_content">
+                <ul style="text-align:left;">
+                    <li style="margin-bottom:5px;font-size:15px;"><a href="more" >Culture and pedagogy</a></li>
                 <li style="margin-bottom:5px;font-size:15px;"><a href="press" >Press Resources</a></li>
                 <li style="margin-bottom:5px;font-size:15px;"><a href="http://schoolserver.org/" >School Server Resources</a></li>
                 <li style="margin-bottom:5px;font-size:15px;"><a href="http://planet.sugarlabs.org" >Planet Sugar Labs</a></li>
-                
-                
-                
-              </ul>
-            </div><!-- /.navbar-collapse -->
-            </div>
+                        </ul>
+                </article>
         </div>
+        
         <div class="col-md-2 to-animate">
           <!-- <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
             <li><u>Contact Us</u></li>
@@ -404,7 +359,9 @@ function topFunction() {
 <a href="https://github.com/sugarlabs" class="ssk ssk-icon ssk-github ssk-lg"></a>
     <a href="https://twitter.com/sugar_labs" class="ssk ssk-icon ssk-twitter ssk-lg"></a>
      <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-icon ssk-instagram ssk-lg"></a>
-    
+    <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-icon ssk-youtube ssk-lg">
+
+     </a>
     
     </div>
     </br>

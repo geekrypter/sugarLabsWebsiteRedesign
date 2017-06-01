@@ -193,6 +193,7 @@ px      68    160    252    */
     height: 75px;
     /*margin*/
   }
+  header.small img{ width: 150px; height: 50px;margin-top:14px;  }
   header .navbar-default .navbar-toggle {
     margin-top: 20px;
     /*margin-bottom: 20px;*/

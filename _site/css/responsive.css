@@ -210,6 +210,17 @@ header .navbar-default .navbar-nav li ul li a{
 
 
 header.large li{ margin-top: 0px; }
+#testimonial .counter-box li h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.price{
+  font-size: 14px;
+}
+#call-to-action p {
+  font-size: 12px;
+  line-height: 1.6;
+}
   #slider {
     padding-top: 90px;
     padding-bottom: 100px;

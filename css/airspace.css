@@ -26,7 +26,7 @@ header.small img{ width: 150px; height: 50px;  }
 body {
   font-family: 'Varela Round', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #f8f8ff;
+  background-color: #d9eaff;
 }
 h1,
 h2,
@@ -219,8 +219,8 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
-  opacity: 0.8;
+  background: #00588C;
+  /*opacity: 0.8;*/
   filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 #call-to-action h2 {
@@ -291,7 +291,12 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 120px;
   height: 120px;
 }
-#testimonial .block h2 {
+#h2ele {
+  line-height: 27px;
+  color: #5C5C5C;
+  padding-top: 110px;
+}
+# .block h2 {
   line-height: 27px;
   color: #5C5C5C;
   padding-top: 110px;
@@ -319,7 +324,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #testimonial .testimonial-carousel {
   text-align: center;
   width: 75%;
-  border: 1px solid #DEDEDE;
+  border: 1px solid #000000;
   padding: 24px;
   margin: 0 auto;
 }

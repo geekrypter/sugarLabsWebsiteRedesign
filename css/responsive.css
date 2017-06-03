@@ -181,11 +181,11 @@ px      68    160    252    */
     font-size: 13px;
   }
   header {
-    background-color: #1d192c;
+    background-color: #00588c;
    /* opacity: 0.8;*/
   }
   header .navbar-default{
-    background-color: #1d192c;
+    background-color: #00588c;
     /*opacity: 0.8;*/
   }
   header.large img{
@@ -211,7 +211,7 @@ header .navbar-default .navbar-nav li ul li a{
 
 header.large li{ margin-top: 0px; }
 #testimonial .counter-box li h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 .price{

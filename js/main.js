@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+	
+ 
 
 	$("#portfolio-contant-active").mixItUp();
 
@@ -10,6 +11,11 @@ $(document).ready(function(){
 	    autoPlay: 3000,
 	});
 	$("#testimonial-slider2").owlCarousel({
+	    paginationSpeed : 500,      
+	    singleItem:true,
+	    autoPlay: 3000,
+	});
+		$("#testimonial-slider3").owlCarousel({
 	    paginationSpeed : 500,      
 	    singleItem:true,
 	    autoPlay: 3000,
@@ -30,7 +36,18 @@ $(document).ready(function(){
 		itemsDesktop : [1199,5],
 		itemsDesktopSmall : [979,5],
 	});
-
+  
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                              
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                           
+            });
 
 	// google map
 		var map;

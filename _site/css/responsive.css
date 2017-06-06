@@ -139,6 +139,19 @@ px      68    160    252    344    436    528    620    712    */
   #features-work .block ul li {
     width: 49%;
   }
+  
+    .dropdown:hover .dropdown-menu {
+    display: none;
+}
+.chat-window{
+    bottom:0;
+    position:fixed;
+    float:right;
+    width: screen.width;
+    padding-bottom:100px; 
+    margin-left:0px;
+}
+
   /*---------------------------------------------
 					Work close 
 -----------------------------------------------*/
@@ -181,11 +194,11 @@ px      68    160    252    */
     font-size: 13px;
   }
   header {
-    background-color: #00588c;
+    background-color: #1d192c;
    /* opacity: 0.8;*/
   }
   header .navbar-default{
-    background-color: #00588c;
+    background-color: #1d192c;
     /*opacity: 0.8;*/
   }
   header.large img{

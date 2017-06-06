@@ -67,7 +67,7 @@
 <script src="js/jquery.counterup.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/modernizr-2.6.2.min.js"></script>
-
+<script src="js/float-panel.js"></script>
 
 <script src="js/main.js"></script>
     <link rel="canonical" href="https://www.sugarlabs.org/" />
@@ -105,7 +105,7 @@
                 <li><a href="/work">About</a></li>
                 <li><a href="http://server.sugarizer.org">Try Now</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li ><a href="#" style="color:#0099FF">SOAS</a></li>
                     <li ><a href="#" style="color:#0099FF">Chromebooks</a></li>
@@ -248,6 +248,124 @@ forms of education.</p>
 <p><a href='/'>Return to main page</a></p>
 
 
+<!-- <div id="ft" class="container" >
+    <div class="row">
+        <div class="col-md-5">
+            <div class="float-panel panel-primary">
+                <div class="panel-heading" id="accordion">
+                    <span class="glyphicon glyphicon-comment"></span> Chat on our IRC channel dgfhftrstdhghgfhhgs
+                    <div class="btn-group pull-right">
+                        <a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
+                </div>
+            <div class="panel-collapse collapse" id="collapseOne">
+                <div class="panel-body">
+                   <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:450px;"></iframe>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+ <div id="ftctn" class="container" style="padding-left:0px;margin-left:0px;">
+    <div class="row chat-window " id="chat_window_1" >
+        <div class="col-md-12">
+          <div class="panel panel-success" >
+                <div class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
+                    <div class="col-md-10" style="padding-left:80px;margin-left:0px;padding-bottom:0px;">
+                        <h3 class="panel-title" style="font-size:14px;color:#000000;"><!-- <span class="glyphicon glyphicon-comment"></span> -->Chat on our IRC channel</h3>
+                    </div>
+                    <div class="col-md-2" style="text-align: right; padding-right:0px;">
+                        <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim"></span></a>
+                        <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1"></span></a>
+                    </div>
+                </div>
+                <div class="panel-body msg_container_base">
+                    
+                    
+                     <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:400px;"></iframe>
+                    
+                    
+                  
+                </div>
+               
+        </div>
+        </div>
+    </div>
+    
+    
+</div>
+ <!-- <div class="container" >
+    <div class="row">
+        <div class="col-md-5">
+    <div class="floatWrapper" >
+            <div class="float-panel" data-top="0" >
+                
+            <div class="float-panel panel-primary">
+                <div class="panel-heading" id="accordion">
+                    <span class="glyphicon glyphicon-comment"></span> Chat on our IRC channel dgfhftrstdhghgfhhgs
+                    <div class="btn-group pull-right">
+                        <a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
+                </div>
+            <div class="panel-collapse collapse" id="collapseOne">
+                <div class="panel-body">
+                   <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:450px;"></iframe>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div> -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading" id="accordion">
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+                    <div class="btn-group pull-right">
+                        <a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
+                </div>
+            <div class="panel-collapse collapse" id="collapseOne">
+                <div class="panel-body">
+                   <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:450px;"></iframe>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div id="container-floating">
+    
+      <div id="floating-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#floatingnav"  data-placement="left">
+        <i id="legend" class="fa fa-tasks fa-stack-1x fa-inverse fa-2x" style="top:12px" role="button" tabindex="0"></i>
+    </div>
+  <div id="floatingnav" class="collapse">
+      <div class="nd1 nds" data-toggle="tooltip" data-placement="left">
+     <i id="locateplace" class="fa fa-search fa-stack-1x fa-inverse fa-2x" style="top:12px" ng-click="navMenuController($event);" role="button" tabindex="0"></i>
+      </div>
+      <div class="nd3 nds" data-toggle="tooltip" data-placement="left">
+     <i id="locateplace" class="fa fa-search fa-stack-1x fa-inverse fa-2x" style="top:12px" ng-click="navMenuController($event);" role="button" tabindex="0"></i>
+      </div>
+      <div class="nd4 nds" data-toggle="tooltip" data-placement="left">
+     <i id="locateplace" class="fa fa-search fa-stack-1x fa-inverse fa-2x" style="top:12px" ng-click="navMenuController($event);" role="button" tabindex="0"></i>
+      </div>
+  </div>
+
+</div> -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button>
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
@@ -273,6 +391,46 @@ $(document).ready(function() {
     }
   );      
 });
+$(document).ready(function() { 
+  var $this = $(".panel-heading span.icon_minim");
+
+     $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+});
+$(document).on('click', '.panel-heading span.icon_minim', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.removeClass('ion-plus-round').addClass('ion-minus-round');
+    }
+});
+$(document).on('focus', '.panel-footer input.chat_input', function (e) {
+    var $this = $(this);
+    if ($('#minim_chat_window').hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $('#minim_chat_window').removeClass('panel-collapsed');
+        $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('click', '#new_chat', function (e) {
+    var size = $( ".chat-window:last-child" ).css("margin-left");
+     size_total = parseInt(size) + 400;
+    alert(size_total);
+    var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
+    clone.css("margin-left", size_total);
+});
+$(document).on('click', '.icon_close', function (e) {
+    //$(this).parent().parent().parent().parent().remove();
+    $( "#chat_window_1" ).remove();
+});
+  
+
 </script>
 <footer  style="background-color:#282828">
  

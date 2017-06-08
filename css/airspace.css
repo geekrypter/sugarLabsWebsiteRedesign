@@ -15,8 +15,25 @@
 --*/
 
 
-header.large{ height: 100px; }
-header.large img{ width: 300px; height: 100px;  }
+header.large{ height: 100px;
+ }
+header.large img{ width: 300px; height: 100px; 
+ }
+
+header nav a img{
+  transition: all 0.4s;
+   -ms-transition: all 0.4s;
+      -moz-transition: all 0.4s; /* Firefox 4 */
+      -webkit-transition: all 0.4s; /* Safari and Chrome */
+      -o-transition: all 0.4s; /* Opera */
+}
+header li{
+  transition: all 0.4s;
+   -ms-transition: all 0.4s;
+      -moz-transition: all 0.4s; /* Firefox 4 */
+      -webkit-transition: all 0.4s; /* Safari and Chrome */
+      -o-transition: all 0.4s; /* Opera */
+}
 
 header.large li{ margin-top: 35px; }
 header.large li.dropdown li{margin-top: 0px;}
@@ -100,6 +117,7 @@ header .navbar-default .navbar-nav li a {
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
+
 }
 /*---------------------------------------------
 					Index Start

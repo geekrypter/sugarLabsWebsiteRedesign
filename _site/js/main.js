@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	
- 
+var $this = $(".panel-heading span.icon_minim");
+     // window.alert(5 + 6);
+     // $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
 
 	$("#portfolio-contant-active").mixItUp();
 

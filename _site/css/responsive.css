@@ -19,6 +19,8 @@ px      68    160    252    344    436    528    620    712    */
   /*--
 	wrapper Start 
 --*/
+
+
   #wrapper {
     text-align: center;
   }
@@ -140,9 +142,9 @@ px      68    160    252    344    436    528    620    712    */
     width: 49%;
   }
   
-    .dropdown:hover .dropdown-menu {
+    /*.dropdown:hover .dropdown-menu {
     display: none;
-}
+}*/
 
 
   /*---------------------------------------------
@@ -188,17 +190,29 @@ px      68    160    252    */
   }
   header {
     background-color: #1d192c;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
    /* opacity: 0.8;*/
   }
   header .navbar-default{
     background-color: #1d192c;
     /*opacity: 0.8;*/
   }
+  header.large{ height: 40px;
+ }
   header.large img{
     width: 200px; 
     height: 75px;
     /*margin*/
   }
+.divider{
+  display: none;
+}
+.dropdown-header{
+    display: none;
+
+}
+
   
   /*.chat-window
 {

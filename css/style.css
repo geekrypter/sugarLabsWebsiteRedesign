@@ -64,7 +64,11 @@
   padding: 15px;
   border-radius: 10px;
 }
-
+.ifr{
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
 #myBtn2:hover {
   background-color: #555;
 }
@@ -311,6 +315,13 @@
   font-size: 15px;
   /*border-radius: 40px;*/
   cursor: pointer;
+}
+@media (min-width: 767px) 
+{
+    ul.nav li.dropdown:hover > ul.dropdown-menu 
+    {
+       display: block;
+    }
 }
 /*.chat
 {

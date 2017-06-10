@@ -100,13 +100,13 @@
           </div>
           
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1" style="padding-bottom:0px;margin-bottom: 0px;">
               <ul class="nav navbar-nav navbar-right abc">
                 <li><a href="/">Home</a></li>
                 <li><a href="/work">About</a></li>
                 <li><a href="http://server.sugarizer.org">Try Now</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li ><a href="#" style="color:#0099FF">SOAS</a></li>
                     <li ><a href="#" style="color:#0099FF">Chromebooks</a></li>
@@ -284,42 +284,7 @@ Other names are trademarks of their respective owners.</p>
     </div>
 </div>
  -->
-<div id="mcw1" class="container-popup" style="padding-top:60px;"></div>
- <div id="mcw2" class="popup" style="padding-top:62px;text-align:center;">
- Chat on our IRC channel!<span id="close" class="ion-close-round icon_close" style="color:#000000;"></span>
-  <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:100%;"></iframe>
 
-</div>
- <div id="ftctn" class="container" style="padding-left:0px;margin-left:0px;">
-    <div class="row chat-window " id="chat_window_1" >
-        <div class="col-md-12">
-          <div class="panel panel-default" >
-                <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
-
-                    <div class="col-md-10" style="padding-left:80px;margin-left:0px;padding-bottom:0px;">
-                        <h3 class="panel-title" style="font-size:14px;color:#000000;"><!-- <span class="glyphicon glyphicon-comment"></span> -->Chat on our IRC channel!</h3>
-                    </div>
-                    <div class="col-md-2" style="text-align: right; padding-right:0px;">
-                        <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;"></span></a>
-                        <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1" style="color:#655E7A;"></span></a>
-                    </div>
-                </div>
-                
-                <div class="panel-body msg_container_base" style="display:none;">
-                    
-                    
-                     <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:400px;"></iframe>
-                    
-                    
-                  
-                </div>
-               
-        </div>
-        </div>
-    </div>
-    
-    
-</div>
  <!-- <div class="container" >
     <div class="row">
         <div class="col-md-5">
@@ -388,6 +353,8 @@ Other names are trademarks of their respective owners.</p>
 
 </div> -->
 <button onclick="chatFunction()" id="myBtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button>
+
+<!-- <button id="mybtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button> -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button>
 
 <script>
@@ -395,7 +362,7 @@ Other names are trademarks of their respective owners.</p>
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)&&(document.getElementById("mcw1").style.display == "none")&&(document.getElementById("mcw2").style.display == "none")) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
@@ -411,6 +378,7 @@ function chatFunction() {
     document.getElementById("mcw1").style.display = "block";
     document.getElementById("mcw2").style.display = "block";
     document.getElementById("myBtn2").style.display = "none";
+    document.getElementById("myBtn").style.display = "none";
     
     // document.body.scrollTop = 0;
     // document.documentElement.scrollTop = 0;
@@ -424,11 +392,12 @@ $(document).ready(function() {
 });
   $(document).ready(function() {
     $("#close").click(function() {
-      window.alert(5 + 6);
+      // window.alert(5 + 6);
 
       document.getElementById("mcw1").style.display = "none";
     document.getElementById("mcw2").style.display = "none";
       document.getElementById("myBtn2").style.display = "block";
+      document.getElementById("myBtn").style.display = "block";
     });
   });
 
@@ -468,6 +437,9 @@ $(document).on('click', '.icon_close', function (e) {
     document.getElementById("mcw1").style.display = "none";
     document.getElementById("mcw2").style.display = "none";
       document.getElementById("myBtn2").style.display = "block";
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } 
 });
 
 </script>
@@ -571,6 +543,43 @@ $(document).on('click', '.icon_close', function (e) {
   </div>
   
 </footer>
+<div id="mcw1" class="container-popup" style="padding-top:60px;"></div>
+ <div id="mcw2" class="popup" style="padding-top:62px;text-align:center;">
+ Chat on our IRC channel!<span id="close" class="ion-close-round icon_close" style="color:#000000;"></span>
+  <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" class="ifr"></iframe>
+
+</div>
+ <div id="ftctn" class="container" style="padding-left:0px;margin-left:0px;">
+    <div class="row chat-window " id="chat_window_1" >
+        <div class="col-md-12">
+          <div class="panel panel-default" >
+                <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
+
+                    <div class="col-md-10" style="padding-left:80px;margin-left:0px;padding-bottom:0px;">
+                        <h3 class="panel-title" style="font-size:14px;color:#000000;"><!-- <span class="glyphicon glyphicon-comment"></span> -->Chat on our IRC channel!</h3>
+                    </div>
+                    <div class="col-md-2" style="text-align: right; padding-right:0px;">
+                        <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;"></span></a>
+                        <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1" style="color:#655E7A;"></span></a>
+                    </div>
+                </div>
+                
+                <div class="panel-body msg_container_base" style="display:none;">
+                    
+                    
+                     
+                     <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:400px;"></iframe>
+                    
+                    
+                  
+                </div>
+               
+        </div>
+        </div>
+    </div>
+    
+    
+</div>
 <!--  <footer  style="background-color:#282828">
  
   

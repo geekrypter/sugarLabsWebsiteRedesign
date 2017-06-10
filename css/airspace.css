@@ -33,7 +33,10 @@ header li{
       -moz-transition: all 0.4s; /* Firefox 4 */
       -webkit-transition: all 0.4s; /* Safari and Chrome */
       -o-transition: all 0.4s; /* Opera */
-}
+}/*
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}*/
 
 header.large li{ margin-top: 35px; }
 header.large li.dropdown li{margin-top: 0px;}

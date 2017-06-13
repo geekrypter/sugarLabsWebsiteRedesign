@@ -21,18 +21,18 @@ header.large img{ width: 300px; height: 100px;
  }
 
 header nav a img{
-  transition: all 0.4s;
-   -ms-transition: all 0.4s;
-      -moz-transition: all 0.4s; /* Firefox 4 */
-      -webkit-transition: all 0.4s; /* Safari and Chrome */
-      -o-transition: all 0.4s; /* Opera */
+  transition: all 0.3s;
+   -ms-transition: all 0.3s;
+      -moz-transition: all 0.3s; /* Firefox 4 */
+      -webkit-transition: all 0.3s; /* Safari and Chrome */
+      -o-transition: all 0.3s; /* Opera */
 }
 header li{
-  transition: all 0.4s;
-   -ms-transition: all 0.4s;
-      -moz-transition: all 0.4s; /* Firefox 4 */
-      -webkit-transition: all 0.4s; /* Safari and Chrome */
-      -o-transition: all 0.4s; /* Opera */
+  transition: all 0.3s;
+   -ms-transition: all 0.3s;
+      -moz-transition: all 0.3s; /* Firefox 4 */
+      -webkit-transition: all 0.3s; /* Safari and Chrome */
+      -o-transition: all 0.3s; /* Opera */
 }/*
 li.dropdown:hover > .dropdown-menu {
     display: block;

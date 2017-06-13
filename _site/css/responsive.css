@@ -198,13 +198,25 @@ px      68    160    252    */
     background-color: #1d192c;
     /*opacity: 0.8;*/
   }
-  header.large{ height: 40px;
+ /* header.large{ height: 40px;
  }
   header.large img{
     width: 200px; 
     height: 75px;
+    
+  }*/
+   header.large{
+    height: 23px;
+  }
+  header.large #navh{
+    width: 210px; 
+    height: 21px;
     /*margin*/
   }
+  header.small{
+    height: 23px;
+  }
+  header.small #navh{ width: 120px; height: 7px; margin-top: 14px; }
 .divider{
   display: none;
 }
@@ -227,7 +239,7 @@ px      68    160    252    */
     height: 100%;
     background:rgba(255,255,255,0.5);
 }*/
-  header.small img{ width: 150px; height: 50px;margin-top:14px;  }
+  /*header.small img{ width: 150px; height: 50px;margin-top:14px;  }*/
   header .navbar-default .navbar-toggle {
     margin-top: 20px;
     /*margin-bottom: 20px;*/

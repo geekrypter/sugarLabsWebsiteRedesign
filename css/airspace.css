@@ -17,10 +17,10 @@
 
 header.large{ height: 100px;
  }
-header.large img{ width: 300px; height: 100px; 
+header.large #navh{ width: 300px; height: 40px; 
  }
 
-header nav a img{
+#navh{
   transition: all 0.3s;
    -ms-transition: all 0.3s;
       -moz-transition: all 0.3s; /* Firefox 4 */
@@ -42,7 +42,7 @@ header.large li{ margin-top: 35px; }
 header.large li.dropdown li{margin-top: 0px;}
 header.small{ height:40px;}
 
-header.small img{ width: 150px; height: 50px;  }
+header.small #navh{ width: 150px; height: 5px;  }
 body {
   font-family: 'Varela Round', sans-serif;
   -webkit-font-smoothing: antialiased;

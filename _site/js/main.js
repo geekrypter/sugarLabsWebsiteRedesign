@@ -40,6 +40,11 @@ var $this = $(".panel-heading span.icon_minim");
 	    singleItem:true,
 	    autoPlay: 3000,
 	});
+		$("#testimonial-slider4").owlCarousel({
+	    paginationSpeed : 500,      
+	    singleItem:true,
+	    autoPlay: 3000,
+	});
 
 
 
@@ -162,12 +167,12 @@ if (color < 10) {
 }
 
 document.querySelector('#defaultIcon').href = 
-    'assets/favicon_' + logoID + '.png';
+    'https://www.sugarlabs.org/assets/favicon_' + logoID + '.png';
 
-var h = document.querySelector('.logo').src;
+var h = document.querySelector('.logo').innerHTML;
 h = h.replace(/033cd2/g, COLORS[color][0]);
 h = h.replace(/78e600/g, COLORS[color][1]);
-document.querySelector('.logo').src = h;
+document.querySelector('.logo').innerHTML = h;
 
 });
 

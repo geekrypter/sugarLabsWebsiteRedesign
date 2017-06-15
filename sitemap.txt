@@ -4,5 +4,6 @@ https://www.sugarlabs.org/
 https://www.sugarlabs.org/more
 https://www.sugarlabs.org/press
 https://www.sugarlabs.org/inquiry
+https://www.sugarlabs.org/contact_us
 {% for post in site.posts %}https://www.sugarlabs.org{{ post.url }}
 {% endfor %}

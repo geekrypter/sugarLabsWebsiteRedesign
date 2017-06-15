@@ -346,6 +346,7 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   width: 75%;
   border: 1px solid #DEDEDE;
+  border: 1px solid #000000;
   padding: 24px;
   margin: 0 auto;
 }

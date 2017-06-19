@@ -6,5 +6,6 @@ https://www.sugarlabs.org/press
 https://www.sugarlabs.org/inquiry
 https://www.sugarlabs.org/contact_us
 https://www.sugarlabs.org/about_us
+https://www.sugarlabs.org/libre_software_culture
 {% for post in site.posts %}https://www.sugarlabs.org{{ post.url }}
 {% endfor %}

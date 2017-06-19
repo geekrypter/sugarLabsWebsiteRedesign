@@ -19,7 +19,12 @@ px      68    160    252    344    436    528    620    712    */
   /*--
 	wrapper Start 
 --*/
-
+#btbtn{
+  display: block;
+}
+#myBtn{
+  display: none;
+}
 
   #wrapper {
     text-align: center;

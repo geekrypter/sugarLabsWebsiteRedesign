@@ -40,12 +40,11 @@ var $this = $(".panel-heading span.icon_minim");
 	    singleItem:true,
 	    autoPlay: 3000,
 	});
-		$("#testimonial-slider4").owlCarousel({
+$("#testimonial-slider4").owlCarousel({
 	    paginationSpeed : 500,      
 	    singleItem:true,
 	    autoPlay: 3000,
 	});
-
 
 
 	$("#clients-logo").owlCarousel({
@@ -91,33 +90,33 @@ var $this = $(".panel-heading span.icon_minim");
         time: 1000
     });
 		
-			var sliderMain = function() {
+	// 		var sliderMain = function() {
 		
-	  	$('#fh5co-hero .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
-			directionNav: true,
-			start: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			},
-			before: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			}
+	//   	$('#fh5co-hero .flexslider').flexslider({
+	// 		animation: "fade",
+	// 		slideshowSpeed: 5000,
+	// 		directionNav: true,
+	// 		start: function(){
+	// 			setTimeout(function(){
+	// 				$('.slider-text').removeClass('animated fadeInUp');
+	// 				$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+	// 			}, 500);
+	// 		},
+	// 		before: function(){
+	// 			setTimeout(function(){
+	// 				$('.slider-text').removeClass('animated fadeInUp');
+	// 				$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+	// 			}, 500);
+	// 		}
 
-	  	});
+	//   	});
 
-	  	$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	$(window).resize(function(){
-	  		$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	});
+	//   	$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
+	//   	$(window).resize(function(){
+	//   		$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
+	//   	});
 
-	};
+	// };
 	var fullHeight = function() {
 
 		$('.js-fullheight').css('height', $(window).height());
@@ -126,33 +125,33 @@ var $this = $(".panel-heading span.icon_minim");
 		});
 
 	};
-	var sliderMain = function() {
+	// var sliderMain = function() {
 		
-	  	$('#fh5co-hero .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
-			directionNav: true,
-			start: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			},
-			before: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			}
+	//   	$('#fh5co-hero .flexslider').flexslider({
+	// 		animation: "fade",
+	// 		slideshowSpeed: 5000,
+	// 		directionNav: true,
+	// 		start: function(){
+	// 			setTimeout(function(){
+	// 				$('.slider-text').removeClass('animated fadeInUp');
+	// 				$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+	// 			}, 500);
+	// 		},
+	// 		before: function(){
+	// 			setTimeout(function(){
+	// 				$('.slider-text').removeClass('animated fadeInUp');
+	// 				$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+	// 			}, 500);
+	// 		}
 
-	  	});
+	//   	});
 
-	  	$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	$(window).resize(function(){
-	  		$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	});
+	//   	$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
+	//   	$(window).resize(function(){
+	//   		$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
+	//   	});
 
-	};
+	// };
 	var COLORS = [['006E00', '78E600'], ['68008C', '78E600'],
               ['006E00', '00BEFF'], ['033CD2', '00BEFF'],
               ['6E008C', '00BEFF'], ['A00000', 'FF7800'],
@@ -166,13 +165,13 @@ if (color < 10) {
     logoID = "0" + logoID;
 }
 
-document.querySelector('#defaultIcon').href = 
+document.querySelector('#defaultIcon1').href = 
     'https://www.sugarlabs.org/assets/favicon_' + logoID + '.png';
 
-var h = document.querySelector('.logo').innerHTML;
+var h = document.querySelector('.logo1').innerHTML;
 h = h.replace(/033cd2/g, COLORS[color][0]);
 h = h.replace(/78e600/g, COLORS[color][1]);
-document.querySelector('.logo').innerHTML = h;
+document.querySelector('.logo1').innerHTML = h;
 
 });
 

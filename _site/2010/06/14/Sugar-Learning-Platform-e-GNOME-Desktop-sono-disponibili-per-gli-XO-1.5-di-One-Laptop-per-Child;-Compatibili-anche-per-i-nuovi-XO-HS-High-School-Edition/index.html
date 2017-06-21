@@ -284,7 +284,7 @@ alle più moderne forme di apprendimento.</p>
 <button onclick="chatFunction()" id="myBtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button>
 
 <!-- <button id="mybtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button> -->
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button>
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button> -->
 
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
@@ -312,13 +312,13 @@ function chatFunction() {
     // document.body.scrollTop = 0;
     // document.documentElement.scrollTop = 0;
 }
-$(document).ready(function() {  
-  $( ".widget h4" ).click(
-    function() {
-      $(this).parent().toggleClass('active');
-    }
-  );      
-});
+// $(document).ready(function() {  
+//   $( ".widget h4" ).click(
+//     function() {
+//       $(this).parent().toggleClass('active');
+//     }
+//   );      
+// });
   $(document).ready(function() {
     $("#close").click(function() {
       // window.alert(5 + 6);
@@ -372,23 +372,16 @@ $(document).on('click', '.icon_close', function (e) {
 });
 
 </script>
-<footer  style="background-color:#282828">
+<footer  style="background-color:#282828;padding-top:5px;">
  
-  <div class="container fold_1" style="margin:15px 0 0 60px">
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="/contact">Contact us</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="#">Terms</a></li>
-          </ul>
-        </div>
-        <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
-      </div>
-    </div> -->
+  <div class="container fold_1">
+  <div class="row">
+ 
+  <div class="col-md-12">
+  <h4 style="text-align:right;">
+  <a href="#" onclick="topFunction()" style="color: #0099FF;">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
+  </div>
+  </div>
     
         <div class="row">
         <div class="col-md-2 widget">
@@ -430,13 +423,7 @@ $(document).on('click', '.icon_close', function (e) {
         </div>
         
         <div class="col-md-2 to-animate">
-          <!-- <ul class="contact-info"  style="text-align:left;color:#ffffff;margin-top:10px;">
-            <li><u>Contact Us</u></li>
-            <li><i class="icon ion-ios-home"></i>Boston, MA, US</li>
-            <li><i class="icon ion-ios-telephone"></i>+1-415-343-5226</li>
-            <li><i class="icon ion-android-mail"></i>walter@sugarlabs.org</li>
-            <li>https://www.sugarlabs.org</li>
-          </ul> -->
+         
         </div>
         <div class="col-md-3 to-animate" style="margin-top:10px;">
           <div class="row">
@@ -451,12 +438,7 @@ $(document).on('click', '.icon_close', function (e) {
     
     </div>
     </br>
-   <!-- <div class="row">
-   <ul class="contact-info"  style="color:#ffffff;">
-            <li><u>Join our mailing list!</u></li>
-            </ul>
-    <a href="https://wiki.sugarlabs.org/go/Mailing_Lists" class="btn btn-view-works" style="background: #655E7A;color:#fff"><i class="icon ion-android-mail"></i>Subscribe</a>
-    </div> -->
+ 
 </div>
         </div>
         
@@ -477,12 +459,18 @@ $(document).on('click', '.icon_close', function (e) {
 <div id="mcw1" class="container-popup" style="padding-top:60px;"></div>
  <div id="mcw2" class="popup" style="padding-top:62px;text-align:center;">
  Chat on our IRC channel!<span id="close" class="ion-close-round icon_close" style="color:#000000;"></span>
-  <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" class="ifr"></iframe>
+  <!-- <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" class="ifr"></iframe> -->
 
 </div>
- <div id="ftctn" class="container" style="padding-left:0px;margin-left:0px;">
-    <div class="row chat-window " id="chat_window_1" >
-        <div class="col-md-12">
+ <div id="ftctn" class="container" style="padding-left:0px;margin-left:30px;">
+    <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+    
+        <div class="col-md-4">
+        <div class="chat-window pull-right" id="chat_window_1" >
           <div class="panel panel-default" >
                 <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
 
@@ -499,7 +487,7 @@ $(document).on('click', '.icon_close', function (e) {
                     
                     
                      
-                     <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:400px;"></iframe>
+                     <!-- <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:400px;"></iframe> -->
                     
                     
                   
@@ -507,79 +495,12 @@ $(document).on('click', '.icon_close', function (e) {
                
         </div>
         </div>
+        </div>
     </div>
     
     
 </div>
-<!--  <footer  style="background-color:#282828">
- 
-  
-  <div class="container-fluid">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="text-align:left">
-    <span class="sr-only">Toggle navigation</span>
-          ifcudfcedjlnkfcedj
-  </button>
-  <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
-              <ul class="nav navbar-nav navbar-right abc">
-                <li><a href="/">Home</a></li>
-                <li><a href="/work">About</a></li>
-                <li><a href="http://server.sugarizer.org">Try Now</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li ><a href="#" style="color:#0099FF">SOAS</a></li>
-                    <li ><a href="#" style="color:#0099FF">Chromebooks</a></li>
-                    <li ><a href="#" style="color:#0099FF">Linux Distros</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
-                    <li><a href="#" style="color:#0099FF">Sugar Handbook</a></li>
 
-                    <li><a href="http://activities.sugarlabs.org" style="color:#0099FF">Activities Library</a></li>
-
-                    <li><a href="#" style="color:#0099FF">EBook Library</a></li>
-                  </ul>
-                </li>
-                <li><a href="http://server.sugarizer.org">Use</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="http://www.recycleusb.com" style="color:#0099FF">Sugar Sticks</a></li>
-                    <li><a href="#" style="color:#0099FF">Sugarizer Server (Raspberry Pi)</a></li>
-                    <li><a href="#" style="color:#0099FF">Pre-installed pi3 Desktops</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
-                    <li><a href="#" style="color:#0099FF">Other Offers</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="" style="color:#0099FF">Community Mailing Lists</a></li>
-                    <li><a href="#" style="color:#0099FF">Developer's Guide</a></li>
-                    <li><a href="#" style="color:#0099FF">Start a local lab</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Translation</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Usability</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Software</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Central Organisation</a></li>
-
-                    <li><a href="#" style="color:#0099FF">Related Projects</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="http://planet.sugarlabs.org" style="color:#0099FF">Blog Archive</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            </div>
-
-</footer> -->
 
 
 <script type="text/javascript">

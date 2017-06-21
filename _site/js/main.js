@@ -1,11 +1,12 @@
 $(document).ready(function(){
-	document.getElementById("mcw1").style.display = "none";
-    document.getElementById("mcw2").style.display = "none";
-    $( ".widget h4" ).click(
+	   $( ".widget h4" ).click(
     function() {
       $(this).parent().toggleClass('active');
     }
   ); 
+	document.getElementById("mcw1").style.display = "none";
+    document.getElementById("mcw2").style.display = "none";
+ 
   var _originalSize = $(window).width() + $(window).height()
   $(window).resize(function(){
     if($(window).width() + $(window).height() != _originalSize){

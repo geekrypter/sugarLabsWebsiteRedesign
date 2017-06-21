@@ -187,6 +187,13 @@ font header .navbar-default .navbar-nav li a:hover {
         margin-top: 33px; /*the image height*/
       /*  padding-left:100px;*/
 }
+#intro .block video {
+    width: 100%; /*the image width*/
+        height: 350px;
+        margin-top: 33px; /*the image height*/
+      /*  padding-left:100px;*/
+}
+
 #intro .section-title {
   margin-bottom: 0px;
 }

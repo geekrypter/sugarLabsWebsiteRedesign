@@ -300,8 +300,57 @@ nombres y sus respectivas marcas corresponden a sus dueños.</p>
 <p><a href='/'>Return to main page</a></p>
 
 
-<button onclick="chatFunction()" id="myBtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button>
+<!-- <button onclick="chatFunction()" id="myBtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button> -->
+<button id="myBtn2" title="IRC chat" data-toggle="modal" data-target="#fsModal"><i class="ion-ios-chatbubble-outline"></i></button>
 
+<!-- modal -->
+<div id="fsModal"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+  <!-- dialog -->
+  <div class="modal-dialog">
+
+    <!-- content -->
+    <div class="modal-content">
+
+      <!-- header -->
+      <div class="modal-header">
+        <h1 id="myModalLabel"
+            class="modal-title">
+          Modal title
+        </h1>
+      </div>
+      <!-- header -->
+      
+      <!-- body -->
+      <div class="modal-body">
+         <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:100%;"></iframe>
+
+      </div>
+      <!-- body -->
+
+      <!-- footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-dismiss="modal">
+          close
+        </button>
+        
+      </div>
+      <!-- footer -->
+
+    </div>
+    <!-- content -->
+
+  </div>
+  <!-- dialog -->
+
+</div>
+<!-- modal -->
 <!-- <button id="mybtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button> -->
 <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button> -->
 

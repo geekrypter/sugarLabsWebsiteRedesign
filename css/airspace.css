@@ -1701,3 +1701,10 @@ px      68    160    252    344    436    */
   background: darken(#f1f3f5, 20%);
 }
 /*------------------------------------------------------------------*/
+#imgrflt {
+  /*-webkit-box-reflect: below 0*/
+    /*-webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white)); */
+
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+}
+

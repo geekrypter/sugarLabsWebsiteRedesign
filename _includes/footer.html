@@ -1,4 +1,3 @@
-<!-- <button onclick="chatFunction()" id="myBtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button> -->
 <button id="myBtn2" title="IRC chat" data-toggle="modal" data-target="#fsModal"><i class="ion-ios-chatbubble-outline"></i></button>
 
 <!-- modal -->
@@ -50,8 +49,7 @@
 
 </div>
 <!-- modal -->
-<!-- <button id="mybtn2" title="IRC chat"><i class="ion-ios-chatbubble-outline"></i></button> -->
-<!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon ion-ios-arrow-up"></i></button> -->
+
 
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
@@ -76,19 +74,10 @@ function chatFunction() {
     document.getElementById("myBtn2").style.display = "none";
     document.getElementById("myBtn").style.display = "none";
     
-    // document.body.scrollTop = 0;
-    // document.documentElement.scrollTop = 0;
 }
-// $(document).ready(function() {  
-//   $( ".widget h4" ).click(
-//     function() {
-//       $(this).parent().toggleClass('active');
-//     }
-//   );      
-// });
+
   $(document).ready(function() {
     $("#close").click(function() {
-      // window.alert(5 + 6);
 
       document.getElementById("mcw1").style.display = "none";
     document.getElementById("mcw2").style.display = "none";
@@ -126,7 +115,6 @@ $(document).on('click', '#new_chat', function (e) {
     clone.css("margin-left", size_total);
 });
 $(document).on('click', '.icon_close', function (e) {
-    //$(this).parent().parent().parent().parent().remove();
     $( "#chat_window_1" ).remove();
 });
   $(document).on('click', '#close', function (e) {
@@ -217,7 +205,8 @@ $(document).on('click', '.icon_close', function (e) {
         <p style="text-align:left;font-size:13px;">
     Original Website: Copyright &copy; Sugar Labs&reg; Website Authors, available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC 4.0 license.</a></br>
   
-    Redesigned Website: Copyright &copy; Seetarama Raju <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><!-- <img alt="Creative Commons License" style="border-width:0;height:31px;width:88px" src="img/88x31.png" /> --></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.
+    Redesigned Website: Copyright &copy; Seetarama Raju <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.</br>
+    Website base template: Designed and developed by Themefisher
   </p>
       </div>
     </div>
@@ -230,20 +219,21 @@ $(document).on('click', '.icon_close', function (e) {
   <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" class="ifr"></iframe>
 
 </div>
- <div id="ftctn" class="container" style="padding-left:0px;margin-left:30px;>
+ <div id="ftctn" class="container" style="padding-left:0px;>
+
     <div class="row">
     <div class="col-md-4">
     </div>
     <div class="col-md-4">
     </div>
     
-        <div class="col-md-4">
+        <div class="col-md-4" style="position:absolute;bottom:0;right:0;">
         <div class="chat-window pull-right" id="chat_window_1" >
           <div class="panel panel-default" >
                 <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
 
                     <div class="col-md-10" style="padding-left:80px;margin-left:0px;padding-bottom:0px;">
-                        <h3 class="panel-title" style="font-size:14px;color:#000000;"><!-- <span class="glyphicon glyphicon-comment"></span> -->Chat on our IRC channel!</h3>
+                        <h3 class="panel-title" style="font-size:14px;color:#000000;">Chat on our IRC channel!</h3>
                     </div>
                     <div class="col-md-2" style="text-align: right; padding-right:0px;">
                         <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;"></span></a>
@@ -268,7 +258,19 @@ $(document).on('click', '.icon_close', function (e) {
     
     
 </div>
+<div id="mobile-ssk" class="ssk-sticky ssk-left ssk-center ssk-group">
+<a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-facebook ssk-lg"></a>
+<a href="https://github.com/sugarlabs" class="ssk ssk-github ssk-lg"></a>
+    <a href="https://twitter.com/sugar_labs" class="ssk ssk-twitter ssk-lg"></a>
+     <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-instagram ssk-wisteria ssk-lg">
 
+     </a>
+      <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-youtube ssk-pomegranate ssk-lg">
+
+     </a>
+   
+
+</div>
 
 
 <script type="text/javascript">

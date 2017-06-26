@@ -33,10 +33,7 @@ header li{
       -moz-transition: all 0.3s; /* Firefox 4 */
       -webkit-transition: all 0.3s; /* Safari and Chrome */
       -o-transition: all 0.3s; /* Opera */
-}/*
-li.dropdown:hover > .dropdown-menu {
-    display: block;
-}*/
+}
 
 header.large li{ margin-top: 35px; }
 header.large li.dropdown li{margin-top: 0px;}
@@ -185,13 +182,11 @@ font header .navbar-default .navbar-nav li a:hover {
     width: 100%; /*the image width*/
         height: 350px;
         margin-top: 33px; /*the image height*/
-      /*  padding-left:100px;*/
 }
 #intro .block video {
     width: 100%; /*the image width*/
         height: 350px;
         margin-top: 33px; /*the image height*/
-      /*  padding-left:100px;*/
 }
 
 #intro .section-title {
@@ -230,7 +225,6 @@ font header .navbar-default .navbar-nav li a:hover {
 	call-to-action Start
 --*/
 #call-to-action {
-  /*background: url("../img/call-to-action-bg.jpg") no-repeat;*/
   background-size: cover;
   background-attachment: fixed;
   padding: 70px 0px;
@@ -315,7 +309,6 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 100px 0;
 }
  #testimonial .span1 {
-  /*padding-bottom: 38px;*/
   width: 120px;
   height: 120px;
 }
@@ -884,20 +877,16 @@ footer .footer-manu ul li a:hover {
       display:inline; 
     }
     .widget h4 { 
-        /*border-bottom:1px solid #ddd;*/
     }   
     .widget h4:after {
-        /*content:"\203A";*/
         color:white;
         width:20px;
         height:20px;
         background:#999;
         display:inline-block;
         text-align:center;
-        /*float:right;*/
     }
     .active.widget h4:after {
-        /*content:"\2039";    */
         background:#ccc;
     }
     .ssk-group{
@@ -1031,13 +1020,11 @@ footer .footer-manu ul li a:hover {
   background: #e5e5e5;
   margin: 0;
   padding: 0;
-  /*max-height:360px;*/
   overflow-x:hidden;
 }
 .top-bar {
   background: #666;
   color: white;
-  /*padding: 10px;*/
   position: relative;
   overflow: hidden;
 }
@@ -1101,7 +1088,6 @@ footer .footer-manu ul li a:hover {
   padding: 3px 6px;
   background-color: #655E7A;
   font-size: 15px;
-  /*border-radius: 40px;*/
   cursor: pointer;
 }
 @media (min-width: 767px) 
@@ -1187,7 +1173,6 @@ px      68    160    252    344    436    528    620    712    */
     width: 200px; /*the image width*/
         height: 350px;
         margin-top: 33px; /*the image height*/
-      /*  padding-left:100px;*/
 }
 
 
@@ -1311,26 +1296,18 @@ px      68    160    252    */
     background-color: #1d192c;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-   /* opacity: 0.8;*/
   }
   header .navbar-default{
     background-color: #1d192c;
-    /*opacity: 0.8;*/
   }
- /* header.large{ height: 40px;
- }
-  header.large img{
-    width: 200px; 
-    height: 75px;
-    
-  }*/
+ 
    header.large{
     height: 23px;
   }
   header.large #navh{
     width: 210px; 
     height: 21px;
-    /*margin*/
+
   }
   header.small{
     height: 23px;
@@ -1344,24 +1321,9 @@ px      68    160    252    */
 
 }
 
-  
-  /*.chat-window
-{
-    position:fixed;
-    padding:0;
-    margin:0;
 
-    top:0;
-    left:0;
-
-    width: 100%;
-    height: 100%;
-    background:rgba(255,255,255,0.5);
-}*/
-  /*header.small img{ width: 150px; height: 50px;margin-top:14px;  }*/
   header .navbar-default .navbar-toggle {
     margin-top: 20px;
-    /*margin-bottom: 20px;*/
   }
 header .navbar-default .navbar-nav li a {
   color: #ffffff;
@@ -1374,7 +1336,6 @@ header .navbar-default .navbar-nav li ul li a{
 }
 #mobile-ssk{
   display: none !important;
-  /*padding-bottom: 10px;*/
 }
 #myBtn2 {
   display: block;
@@ -1648,7 +1609,6 @@ px      68    160    252    344    436    */
   right: 0;
   bottom: 0;
   left: 0;
-  /*border: 2px solid #3c7dcf;*/
   border-radius: 0;
   box-shadow: none;
 }
@@ -1702,9 +1662,6 @@ px      68    160    252    344    436    */
 }
 /*------------------------------------------------------------------*/
 #imgrflt {
-  /*-webkit-box-reflect: below 0*/
-    /*-webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white)); */
-
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(55%, transparent) , to(rgba(250, 250, 250, 0.1)));
 }
 

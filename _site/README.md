@@ -1,15 +1,15 @@
-#Redesigned version of "www.sugarlabs.org"
+# Redesigned version of "www.sugarlabs.org"
 
-##Introduction
+## Introduction
 This repository contains the code for the redesigned version of "www.sugarlabs.org". This repository is used for the development of the GSOC 2017 project **Giving Sugar Labs Website a New Look** under the organization **Sugar Labs**. All the changes made are always posted at [https://github.com/sugarlabs/www-sugarlabs/issues/63](https://github.com/sugarlabs/www-sugarlabs/issues/63). The repository of the original website is located at [https://github.com/sugarlabs/www-sugarlabs](https://github.com/sugarlabs/www-sugarlabs). Even though it can be observed that the repository is not a fork of the original website's repository, the new code has been added on a fork version. The code uses the same Jekyll environment as that of the original website's code. Do check out the code! 
 
-##License Information
+## License Information
 The license information of all the dependencies used in the code can be found in the "LicenseInformation.txt" file.
 
-##Code and Contribution
+## Code and Contribution
 The code has been restructured and unnecessary code has been removed which makes it a contributor-friendly codebase. So, hope on and contribute now!
 
-##Feedback/Suggestions and Issues
+## Feedback/Suggestions and Issues
 Feedback/Suggestions are always welcome and do mention any issues found. They can be provided through:
 1)Issues section of this repository
 2)[https://github.com/sugarlabs/www-sugarlabs/issues/63](https://github.com/sugarlabs/www-sugarlabs/issues/63)
@@ -17,7 +17,7 @@ Feedback/Suggestions are always welcome and do mention any issues found. They ca
 ## SugarLabs.org Website Sources
 This website is created using Jekyll, Bootstrap, some plugins and pure jQuery along with HTML, CSS and Javascript.
 
-##How to run the code
+## How to run the code
 Install Ruby and the Gem package manager (pre-installed in Mac OS X) and install `jekyll` and its related packages available in the Github hosted version by running, from this directory:
 
     bundle install;

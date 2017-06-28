@@ -102,3 +102,18 @@ Copyright (c) 2011-2013 Caleb Troughton
 Dual licensed under the MIT license and GPL license.
 https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 */
+
+(17)--------
+/**!
+ * MixItUp v2.1.7
+ *
+ * @copyright Copyright 2014 KunkaLabs Limited.
+ * @author    KunkaLabs Limited.
+ * @link      https://mixitup.kunkalabs.com
+ *
+ * @license   Commercial use requires a commercial license.
+ *            https://mixitup.kunkalabs.com/licenses/
+ *
+ *            Non-commercial use permitted under terms of CC-BY-NC license.
+ *            http://creativecommons.org/licenses/by-nc/3.0/
+ */

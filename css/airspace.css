@@ -1678,49 +1678,49 @@ px      68    160    252    344    436    */
 }
 #delay_demo {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin:0 auto;
   padding: 5%;
 }
 #dd_main {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 300px;
   position:absolute;
   /*top: 40vh;
   left: 40vw;*/
   /*align: middle;*/
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 43%;
+  /*transform: translate(-50%, -50%);*/
   /*border-radius: 50px;*/
   transition: all 2s ease-in-out;
   /*background: #EEE url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/927610/full-moon.svg) no-repeat;*/
-    background: url({{ site.baseurl }}/assets/logo.svg) no-repeat;
+    background: url("../assets/logo.svg") no-repeat;
 
   /*background-size: 160% 150%;*/
 }
 #dd_main2 {
-  width: 220px;
+  width: 230px;
   height: 25px;
   position:absolute;
   /*top: 40vh;
   left: 40vw;*/
   /*align: middle;*/
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 61%;
+  left: 45%;
+  /*transform: translate(-50%, -50%);*/
   /*border-radius: 50px;*/
   transition: all 2s ease-in-out;
   /*background: #EEE url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/927610/full-moon.svg) no-repeat;*/
-    background: url({{ site.baseurl }}/assets/245.gif) no-repeat;
+    background: url("../assets/245.gif") no-repeat;
 
   /*background-size: 160% 150%;*/
 }
 #delay_demo .center {
   /*width: 100vw;*/
   width: 100%;
-  
+  height: 100%;
   position: absolute;
   /*bottom:20px;*/
 }
@@ -1734,6 +1734,7 @@ px      68    160    252    344    436    */
   background: url(data:image/svg+xml;base64,PHN2ZyBzdHJva2Utd2lkdGg9JzMuNScgZmlsbD0nI2ZmZicgc3Ryb2tlPScjMDAwJyBoZWlnaHQ9JzU1JyB2aWV3Qm94PScwIDAgNDUgNDUnIHdpZHRoPSc1NScgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxkZWZzLz48ZyBmb250LXNpemU9JzE2JyBmaWxsPSdub25lJyBmb250LWZhbWlseT0nVGltZXMgTmV3IFJvbWFuJyB0cmFuc2Zvcm09J21hdHJpeCgxIDAgMC0xIDAgNDEuMjUpJz48ZyBzdHJva2U9J25vbmUnPjxwYXRoIGQ9J20uMDAxLjAwMWg0MS4yNXY0MS4yNWgtNDEuMjV6Jy8+PGVsbGlwc2Ugcng9JzE1LjEyJyByeT0nMTUuMTInIGZpbGw9JyNmZmYnIHRyYW5zZm9ybT0nbWF0cml4KC43NTA4OC0uNjYwNDQuNjYwNDQuNzUwODggMjAuNjcgMjAuNTM1KScvPjwvZz48ZWxsaXBzZSBzdHJva2Utd2lkdGg9JzUuNDgyJyByeD0nMTcuODgyJyByeT0nMTcuODgyJyBzdHJva2UtbWl0ZXJsaW1pdD0nNzkuODQnIHRyYW5zZm9ybT0nbWF0cml4KC45MzM4NS0uMzU3NjYuMzU3NjYuOTMzODUgMjAuNjcgMjAuNTM1KScvPjx0ZXh0IGZvbnQtc2l6ZT0nMjYuODAxJyB4PScwJyB5PScwJyBmb250LXdlaWdodD0nYm9sZCcgZmlsbD0nIzAwMCcgc3Ryb2tlPSdub25lJyBmb250LWZhbWlseT0nQXJpYWwnIHRyYW5zZm9ybT0nbWF0cml4KDEgMCAwLTEgMTMuNDE0IDExLjA3KSc+OTwvdGV4dD48ZWxsaXBzZSBzdHJva2Utd2lkdGg9JzEuNjk0JyByeD0nMTEuNTU1JyByeT0nMTEuNTU1JyBzdHJva2UtbWl0ZXJsaW1pdD0nNzkuODQnIHRyYW5zZm9ybT0nbWF0cml4KC45MzM4OC0uMzU3NTkuMzU3NTkuOTMzODggMjAuNjcgMjAuNTM1KScvPjxnIGZpbGw9JyMwMDAnIHN0cm9rZT0nbm9uZSc+PHBhdGggZD0nbTE4LjAyIDM2LjA2bC41NzEtMy42MTNoMy41NDlsLjUwNyAzLjc0eicvPjxwYXRoIGQ9J20xOC4wMiA0LjgzNGwuNTcxIDMuNjEyaDMuNTQ5bC41MDctMy43Mzl6Jy8+PHBhdGggZD0nbTM1Ljk0MyAxOC4xNGwtMy42MTIuNTd2My41NWwzLjczOS41MDd6Jy8+PHBhdGggZD0nbTUuNDg0IDE4LjE0bDMuNjEzLjU3djMuNTVsLTMuNzM5LjUwN3onLz48cGF0aCBkPSdtOC4yMTMgMjkuMzczbDIuOTU3LTIuMTUxIDIuNTEgMi41MS0yLjI4NiAzeicvPjxwYXRoIGQ9J20zMy43MjEgMjkuMzczbC0yLjk1Ny0yLjE1MS0yLjUxIDIuNTEgMi4yODUgM3onLz48cGF0aCBkPSdtMzMuNzIxIDExLjMwOWwtMi45NTcgMi4xNTEtMi41MS0yLjUxIDIuMjg1LTN6Jy8+PHBhdGggZD0nbTcuNDQyIDExLjMwOWwyLjk1NyAyLjE1MSAyLjUxLTIuNTEtMi4yODUtM3onLz48L2c+PC9nPjwvc3ZnPg==) no-repeat;
   transition: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
   transform: translate3d(0,0,0);
+  /*transform: translate(-400px,-200px);*/
 }
 #dd2 {
   width: 70px;
@@ -1812,17 +1813,18 @@ px      68    160    252    344    436    */
   transition: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
   transform: translate3d(0,0,0);
 }
-  #dd1 {transition-delay: 0.1s;}
+/*  #dd1 {transition-delay: 0.1s;}
   #dd2 {transition-delay: 0.2s;}
   #dd3 {transition-delay: 0.3s;}
   #dd4 {transition-delay: 0.4s;}
   #dd5 {transition-delay: 0.5s;}
   #dd6 {transition-delay: 0.6s;}
   #dd7 {transition-delay: 0.7s;}
-  #dd8 {transition-delay: 0.8s;}
+  #dd8 {transition-delay: 0.8s;}*/
 
 
-#delay_demo:hover #dd1, #delay_demo.hover_effect #dd1 {
+#delay_demo:hover #dd1, #delay_demo.hover_effect #dd1{
+  /*transition-delay: 2s;*/
   transform: translate(-400px,-200px);
 }
 #delay_demo:hover #dd2, #delay_demo.hover_effect #dd2 {

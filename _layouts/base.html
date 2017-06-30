@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
-  <head>
+  <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,6 +74,11 @@
 
     <link rel="canonical" href="https://www.sugarlabs.org/" />
     <link rel="alternate" type="application/rss+xml" title="http://planet.sugarlabs.org/" />
+    <script type="text/javascript">
+$(window).load(function() {
+    $(".loader").delay(2500).fadeOut("slow");
+})
+</script>
   </head>
   <body {{ page.bodyExt }}>
     {{ content }}

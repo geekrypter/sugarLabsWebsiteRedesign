@@ -29,6 +29,10 @@ var h = document.querySelector('.logo2').innerHTML;
 h = h.replace(/033cd2/g, COLORS[color][0]);
 h = h.replace(/78e600/g, COLORS[color][1]);
 document.querySelector('.logo2').innerHTML = h;
+var h = document.querySelector('.logo3').innerHTML;
+h = h.replace(/033cd2/g, COLORS[color][0]);
+h = h.replace(/78e600/g, COLORS[color][1]);
+document.querySelector('.logo3').innerHTML = h;
 document.getElementById("mcw1").style.display = "none";
 
 document.getElementById("mcw2").style.display = "none";
@@ -69,6 +73,22 @@ $("#testimonial-slider3").owlCarousel({
 });
 
 $("#testimonial-slider4").owlCarousel({
+    paginationSpeed : 500,      
+    singleItem:true,
+    autoPlay: 3000,
+});
+$("#testimonial-slider5").owlCarousel({
+    paginationSpeed : 500,      
+    singleItem:true,
+    autoPlay: 3000,
+});
+$("#testimonial-slider6").owlCarousel({
+    paginationSpeed : 500,      
+    singleItem:true,
+    autoPlay: 3000,
+});
+
+$("#testimonial-slider7").owlCarousel({
     paginationSpeed : 500,      
     singleItem:true,
     autoPlay: 3000,

@@ -1743,7 +1743,11 @@ px      68    160    252    344    436    */
   
   width: 200px;
   height: 200px;
-  
+  -webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
   margin-top: -100px;
   margin-left: -100px;
 }
@@ -1765,7 +1769,12 @@ px      68    160    252    344    436    */
 
   background-color: #1e3f57;
 
-  transform-type: preserve-3d;
+  /*transform-type: preserve-3d;*/
+  -webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
 
   animation: dot1 3s cubic-bezier(.55,.3,.24,.99) infinite;
 }
@@ -1782,7 +1791,11 @@ px      68    160    252    344    436    */
   border-radius: 3px;
   
   background-color: #3c617d;
-  
+  -webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
   animation-name: dot2;
 }
 
@@ -1798,14 +1811,18 @@ px      68    160    252    344    436    */
   border-radius: 0 0 5px 5px;
   
   background-color: #6bb2cd;
-  
+  -webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
   animation-name: dot3;
 }
 @keyframes dot1 {
   3%, 97% {
     width: 160px;
     height: 100px;
-
+    
     margin-top: -50px;
     margin-left: -80px;
   }

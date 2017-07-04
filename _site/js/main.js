@@ -1,8 +1,5 @@
 $(document).ready(function(){
-	   $( ".widget h4" ).click(
-    function() {
-      $(this).parent().toggleClass('active');
-    }); 
+	   
 
 var COLORS = [['006E00', '78E600'], ['68008C', '78E600'],
               ['006E00', '00BEFF'], ['033CD2', '00BEFF'],
@@ -33,6 +30,16 @@ var h = document.querySelector('.logo3').innerHTML;
 h = h.replace(/033cd2/g, COLORS[color][0]);
 h = h.replace(/78e600/g, COLORS[color][1]);
 document.querySelector('.logo3').innerHTML = h;
+$( ".widget h4" ).click(
+    function() {
+      $(this).parent().toggleClass('active');
+    }); 
+
+$('[data-toggle="tooltip"]').tooltip(); 
+$('[data-toggle="popover"]').popover();
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+}) 
 document.getElementById("mcw1").style.display = "none";
 
 document.getElementById("mcw2").style.display = "none";

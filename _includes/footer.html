@@ -19,6 +19,7 @@
         <h1 id="myModalLabel"
             class="modal-title center-text">
           Chat on our IRC channel!
+          <a href="#" tabindex="0" data-toggle="popover" title="What is IRC?" data-content="<a href '{{ site.baseurl }}/about_irc'>Click here to find out more!</a>" data-html="true" data-placement="bottom" data-trigger="focus"><span class="ion-ios-information" style="color:#ffffff;"></span></a>
         </h1>
       </div>
       <!-- header -->
@@ -232,10 +233,11 @@ $(document).on('click', '.icon_close', function (e) {
           <div class="panel panel-default" >
                 <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
 
-                    <div class="col-md-10" style="padding-left:80px;margin-left:0px;padding-bottom:0px;">
+                    <div class="col-md-9" style="padding-left:80px;margin-left:0px;padding-bottom:0px;">
                         <h3 class="panel-title" style="font-size:14px;color:#000000;">Chat on our IRC channel!</h3>
                     </div>
-                    <div class="col-md-2" style="text-align: right; padding-right:0px;">
+                    <div class="col-md-3" style="text-align: right; padding-right:0px;">
+                        <a href="{{ site.baseurl }}/about_irc" data-toggle="tooltip" title="What is IRC?" data-placement="left"><span class="ion-ios-information" style="color:#655E7A;"></span></a>
                         <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;"></span></a>
                         <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1" style="color:#655E7A;"></span></a>
                     </div>

@@ -77,8 +77,25 @@ $("#testimonial-slider3").owlCarousel({
     paginationSpeed : 500,      
     singleItem:true,
     autoPlay: 3000,
+    // touchDrag: false;
+    // mouseDrag:false;
+    // keyboard:false,
+    // interval: 300, 
+    // cycle: true, 
 });
-
+$('#oc1').on('click',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+$('#oc2').on('click',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+$('#oc3').on('click',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+// $('#testimonial-slider3').click(function() {
+    
+//   $(this).trigger('owl-next');
+// });
 $("#testimonial-slider4").owlCarousel({
     paginationSpeed : 500,      
     singleItem:true,

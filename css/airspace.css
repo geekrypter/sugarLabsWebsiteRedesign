@@ -1752,11 +1752,11 @@ px      68    160    252    344    436    */
   
   width: 200px;
   height: 200px;
-  -webkit-transform: translateZ(0);
+/*  -webkit-transform: translateZ(0);
 -moz-transform: translateZ(0);
 -ms-transform: translateZ(0);
 -o-transform: translateZ(0);
-transform: translateZ(0);
+transform: translateZ(0);*/
   margin-top: -100px;
   margin-left: -100px;
 }
@@ -1779,11 +1779,11 @@ transform: translateZ(0);
   background-color: #1d192c;
 
   /*transform-type: preserve-3d;*/
-  -webkit-transform: translateZ(0);
+/*  -webkit-transform: translateZ(0);
 -moz-transform: translateZ(0);
 -ms-transform: translateZ(0);
 -o-transform: translateZ(0);
-transform: translateZ(0);
+transform: translateZ(0);*/
 
   animation: dot1 3s cubic-bezier(.55,.3,.24,.99) infinite;
 }
@@ -1800,11 +1800,11 @@ transform: translateZ(0);
   border-radius: 3px;
   
   background-color: #ffffff;
-  -webkit-transform: translateZ(0);
+/*  -webkit-transform: translateZ(0);
 -moz-transform: translateZ(0);
 -ms-transform: translateZ(0);
 -o-transform: translateZ(0);
-transform: translateZ(0);
+transform: translateZ(0);*/
   animation-name: dot2;
 }
 
@@ -2294,3 +2294,26 @@ animation-fill-mode:forwards;
     }
 }
 
+/*-----------------------------------------------------------------------*/
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+  
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #1d192c;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  border-radius: 4px 4px 4px 4px ;
+  padding-left : 5px;
+  padding-right : 5px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+  color : white !important;
+  background-color: #1d192c;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}

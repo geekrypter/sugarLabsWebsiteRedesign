@@ -8,5 +8,7 @@ https://www.sugarlabs.org/contact_us
 https://www.sugarlabs.org/about_us
 https://www.sugarlabs.org/libre_software_culture
 https://www.sugarlabs.org/about_irc
+https://www.sugarlabs.org/booting_soas
+https://www.sugarlabs.org/developers
 {% for post in site.posts %}https://www.sugarlabs.org{{ post.url }}
 {% endfor %}

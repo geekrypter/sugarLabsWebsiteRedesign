@@ -345,7 +345,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #testimonial .testimonial-carousel {
   text-align: center;
   width: 75%;
-  border: 1px solid #DEDEDE;
+  /*border: 1px solid #DEDEDE;*/
   border: 1px solid #000000;
   padding: 24px;
   margin: 0 auto;
@@ -364,7 +364,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #testimonial .testimonial-carousel .user p {
   padding-bottom: 0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   color: #353241;
 }
@@ -383,7 +383,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {
   background: #5C5C5C;
-  font-size: 30px;
+  font-size: 32px;
   display: inline-block;
   border: 0px;
 }
@@ -2303,9 +2303,9 @@ animation-fill-mode:forwards;
 }
 
 #exTab3 .tab-content {
-  color : white;
-  background-color: #1d192c;
-  opacity: 0.8;
+  color : black;
+  background-color: #f8f8ff;
+  /*opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
   border-radius: 4px 4px 4px 4px ;
   padding-left : 5px;
@@ -2316,4 +2316,9 @@ animation-fill-mode:forwards;
   background-color: #1d192c;
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+hr {
+  border: 0; 
+  height: 2px; 
+  background:#000000;
 }

@@ -88,6 +88,24 @@ $('#testimonial-slider3').trigger('owl.next');
 $('#oc3').on('click',function(){
 $('#testimonial-slider3').trigger('owl.next');
 })
+$('#oc1').on('tap',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+$('#oc2').on('tap',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+$('#oc3').on('tap',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+$('#oc1').on('taphold',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+$('#oc2').on('taphold',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
+$('#oc3').on('taphold',function(){
+$('#testimonial-slider3').trigger('owl.next');
+})
 
 $("#testimonial-slider4").owlCarousel({
     paginationSpeed : 500,      

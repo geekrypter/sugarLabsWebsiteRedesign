@@ -1098,7 +1098,16 @@ footer .footer-manu ul li a:hover {
     }
 }
 
-
+.test{
+  padding-top:20px !important;
+  padding-bottom:20px !important;
+}
+.ds{
+   margin-left:150px;
+}
+.cta{
+  padding-top:30px;padding-bottom:10px;
+}
 
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -1126,7 +1135,16 @@ px      68    160    252    344    436    528    620    712    */
 .fold_1{
   margin:0 0 0 0;
 }
+.cta{
+  padding-top:40px;padding-bottom:0px;
+}
+.ds{
+  margin-left: 5px;
+}
 
+#exTab3{
+  visibility: hidden;
+}
   #wrapper {
     text-align: center;
   }
@@ -1288,6 +1306,24 @@ px      68    160    252    */
   .heading {
     padding-left: 0px; 
   }
+  .ds{
+  margin-left: 5px;
+}
+.cta{
+  padding-top:80px !important;
+  padding-bottom:0px !important;
+  margin-bottom: 0px !important;
+}
+.test{
+  padding-top:20px !important; 
+  padding-bottom:5px !important;
+  margin-top:0 !important;
+}
+#exTab3{
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  display: none;
+}
   h2 {
     font-size: 18px;
   }
@@ -2296,29 +2332,42 @@ animation-fill-mode:forwards;
 
 /*-----------------------------------------------------------------------*/
 /* change border radius for the tab , apply corners on top*/
-
+/*#exTab3 .nav-pills > li{
+  color: white;
+}*/
 #exTab3 .nav-pills > li > a {
-  border-radius: 4px 4px 0 0 ;
-  
+  border-radius: 30px 30px 30px 30px ;
+  /*color: white;*/
+ border: 1px solid #000000;
+}
+#exTab3{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right:0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1d192c;
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
-#exTab3 .tab-content {
-  color : black;
-  background-color: #f8f8ff;
-  /*opacity: 0.8;
-  filter: alpha(opacity=80); /* For IE8 and earlier */
-  border-radius: 4px 4px 4px 4px ;
-  padding-left : 5px;
-  padding-right : 5px;
-}
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+.nav-pills>li >a, .nav-pills>li >a:hover, .nav-pills>li >a:focus{
   color : white !important;
   background-color: #1d192c;
-  opacity: 0.8;
-  filter: alpha(opacity=80); /* For IE8 and earlier */
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 hr {
   border: 0; 
-  height: 2px; 
+  height: 1px; 
   background:#000000;
 }
+.anchor{
+  display: block;
+  height: 40px; /*same height as header*/
+  margin-top: -40px; /*same height as header*/
+  visibility: hidden;
+}
+
+

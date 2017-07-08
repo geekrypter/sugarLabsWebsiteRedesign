@@ -40,9 +40,10 @@ $('[data-toggle="popover"]').popover();
 $('.popover-dismiss').popover({
   trigger: 'focus'
 }) 
-document.getElementById("mcw1").style.display = "none";
 
-document.getElementById("mcw2").style.display = "none";
+// document.getElementById("mcw1").style.display = "none";
+
+// document.getElementById("mcw2").style.display = "none";
  
 var _originalSize = $(window).width() + $(window).height()
 $(window).resize(function(){
@@ -77,11 +78,6 @@ $("#testimonial-slider3").owlCarousel({
     paginationSpeed : 500,      
     singleItem:true,
     autoPlay: 3000,
-    // touchDrag: false;
-    // mouseDrag:false;
-    // keyboard:false,
-    // interval: 300, 
-    // cycle: true, 
 });
 $('#oc1').on('click',function(){
 $('#testimonial-slider3').trigger('owl.next');
@@ -92,10 +88,7 @@ $('#testimonial-slider3').trigger('owl.next');
 $('#oc3').on('click',function(){
 $('#testimonial-slider3').trigger('owl.next');
 })
-// $('#testimonial-slider3').click(function() {
-    
-//   $(this).trigger('owl-next');
-// });
+
 $("#testimonial-slider4").owlCarousel({
     paginationSpeed : 500,      
     singleItem:true,

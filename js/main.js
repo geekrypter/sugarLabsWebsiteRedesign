@@ -74,6 +74,7 @@ $("#testimonial-slider2").owlCarousel({
     singleItem:true,
     autoPlay: 3000,
 });
+        
 $("#testimonial-slider3").owlCarousel({
     paginationSpeed : 500,      
     singleItem:true,
@@ -106,6 +107,7 @@ $('#testimonial-slider3').trigger('owl.next');
 $('#oc3').on('taphold',function(){
 $('#testimonial-slider3').trigger('owl.next');
 })
+
 
 $("#testimonial-slider4").owlCarousel({
     paginationSpeed : 500,      

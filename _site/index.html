@@ -122,6 +122,7 @@
 $(window).load(function() {
     $(".loader").delay(2500).fadeOut("slow");
 })
+
 </script>
 
   </head>
@@ -328,7 +329,7 @@ $(window).load(function() {
       <div class="section-title">
       <h2 style="margin-bottom:30px;text-align:center;">Glimpse of Sugar...</h2>
       </div>
-      <div class="row">
+      <!-- <div class="row">
       <div class="col-md-2">
       </div>
           <div class="col-md-8">
@@ -359,9 +360,60 @@ $(window).load(function() {
           </div>
             <div class="col-md-2">
       </div>
+          </div> -->
           </div>
+          </section>
+          <section id="intro" class="intro_img" style="height:100%;width:100%">
+          <div class="container">
+<div class="row">
+<div class="col-md-2">
+</div>
+<div class="col-md-8">
+          <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img id="imgrflt" src="assets/screenshot1.png" style="width:100%;">
+  <div class="text">
+<h3 class="text-center">This is sugar!</h3>
+                    <p>Every user is greeted with this homepage view when they open Sugar. The colour of the icon in the middle can be changed.</p>
+  </div>
+</div>
+
+<div class="mySlides fade" >
+  <div class="numbertext">2 / 3</div>
+  <img id="imgrflt" src="assets/neighbourhood-screenshot.svg" style="width:100%;">
+  <div class="text">
+<p><br>In the Sugar Neighborhood view, learners see their
+  friends clustered around their current Activities; from this view they can
+  join each other’s Activities.  Sugar collaboration works "peer to
+  peer," in a classroom or under a tree; Sugar does not require the
+  Internet.</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img id="imgrflt" src="assets/screenshot2.png" style="width:100%;">
+  <div class="text">
+<p><br>This is one of the many other fun activities present in Sugar. Check out all the other activities.</p>
+  </div>
+</div>
+
+</div>
+<div class="col-md-2">
+</div>
+</div>
+</div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot1"></span> 
+  <span class="dot1"></span> 
+  <span class="dot1"></span> 
 </div>
     </section>
+
 <section id="intro" style="padding-top:10px;">
       <div class="container">
         <div class="row">
@@ -1067,6 +1119,27 @@ $(document).on('click', '.icon_close', function (e) {
    
 
 </div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot1");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(function(){showSlides();}, 2000); // Change image every 2 seconds
+}
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
@@ -1079,6 +1152,7 @@ $(document).on('click', '.icon_close', function (e) {
             }
         });
     </script>
+
     
 
   </body>

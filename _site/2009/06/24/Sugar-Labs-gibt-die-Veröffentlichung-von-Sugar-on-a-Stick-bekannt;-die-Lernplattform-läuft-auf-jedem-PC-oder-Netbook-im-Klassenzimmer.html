@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
  		<link id="defaultIcon1" rel="shortcut icon" href="https://www.sugarlabs.org/assets/favicon_06.png" />
     <title>Sugar Labs gibt die Veröffentlichung von Sugar on a Stick bekannt; die Lernplattform läuft auf jedem PC oder Netbook im Klassenzimmer.</title>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
     <meta name="robots" content="index,follow,NOODP" />
     <meta name="description" Content="At Sugar Labs, we make a collection of tools that learners use to explore, discover, create, and reflect. We are non-profit and led by volunteers. We distribute these tools freely and encourage our users to appropriate them, taking ownership and responsibility for their learning." />
     <meta name="keywords" Content="Sugar Labs, Sugar, Sugarlabs, Education, Opensource, OpenSource, Sugar activities, activities, Sugar OS, Sugarizer, Sugar on Stick, SOAS" />
@@ -44,32 +45,31 @@
     </script>
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="/css/jquery.floating-social-share.min.css"> -->
-    <!-- <link rel="stylesheet" href="/css/owl.carousel.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" />
-    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" /> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/owl.carousel.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" /> -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/airspace.css" />
     <link rel="stylesheet" href="/css/ionicons.min.css" />
     <!-- <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" /> -->
     <link rel="stylesheet" href="/css/animate.css" />
     <link rel="stylesheet" href="/css/syntax.css" />
-    <!-- <link rel="stylesheet" href="/assets/dist/css/social-share-kit.css" type="text/css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share-kit/1.0.7/css/social-share-kit.css" type="text/css">
+    <link rel="stylesheet" href="/assets/dist/css/social-share-kit.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share-kit/1.0.7/css/social-share-kit.css" type="text/css"> -->
 
     <!-- Js -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- <script src="/js/bootstrap.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- <script src="/js/owl.carousel.min.js"></script> -->
-    
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+   
     <script src="/js/plugins.js"></script>
     <!-- <script src="/js/min/waypoints.min.js"></script> -->
     
-
-    
-    <!-- <script src="/js/vendor/modernizr-2.6.2.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-    
+    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> -->
+     <script src="/js/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
     <script src="/js/main.js"></script>
 
     <link rel="canonical" href="https://www.sugarlabs.org/" />
@@ -404,82 +404,7 @@ Labs am Stand 7.2a 110a zu sprechen.</p>
 <!-- modal -->
 
 
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)&&(document.getElementById("mcw1").style.display == "none")&&(document.getElementById("mcw2").style.display == "none")) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-function chatFunction() {
-    document.getElementById("mcw1").style.display = "block";
-    document.getElementById("mcw2").style.display = "block";
-    document.getElementById("myBtn2").style.display = "none";
-    document.getElementById("myBtn").style.display = "none";
-    
-}
-
-  $(document).ready(function() {
-    $("#close").click(function() {
-
-      document.getElementById("mcw1").style.display = "none";
-    document.getElementById("mcw2").style.display = "none";
-      document.getElementById("myBtn2").style.display = "block";
-      document.getElementById("myBtn").style.display = "block";
-    });
-  });
-
-$(document).on('click', '.panel-heading span.icon_minim', function (e) {
-    var $this = $(this);
-    if (!$this.hasClass('panel-collapsed')) {
-        $this.parents('.panel').find('.panel-body').slideUp();
-        $this.addClass('panel-collapsed');
-        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
-    } else {
-        $this.parents('.panel').find('.panel-body').slideDown();
-        $this.removeClass('panel-collapsed');
-        $this.removeClass('ion-plus-round').addClass('ion-minus-round');
-    }
-});
-
-$(document).on('focus', '.panel-footer input.chat_input', function (e) {
-    var $this = $(this);
-    if ($('#minim_chat_window').hasClass('panel-collapsed')) {
-        $this.parents('.panel').find('.panel-body').slideDown();
-        $('#minim_chat_window').removeClass('panel-collapsed');
-        $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
-    }
-});
-$(document).on('click', '#new_chat', function (e) {
-    var size = $( ".chat-window:last-child" ).css("margin-left");
-     size_total = parseInt(size) + 400;
-    alert(size_total);
-    var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
-    clone.css("margin-left", size_total);
-});
-$(document).on('click', '.icon_close', function (e) {
-    $( "#chat_window_1" ).remove();
-});
-  $(document).on('click', '#close', function (e) {
-    document.getElementById("mcw1").style.display = "none";
-    document.getElementById("mcw2").style.display = "none";
-      document.getElementById("myBtn2").style.display = "block";
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } 
-});
-
-</script>
 <footer  style="background-color:#282828;padding-top:5px;">
  
   <div class="container fold_1">
@@ -626,6 +551,82 @@ $(document).on('click', '.icon_close', function (e) {
 
 </div>
 <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)&&(document.getElementById("mcw1").style.display == "none")&&(document.getElementById("mcw2").style.display == "none")) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+function chatFunction() {
+    document.getElementById("mcw1").style.display = "block";
+    document.getElementById("mcw2").style.display = "block";
+    document.getElementById("myBtn2").style.display = "none";
+    document.getElementById("myBtn").style.display = "none";
+    
+}
+
+  $(document).ready(function() {
+    $("#close").click(function() {
+
+      document.getElementById("mcw1").style.display = "none";
+    document.getElementById("mcw2").style.display = "none";
+      document.getElementById("myBtn2").style.display = "block";
+      document.getElementById("myBtn").style.display = "block";
+    });
+  });
+
+$(document).on('click', '.panel-heading span.icon_minim', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.removeClass('ion-plus-round').addClass('ion-minus-round');
+    }
+});
+
+$(document).on('focus', '.panel-footer input.chat_input', function (e) {
+    var $this = $(this);
+    if ($('#minim_chat_window').hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $('#minim_chat_window').removeClass('panel-collapsed');
+        $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('click', '#new_chat', function (e) {
+    var size = $( ".chat-window:last-child" ).css("margin-left");
+     size_total = parseInt(size) + 400;
+    alert(size_total);
+    var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
+    clone.css("margin-left", size_total);
+});
+$(document).on('click', '.icon_close', function (e) {
+    $( "#chat_window_1" ).remove();
+});
+  $(document).on('click', '#close', function (e) {
+    document.getElementById("mcw1").style.display = "none";
+    document.getElementById("mcw2").style.display = "none";
+      document.getElementById("myBtn2").style.display = "block";
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } 
+});
+
+</script>
+<script>
 var slideIndex = 0;
 showSlides();
 
@@ -646,7 +647,7 @@ function showSlides() {
     setTimeout(function(){showSlides();}, 2000); // Change image every 2 seconds
 }
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
 <script type="text/javascript">

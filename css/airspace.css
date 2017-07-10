@@ -1112,6 +1112,12 @@ footer .footer-manu ul li a:hover {
   padding-top:0px !important;
   padding-bottom:110px !important;
 }
+.anchor{
+  display: block;
+  height: 40px; /*same height as header*/
+  margin-top: -40px; /*same height as header*/
+  visibility: hidden;
+}
 
 /*-----------------------------------------------------------------------------------------------*/
 /*    Default Layout: 992px. 
@@ -2373,12 +2379,7 @@ hr {
   height: 1px; 
   background:#000000;
 }
-.anchor{
-  display: block;
-  height: 40px; /*same height as header*/
-  margin-top: -40px; /*same height as header*/
-  visibility: hidden;
-}
+
 
 .mySlides {display:none}
 

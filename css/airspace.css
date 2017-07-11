@@ -130,8 +130,16 @@ font header .navbar-default .navbar-nav li a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  /*background-position: center center;*/
+  padding: 130px 0 130px 0;
   position: relative;
+
+/*  background-image:url('../img/new_bg6.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 120px;
+    width: 20%;*/
 }
 #slider:before {
   content: "";
@@ -1000,6 +1008,7 @@ footer .footer-manu ul li a:hover {
 }
 .chat-window{
     bottom:0;
+    right: 10px;
     position:fixed;
     float:right;
     width: 400px;
@@ -1026,6 +1035,7 @@ footer .footer-manu ul li a:hover {
   background: #666;
   color: white;
   position: relative;
+  bottom: 0;
   overflow: hidden;
 }
 .msg_container {
@@ -1112,7 +1122,13 @@ footer .footer-manu ul li a:hover {
   padding-top:0px !important;
   padding-bottom:110px !important;
 }
-.anchor{
+.anchor1{
+  display: block;
+  height: 100px; /*same height as header*/
+  margin-top: -100px; /*same height as header*/
+  visibility: hidden;
+}
+.anchor2{
   display: block;
   height: 40px; /*same height as header*/
   margin-top: -40px; /*same height as header*/
@@ -1420,8 +1436,9 @@ header.large li{ margin-top: 0px; }
   line-height: 1.6;
 }
   #slider {
-    padding-top: 90px;
-    padding-bottom: 100px;
+/*    padding-top: 90px;
+    padding-bottom: 100px;*/
+    background-position: center center;
   }
   #slider .block {
     padding-left: 0px;
@@ -2354,7 +2371,7 @@ animation-fill-mode:forwards;
 #exTab3 .nav-pills > li > a {
   border-radius: 30px 30px 30px 30px ;
   /*color: white;*/
- border: 1px solid #000000;
+ border: 1px solid #474354;
 }
 #exTab3{
   margin-left: 0;
@@ -2363,16 +2380,18 @@ animation-fill-mode:forwards;
   padding-right:0;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #1d192c;
+ /* background-color: #1d192c;
   opacity: 0.75;
   filter: alpha(opacity=75); /* For IE8 and earlier */
+  background-color: #595565;
 }
 
 .nav-pills>li >a, .nav-pills>li >a:hover, .nav-pills>li >a:focus{
   color : white !important;
-  background-color: #1d192c;
+  /*background-color: #1d192c;
   opacity: 0.75;
   filter: alpha(opacity=75); /* For IE8 and earlier */
+  background-color: #595565;
 }
 hr {
   border: 0; 

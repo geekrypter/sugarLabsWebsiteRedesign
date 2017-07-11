@@ -483,12 +483,12 @@ manquent de ressources d’ici la rentrée.”</p>
  <div id="ftctn" class="container" style="padding-left:0px;>
 
     <div class="row">
-    <div class="col-md-4">
+   <!--  <div class="col-md-4">
     </div>
     <div class="col-md-4">
-    </div>
+    </div> -->
     
-        <div class="col-md-4" style="position:absolute;bottom:0;right:0;">
+        <div class="col-md-12" style="position:absolute;bottom:0;right:0;">
         <div class="chat-window pull-right" id="chat_window_1" >
           <div class="panel panel-default" >
                 <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
@@ -638,8 +638,22 @@ function showSlides() {
         $(document).on("scroll", function () {
             if ($(document).scrollTop() > 10) {
                 $("header").removeClass("large").addClass("small");
+                $("#1h").removeClass("anchor1").addClass("anchor2");
+                $("#2h").removeClass("anchor1").addClass("anchor2");
+                $("#3h").removeClass("anchor1").addClass("anchor2");
+                $("#4h").removeClass("anchor1").addClass("anchor2");
+                $("#5h").removeClass("anchor1").addClass("anchor2");
+                $("#1h2").removeClass("anchor1").addClass("anchor2");
+                $("#2h2").removeClass("anchor1").addClass("anchor2");
             } else {
                 $("header").removeClass("small").addClass("large");
+                $("#1h").removeClass("anchor2").addClass("anchor1");
+                $("#2h").removeClass("anchor2").addClass("anchor1");
+                $("#3h").removeClass("anchor2").addClass("anchor1");
+                $("#4h").removeClass("anchor2").addClass("anchor1");
+                $("#5h").removeClass("anchor2").addClass("anchor1");
+                $("#1h2").removeClass("anchor2").addClass("anchor1");
+                $("#2h2").removeClass("anchor2").addClass("anchor1");
             }
         });
     </script>

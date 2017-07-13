@@ -338,7 +338,7 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 50%;
   float: left;
   text-align: center;
-  margin: 30px 0 30px;
+  margin: 17px 0 30px;
 }
 #testimonial .counter-box li i {
   font-size: 35px;
@@ -962,7 +962,7 @@ footer .footer-manu ul li a:hover {
 #myBtn2 {
   display: none;
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 20px;
   z-index: 99;
   border: none;
@@ -970,8 +970,8 @@ footer .footer-manu ul li a:hover {
   background-color: #655E7A;
   color: white;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 12px;
 }
 .ifr{
   border: 0;
@@ -1008,7 +1008,7 @@ footer .footer-manu ul li a:hover {
 }
 .chat-window{
     bottom:0;
-    right: 10px;
+    right: 20px;
     position:fixed;
     float:right;
     width: 400px;
@@ -1172,6 +1172,12 @@ px      68    160    252    344    436    528    620    712    */
 }
 #exTab3{
   visibility: hidden;
+}
+#myBtn2 {
+  display: block;
+}
+#ftctn{
+  display: none;
 }
   #wrapper {
     text-align: center;
@@ -1419,6 +1425,9 @@ header .navbar-default .navbar-nav li ul li a{
 }
 #myBtn2 {
   display: block;
+  bottom: 13px;
+  right: 15px;
+  padding: 11px;
 }
 #ftctn{
   display: none;
@@ -1649,6 +1658,7 @@ header.large li{ margin-top: 0px; }
     display: none;
   }
 }
+
 /*    Wide Mobile Layout: 480px.
     Gutters: 24px.
     Outer margins: 22px.

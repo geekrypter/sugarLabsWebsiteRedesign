@@ -50,12 +50,13 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/airspace.css" />
+    
+    <link rel="stylesheet" href="/css/animate.css" />
+     <link rel="stylesheet" href="/assets/dist/css/social-share-kit.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share-kit/1.0.7/css/social-share-kit.css" type="text/css"> -->
     <link rel="stylesheet" href="/css/ionicons.min.css" />
     <!-- <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" /> -->
-    <link rel="stylesheet" href="/css/animate.css" />
-    
-    <link rel="stylesheet" href="/assets/dist/css/social-share-kit.css" type="text/css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share-kit/1.0.7/css/social-share-kit.css" type="text/css"> -->
+   
 
     <!-- Js -->
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
@@ -70,57 +71,16 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> -->
      
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js" ></script>
 
     <link rel="canonical" href="https://www.sugarlabs.org/" />
     <link rel="alternate" type="application/rss+xml" title="http://planet.sugarlabs.org/" />
     <script type="text/javascript">
-   
-//     $(document).ready(function(){
-//     var COLORS = [['006E00', '78E600'], ['68008C', '78E600'],
-//               ['006E00', '00BEFF'], ['033CD2', '00BEFF'],
-//               ['6E008C', '00BEFF'], ['A00000', 'FF7800'],
-//               ['033CD2', 'FF64D2'], ['6E008C', 'FF64D2'],
-//               ['6E008C', 'FF7800'], ['033CD2', 'FF7800'],
-//               ['006E00', 'FFD732'], ['6E008C', 'FFD732']];
 
-// var color = Math.floor((Math.random() * 12));
-
-// var logoID = color + 1;
-
-// if (color < 10) {
-//     logoID = "0" + logoID;
-// }
-// var h = document.querySelector('.logo2').innerHTML;
-// h = h.replace(/033cd2/g, COLORS[color][0]);
-// h = h.replace(/78e600/g, COLORS[color][1]);
-// document.querySelector('.logo2').innerHTML = h;
-// });
-    // $(document).ready(function(){
-    // $("#delay_demo").toggleClass('active');
-    // });
-    // $(document).ready(function(){
-
-    //     // setTimeout(aaaa, 250);
-    //     // aaaa(){
-    //     //     document.getElementById('delay_demo').toggleClass('aaa');
-    //     // }
-    //     $( ".loader" ).mouseover(
-    // function() {
-    //   $("#delay_demo").addClass('aaa');
-    // }); 
-    // });
-    // document.getElementById('delay_demo').addClass('aaa');
-    // 
-    // $(document).ready(function() {
-    // $('.loader').mouseover(function() {
-        // window.alert('#someButton was clicked');
-        // $('#dd1').addClass('aaa');
-    // }); 
-// });
 
 $(window).load(function() {
     $(".loader").delay(2500).fadeOut("slow");
+
 })
 
 </script>
@@ -798,7 +758,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active1";
-    setTimeout(function(){showSlides();}, 2000); // Change image every 2 seconds
+    setTimeout(function(){showSlides();}, 5000); // Change image every 2 seconds
 }
 </script>
 <script src="/js/plugins.js"></script>

@@ -6,9 +6,9 @@
  * 
  */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
 /* var text-decoration */
 /*--
 	Common Css
@@ -133,7 +133,7 @@ font header .navbar-default .navbar-nav li a:hover {
   /*background-position: center center;*/
   padding: 130px 0 130px 0;
   position: relative;
-
+  z-index: -10;
 /*  background-image:url('../img/new_bg6.jpg');
     background-repeat:no-repeat;
     background-size:cover;
@@ -1741,7 +1741,7 @@ px      68    160    252    344    436    */
   background: #f1f3f5;
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 0px;
   background: #f1f3f5;
@@ -1750,7 +1750,7 @@ px      68    160    252    344    436    */
 
 ::-webkit-scrollbar-thumb {
   background: darken(#f1f3f5, 20%);
-}
+}*/
 .popover-title {
     color: #000000;
 }

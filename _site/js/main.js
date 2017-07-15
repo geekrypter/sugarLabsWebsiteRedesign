@@ -155,10 +155,10 @@ $("#works-logo").owlCarousel({
 	}
 
 // Counter
-$('.counter').counterUp({
-    delay: 10,
-    time: 1000
-});
+// $('.counter').counterUp({
+//     delay: 10,
+//     time: 1000
+// });
 		
 var fullHeight = function() {
 	$('.js-fullheight').css('height', $(window).height());

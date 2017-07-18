@@ -90,5 +90,8 @@ $(window).load(function() {
   <link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" />
   <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
     {{ content }}
+    {% if jekyll.environment == 'production' %}
+    {% include googleAnalytics.html %}
+    {% endif %}
   </body>
 </html>

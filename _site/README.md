@@ -7,7 +7,7 @@ This repository contains the code for the redesigned version of "www.sugarlabs.o
 We have integrated 3 major feautres with the help of third party services:
 1. Website users tracking - We have used the [Google Analytics](https://analytics.google.com/) service to track user on the website and get a more detailed analysis on the users usage.
 2. IRC chat - We have used the [Kiwi IRC](https://kiwiirc.com) service to enable users to chat on our IRC channels in the website itself.
-3. Newsletter subscription through email - We have used [Mailchimp](https://mailchimp.com) serivice to let users to subscribe to our newsletters through their emails.
+3. Newsletter subscription through email - We have used the [Mailchimp](https://mailchimp.com) service to let users to subscribe to our newsletters through their emails.
 
 ## License Information
 The license information of all the dependencies used in the code can be found in the "LicenseInformation.txt" file.

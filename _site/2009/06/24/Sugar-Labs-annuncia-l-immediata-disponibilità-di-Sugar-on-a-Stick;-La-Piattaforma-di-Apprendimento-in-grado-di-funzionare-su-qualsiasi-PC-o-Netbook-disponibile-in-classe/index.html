@@ -60,11 +60,11 @@
        <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
-    <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script  type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+    <script  type="text/javascript" src="/js/bootstrap.min.js"></script>
     
-    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="/js/main.js" ></script>
+    <script  type="text/javascript" src="/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script  type="text/javascript" src="/js/main.js" ></script>
 
     <link rel="canonical" href="https://geekrypter.github.io/sugarLabsWebsiteRedesign/" />
     <link rel="alternate" type="application/rss+xml" title="http://planet.sugarlabs.org/" />
@@ -525,7 +525,7 @@ collaboratori di Sugar Labs presso lo stand 7.2a 110a.</p>
    
 
 </div>
-<script>
+<script  type="text/javascript">
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -601,7 +601,7 @@ $(document).on('click', '.icon_close', function (e) {
 });
 
 </script>
-<script>
+<script  type="text/javascript">
 var slideIndex = 0;
 showSlides();
 
@@ -622,9 +622,9 @@ function showSlides() {
     setTimeout(function(){showSlides();}, 5000); // Change image every 2 seconds
 }
 </script>
-<script src="/js/plugins.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script  type="text/javascript" src="/js/plugins.js"></script>
+<script  type="text/javascript" src="/js/owl.carousel.min.js"></script>
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
 <script type="text/javascript">
         $(document).on("scroll", function () {
@@ -646,7 +646,45 @@ function showSlides() {
         });
     </script>
 
+<script type="text/javascript">
+// Bootstrap Material Style button  by Bootstrapthemes.co
+(function($) {
+  $(".bt-ripple").hover(function(e) {
+    var rippler = $(this);
 
+    // create .ink element if it doesn't exist
+    if (rippler.find(".ripple").length == 0) {
+      rippler.append("<span class='ripple'></span>");
+    }
+
+    var ink = rippler.find(".ripple");
+
+    // prevent quick double clicks
+    ink.removeClass("animate");
+
+    // set .ripple diametr
+    if (!ink.height() && !ink.width()) {
+      var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
+      ink.css({
+        height: d,
+        width: d
+      });
+    }
+
+    // get click coordinates
+    var x = e.pageX - rippler.offset().left - ink.width() / 2;
+    var y = e.pageY - rippler.offset().top - ink.height() / 2;
+
+    // set .ripple position and add class .animate
+    ink.css({
+      top: y + 'px',
+      left: x + 'px'
+    }).addClass("animate");
+  });
+})(jQuery);  
+
+
+</script>
 
 
     

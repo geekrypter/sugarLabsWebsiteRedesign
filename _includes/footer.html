@@ -225,7 +225,7 @@
    
 
 </div>
-<script>
+<script  type="text/javascript">
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -301,7 +301,7 @@ $(document).on('click', '.icon_close', function (e) {
 });
 
 </script>
-<script>
+<script  type="text/javascript">
 var slideIndex = 0;
 showSlides();
 
@@ -322,9 +322,9 @@ function showSlides() {
     setTimeout(function(){showSlides();}, 5000); // Change image every 2 seconds
 }
 </script>
-<script src="{{ site.baseurl }}/js/plugins.js"></script>
-<script src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script  type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
+<script  type="text/javascript" src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
 <script type="text/javascript">
         $(document).on("scroll", function () {
@@ -346,7 +346,7 @@ function showSlides() {
         });
     </script>
 {% if jekyll.environment == 'production' %}
-    <script>
+    <script  type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -357,7 +357,45 @@ function showSlides() {
 
 </script>
     {% endif %}
+<script type="text/javascript">
+// Bootstrap Material Style button  by Bootstrapthemes.co
+(function($) {
+  $(".bt-ripple").hover(function(e) {
+    var rippler = $(this);
 
+    // create .ink element if it doesn't exist
+    if (rippler.find(".ripple").length == 0) {
+      rippler.append("<span class='ripple'></span>");
+    }
+
+    var ink = rippler.find(".ripple");
+
+    // prevent quick double clicks
+    ink.removeClass("animate");
+
+    // set .ripple diametr
+    if (!ink.height() && !ink.width()) {
+      var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
+      ink.css({
+        height: d,
+        width: d
+      });
+    }
+
+    // get click coordinates
+    var x = e.pageX - rippler.offset().left - ink.width() / 2;
+    var y = e.pageY - rippler.offset().top - ink.height() / 2;
+
+    // set .ripple position and add class .animate
+    ink.css({
+      top: y + 'px',
+      left: x + 'px'
+    }).addClass("animate");
+  });
+})(jQuery);  
+
+
+</script>
 
 
     

@@ -242,15 +242,15 @@ $(window).load(function() {
 
 <ul  class="nav nav-pills" >
       <li>
-        <a  href="#1h" style="color: #1d192c;"><span style="color:white;">Getting started</span></a>
+        <a  href="#1h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Getting started</span></a>
       </li>
-      <li><a href="#2h" style="color: #1d192c;"><span style="color:white;">Design</span></a>
+      <li><a href="#2h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Design</span></a>
       </li>
-      <li><a href="#3h" style="color: #1d192c;"><span style="color:white;">Sugar Desktop</span></a>
+      <li><a href="#3h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Sugar Desktop</span></a>
       </li>
-      <li><a href="#4h" style="color: #1d192c;"><span style="color:white;">Sugar Web</span></a>
+      <li><a href="#4h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Sugar Web</span></a>
       </li>
-      <li><a href="#5h" style="color: #1d192c;"><span style="color:white;">Sugar Android</span></a>
+      <li><a href="#5h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Sugar Android</span></a>
       </li>
     </ul>
   </div>
@@ -312,7 +312,7 @@ $(window).load(function() {
   <div class="container">
     <div class="row">
       <div class="col-md-12" >
-        <a href="/" ><button type="button" class="btn btn-custom bt bt-ripple" style="margin-bottom:3px;">Return to main page</button></a>
+        <a href="/" ><button type="button" class="btn bt-raised btn-custom bt bt-ripple" style="margin-bottom:3px;">Return to main page</button></a>
       </div>
     </div>
   </div>
@@ -581,6 +581,7 @@ function chatFunction() {
       document.getElementById("myBtn2").style.display = "block";
       document.getElementById("myBtn").style.display = "block";
     });
+    return false;
   });
 
 $(document).on('click', '.panel-heading span.icon_minim', function (e) {
@@ -594,6 +595,7 @@ $(document).on('click', '.panel-heading span.icon_minim', function (e) {
         $this.removeClass('panel-collapsed');
         $this.removeClass('ion-plus-round').addClass('ion-minus-round');
     }
+    return false;
 });
 
 $(document).on('focus', '.panel-footer input.chat_input', function (e) {
@@ -603,6 +605,7 @@ $(document).on('focus', '.panel-footer input.chat_input', function (e) {
         $('#minim_chat_window').removeClass('panel-collapsed');
         $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
     }
+    return false;
 });
 $(document).on('click', '#new_chat', function (e) {
     var size = $( ".chat-window:last-child" ).css("margin-left");
@@ -610,9 +613,11 @@ $(document).on('click', '#new_chat', function (e) {
     alert(size_total);
     var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
     clone.css("margin-left", size_total);
+    return false;
 });
 $(document).on('click', '.icon_close', function (e) {
     $( "#chat_window_1" ).remove();
+    return false;
 });
   $(document).on('click', '#close', function (e) {
     document.getElementById("mcw1").style.display = "none";
@@ -621,6 +626,7 @@ $(document).on('click', '.icon_close', function (e) {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
     } 
+    return false;
 });
 
 </script>

@@ -15,5 +15,6 @@ https://www.sugarlabs.org/for_students
 https://www.sugarlabs.org/for_school_administrators
 https://www.sugarlabs.org/sugar_lesson_plans
 https://www.sugarlabs.org/sugar_stories
+https://www.sugarlabs.org/rpi
 {% for post in site.posts %}https://www.sugarlabs.org{{ post.url }}
 {% endfor %}

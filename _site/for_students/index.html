@@ -242,12 +242,12 @@ $(window).load(function() {
 
 <ul  class="nav nav-pills" >
       <li>
-        <a  href="#1h" style="color: #1d192c;"><span style="color:white;">Student learning goals and Sugar
+        <a  href="#1h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Student learning goals and Sugar
 </span></a>
       </li>
-      <li><a href="#2h" style="color: #1d192c;"><span style="color:white;">Links Part 1</span></a>
+      <li><a href="#2h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Links Part 1</span></a>
       </li>
-       <li><a href="#3h" style="color: #1d192c;"><span style="color:white;">Links Part 2</span></a>
+       <li><a href="#3h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Links Part 2</span></a>
       </li>
     </ul>
   </div>
@@ -307,7 +307,7 @@ While computation and coding are at the heart of Sugar, Sugar is not programming
   <div class="container">
     <div class="row">
       <div class="col-md-12" >
-        <a href="/" ><button type="button" class="btn btn-custom bt bt-ripple" style="margin-bottom:3px;">Return to main page</button></a>
+        <a href="/" ><button type="button" class="btn bt-raised btn-custom bt bt-ripple" style="margin-bottom:3px;">Return to main page</button></a>
       </div>
     </div>
   </div>
@@ -578,6 +578,7 @@ function chatFunction() {
       document.getElementById("myBtn2").style.display = "block";
       document.getElementById("myBtn").style.display = "block";
     });
+    return false;
   });
 
 $(document).on('click', '.panel-heading span.icon_minim', function (e) {
@@ -591,6 +592,7 @@ $(document).on('click', '.panel-heading span.icon_minim', function (e) {
         $this.removeClass('panel-collapsed');
         $this.removeClass('ion-plus-round').addClass('ion-minus-round');
     }
+    return false;
 });
 
 $(document).on('focus', '.panel-footer input.chat_input', function (e) {
@@ -600,6 +602,7 @@ $(document).on('focus', '.panel-footer input.chat_input', function (e) {
         $('#minim_chat_window').removeClass('panel-collapsed');
         $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
     }
+    return false;
 });
 $(document).on('click', '#new_chat', function (e) {
     var size = $( ".chat-window:last-child" ).css("margin-left");
@@ -607,9 +610,11 @@ $(document).on('click', '#new_chat', function (e) {
     alert(size_total);
     var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
     clone.css("margin-left", size_total);
+    return false;
 });
 $(document).on('click', '.icon_close', function (e) {
     $( "#chat_window_1" ).remove();
+    return false;
 });
   $(document).on('click', '#close', function (e) {
     document.getElementById("mcw1").style.display = "none";
@@ -618,6 +623,7 @@ $(document).on('click', '.icon_close', function (e) {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
     } 
+    return false;
 });
 
 </script>

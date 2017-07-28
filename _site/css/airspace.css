@@ -232,6 +232,9 @@ font header .navbar-default .navbar-nav li a:hover {
   position: relative;
   text-align: center;
   color: #fff;
+ -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 #call-to-action:before {
   content: "";
@@ -2144,6 +2147,9 @@ animation-fill-mode:forwards;
 #exTab3 .nav-pills > li > a {
   border-radius: 30px 30px 30px 30px ;
  border: 1px solid #474354;
+ -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 #exTab3{
   margin-left: 0;
@@ -2154,6 +2160,9 @@ animation-fill-mode:forwards;
   padding-bottom: 10px;
 
   background-color: #595565;
+   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .nav-pills>li >a, .nav-pills>li >a:hover, .nav-pills>li >a:focus{

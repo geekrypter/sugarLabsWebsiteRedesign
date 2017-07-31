@@ -54,15 +54,19 @@
 
 
 <footer  style="background-color:#282828;padding-top:5px;">
- 
+ <h4 style="text-align:right;margin-right:20px;">
+  <a href="#" onclick="topFunction()" style="color: #0099FF;">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
   <div class="container fold_1">
-  <div class="row">
+  <!-- <div class="row">
+ <div class="col-md-10" >
+ </div>
+  <div class="col-md-2" >
  
-  <div class="col-md-12">
   <h4 style="text-align:right;">
   <a href="#" onclick="topFunction()" style="color: #0099FF;">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
-  </div>
-  </div>
+  
+  </div> -->
+  <!-- </div> -->
     
         <div class="row">
         <div class="col-md-2 widget">
@@ -185,12 +189,12 @@
           <div class="panel panel-default" >
                 <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
 
-                    <div class="col-md-9" style="padding-left:60px;margin-left:0px;padding-bottom:0px;">
-                        <h3 class="panel-title" style="font-size:16px;color:#000000;">Chat on our IRC channel!&nbsp;<a href="{{ site.baseurl }}/about_irc" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
+                    <div class="col-md-10" style="padding-left:60px;margin-left:0px;padding-bottom:0px;">
+                        <h3 class="panel-title" style="font-size:16px;color:#000000;"><a href="#"><span id="minim_chat_window" class="icon_minim">Chat on our IRC channel!</span></a>&nbsp;<a href="{{ site.baseurl }}/about_irc" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
                     </div>
-                    <div class="col-md-3" style="text-align: right; padding-right:0px;">
+                    <div class="col-md-2" style="text-align: right; padding-right:0px;">
                         
-                        <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;font-size:16px;"></span></a>
+                        <!-- <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;font-size:16px;"></span></a> -->
                         <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1" style="color:#655E7A;font-size:16px;"></span></a>
                     </div>
                 </div>
@@ -266,11 +270,11 @@ $(document).on('click', '.panel-heading span.icon_minim', function (e) {
     if (!$this.hasClass('panel-collapsed')) {
         $this.parents('.panel').find('.panel-body').slideUp();
         $this.addClass('panel-collapsed');
-        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+        // $this.removeClass('ion-minus-round').addClass('ion-plus-round');
     } else {
         $this.parents('.panel').find('.panel-body').slideDown();
         $this.removeClass('panel-collapsed');
-        $this.removeClass('ion-plus-round').addClass('ion-minus-round');
+        // $this.removeClass('ion-plus-round').addClass('ion-minus-round');
     }
     return false;
 });
@@ -280,7 +284,7 @@ $(document).on('focus', '.panel-footer input.chat_input', function (e) {
     if ($('#minim_chat_window').hasClass('panel-collapsed')) {
         $this.parents('.panel').find('.panel-body').slideDown();
         $('#minim_chat_window').removeClass('panel-collapsed');
-        $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        // $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
     }
     return false;
 });
@@ -341,6 +345,8 @@ function showSlides() {
                 $("#3h").removeClass("anchor1").addClass("anchor2");
                 $("#4h").removeClass("anchor1").addClass("anchor2");
                 $("#5h").removeClass("anchor1").addClass("anchor2");
+                $("#6h").removeClass("anchor1").addClass("anchor2");
+                $("#7h").removeClass("anchor1").addClass("anchor2");
             } else {
                 $("header").removeClass("small").addClass("large");
                 $("#1h").removeClass("anchor2").addClass("anchor1");
@@ -348,6 +354,8 @@ function showSlides() {
                 $("#3h").removeClass("anchor2").addClass("anchor1");
                 $("#4h").removeClass("anchor2").addClass("anchor1");
                 $("#5h").removeClass("anchor2").addClass("anchor1");
+                $("#6h").removeClass("anchor2").addClass("anchor1");
+                $("#7h").removeClass("anchor2").addClass("anchor1");
             }
         });
     </script>

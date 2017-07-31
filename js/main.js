@@ -52,11 +52,13 @@ $(window).resize(function(){
 	}
 });
 
-var $this = $(".panel-heading span.icon_minim");
+// var $this = $(".panel-heading span.icon_minim");
 
-$this.addClass('panel-collapsed');
+// $this.addClass('panel-collapsed');
 
-$this.removeClass('ion-minus-round').addClass('ion-plus-round');
+// $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+// 
+
 
 $("#portfolio-contant-active").mixItUp();
 

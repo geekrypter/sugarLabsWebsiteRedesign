@@ -22,14 +22,14 @@ h = h.replace(/033cd2/g, COLORS[color][0]);
 h = h.replace(/78e600/g, COLORS[color][1]);
 document.querySelector('.logo1').innerHTML = h;
 
-var h = document.querySelector('.logo2').innerHTML;
-h = h.replace(/033cd2/g, COLORS[color][0]);
-h = h.replace(/78e600/g, COLORS[color][1]);
-document.querySelector('.logo2').innerHTML = h;
-var h = document.querySelector('.logo3').innerHTML;
-h = h.replace(/033cd2/g, COLORS[color][0]);
-h = h.replace(/78e600/g, COLORS[color][1]);
-document.querySelector('.logo3').innerHTML = h;
+// var h = document.querySelector('.logo2').innerHTML;
+// h = h.replace(/033cd2/g, COLORS[color][0]);
+// h = h.replace(/78e600/g, COLORS[color][1]);
+// document.querySelector('.logo2').innerHTML = h;
+// var h = document.querySelector('.logo3').innerHTML;
+// h = h.replace(/033cd2/g, COLORS[color][0]);
+// h = h.replace(/78e600/g, COLORS[color][1]);
+// document.querySelector('.logo3').innerHTML = h;
 $( ".widget h4" ).click(
     function() {
       $(this).parent().toggleClass('active');
@@ -57,6 +57,8 @@ var $this = $(".panel-heading span.icon_minim");
 $this.addClass('panel-collapsed');
 
 $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+
+
 
 $("#portfolio-contant-active").mixItUp();
 

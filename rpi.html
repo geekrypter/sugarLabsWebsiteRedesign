@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sugar for Raspberry Pi - Sugar Labs
+title: Sugar for Raspbian - Sugar Labs
 permalink: /rpi/index.html
 ---
 
@@ -8,9 +8,9 @@ permalink: /rpi/index.html
   <div class="container ds">
     <div class="row">
       <div class="col-md-6" >
-        <h2 style="text-align:left;"><b>SUGAR FOR RASPBERRY PI</b></h2>
+        <h2 style="text-align:left;"><b>SUGAR FOR RASPBIAN</b></h2>
           </br>
-        <p style="color:#ffffff;font-style: normal;text-align: left ">Welcome to the Sugar for Raspberry Pi site. Here you will find all you need to get started with Sugar for Raspberry Pi.</p>
+        <p style="color:#ffffff;font-style: normal;text-align: left ">Welcome to the Sugar for Raspbian site. Here you will find all you need to get started with Sugar for Raspbian.</p>
       </div>
     </div>
   </div>
@@ -24,13 +24,17 @@ permalink: /rpi/index.html
       <li>
         <a  href="#1h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Introduction</span></a>
       </li>
-      <li><a href="#2h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Download</span></a>
+      <li><a href="#2h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Sugar on Raspbian</span></a>
       </li>
-      <li><a href="#3h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Testing</span></a>
+      <li><a href="#3h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Pre-built Images</span></a>
       </li>
-      <li><a href="#4h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Comparision</span></a>
+      <li><a href="#4h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Without Sugar Desktop</span></a>
       </li>
-      <li><a href="#5h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Reproducing</span></a>
+      <li><a href="#5h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Headless Raspberry Pi</span></a>
+      </li>
+      <li><a href="#6h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Turtle Art/Blocks</span></a>
+      </li>
+      <li><a href="#7h" style="color: #1d192c;" class="btn btn-custom bt bt-ripple"><span style="color:white;">Sugarizer</span></a>
       </li>
     </ul>
   </div>
@@ -43,207 +47,164 @@ permalink: /rpi/index.html
             <span class="anchor1" id="1h"></span>
             <h3>Introduction</h3>
             <hr>
-            <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;text-align:justify;">A Raspberry Pi is a credit card-sized computer originally designed for education, inspired by the 1981 BBC Micro. Creator Eben Upton's goal was to create a low-cost device that would improve programming skills and hardware understanding at the pre-university level. But thanks to its small size and accessible price, it was quickly adopted by tinkerers, makers, and electronics enthusiasts for projects that require more than a basic microcontroller (such as Arduino devices).[1]</p>
-            <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;text-align:justify;">The Raspberry Pi is slower than a modern laptop or desktop but is still a complete Linux computer and can provide all the expected abilities that implies, at a low-power consumption level.[2]</p>
+            <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;text-align:justify;">Raspbian is a derivative of <a href="https://wiki.sugarlabs.org/go/Debian" style="text-decoration:underline;">Debian</a> for the Raspberry Pi.</p>
+            <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;text-align:justify;">In relation to Sugar, Raspbian is a downstream distribution project that can be used to run Sugar.</p>
             
-             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">To learn more, check out the below links:</p>
-            <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li><a href="https://opensource.com/resources/what-raspberry-pi" style="color: black;font-size:15px;"><span style="text-decoration:underline">https://opensource.com/resources/what-raspberry-pi</span></a></li>
-          <li><a href= "https://en.wikipedia.org/wiki/Raspberry_Pi" style="color: black;font-size:15px;"><span style="text-decoration:underline">https://en.wikipedia.org/wiki/Raspberry_Pi</span></a></li>
-         <li><a href= "https://www.raspberrypi.org" style="color: black;font-size:15px;"><span style="text-decoration:underline">https://www.raspberrypi.org</span></a></li>
-          </ul>
-          <h4>References:</h4>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li><b>[1],[2] :</b> <a href="https://opensource.com/resources/what-raspberry-pi" style="color: black;font-size:15px;"><span style="text-decoration:underline">https://opensource.com/resources/what-raspberry-pi</span></a></li>
-          </ul>
+
          <span class="anchor1" id="2h"></span>
-         <h3>Download</h3>
+         <h3>Using Sugar 0.110 on Raspbian</h3>
             <hr>
-             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Rishabh Thaney has made builds for Raspberry Pi using Debian;</p>
+             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">To use Sugar in Raspbian is almost the same as using it in Debian:</p>
           <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li><a href="https://people.sugarlabs.org/rishabh/Stretch-Sugar_autologin-fix-RPi3.img.zip" style="color: black;font-size:15px;"><span style="text-decoration:underline">Stretch-Sugar_autologin-fix-RPi3.img.zip</span></a> at Sugar Labs</li>
-          <li><a href="https://people.sugarlabs.org/rishabh/Stretch-Sugar_autologin-fix-RPi2.img.zip" style="color: black;font-size:15px;"><span style="text-decoration:underline">Stretch-Sugar_autologin-fix-RPi2.img.zip</span></a> at Sugar Labs</li>
-          <li><a href="https://drive.google.com/file/d/0B1YK6wpv2W0eUlMzWUgta1NuQW8/view" style="color: black;font-size:15px;"><span style="text-decoration:underline">2017-06-26-rpi3-stretch.img.zip</span></a> on Google Drive</li>
-          
+          <li>install Raspbian Jessie in the usual way,</li>
           </ul> 
-          <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">See also:</p>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li><a href="http://wiki.sugarlabs.org/go/Summer_of_Code/2017" style="color: black;font-size:15px;"><span style="text-decoration:underline">GSoC 2017 Project Ideas</span></a> by Sugar Labs</li>
-          <li><a href="http://wiki.sugarlabs.org/go/Summer_of_Code/Rishabh_Thaney" style="color: black;font-size:15px;"><span style="text-decoration:underline">GSoC 2017 Proposal</span></a> by Rishabh</li>
-          <li><a href="https://sugaronraspberrypi.wordpress.com/" style="color: black;font-size:15px;"><span style="text-decoration:underline">GSoC 2017 Blog</span></a> by Rishabh</li>
-          
-          </ul> 
-        <span class="anchor1" id="3h"></span>
-         <h3>Testing</h3>
-            <hr>
-             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Report issues to <a href="https://github.com/sugarlabs/rpi23-gen-image" style="color: black;"><span style="text-decoration: underline;">https://github.com/sugarlabs/rpi23-gen-image</span></a></p>
-          <h4>2017-07-07</h4>
-<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;text-align:justify;">Starts at: color/ age-screens/ f3 as "pi" wireless works and shows AD-Hoc and wireless Access points.</p>
-<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Home View (F3 key).</p>
-          <h4>2017-06-26</h4>
-<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">On images dated before 2017-07-04, select "sugar" in top right bar at login.</p>
-          <span class="anchor1" id="4h"></span>
-         <h3>Comparision</h3>
-            <hr>
-             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;text-align:justify;">Please also compare against <a href="http://wiki.sugarlabs.org/go/Soas/Raspberry_Pi" style="color: black;"><span style="text-decoration: underline;">Fedora 26 SoaS</span></a>, as it has many more working activities, although it does not have wireless firmware. (Proprietary wireless drivers have to be loaded after install)</p>
-          
-
-          <span class="anchor1" id="5h"></span>
-         <h3>Reproducing</h3>
-            <hr>
-             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">This was reproduced on Debian <i>stretch</i> platform which was set up in an <i>schroot</i> shell on Ubuntu.</p>
-             <h4>Setup Schroot</h4>
-
-<ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Install the <i>schroot</i> and <i>debootstrap</i> packages,</li>
+ 
+  <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>change <i>/etc/apt/sources.list</i> to use the Stretch testing release,</li>
           </ul> 
  <table style="width:100%;">
   <thead>
     <tr>
-      <th style="color:#ffffff">sudo apt install schroot debootstrap
-      
-  </thead>
-  </table>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Create the <i>stretch</i> filesystem,</li>
-          </ul>  
-          <table style="width:100%;">
-  <thead>
-    <tr>
-      <th style="color:#ffffff">sudo mkdir -p /srv/chroot/stretch<br/>
-sudo debootstrap stretch /srv/chroot/stretch
+      <th style="color:#ffffff">sudo sed -i 's/jessie/stretch/g' /etc/apt/sources.list
       
   </thead>
   </table>
           
-
-
           <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Make a file /etc/schroot/chroot.d/stretch,</li>
+          <li>update the package lists,</li>
           </ul> 
-
-<table style="width:100%;">
+ <table style="width:100%;">
   <thead>
     <tr>
-      <th style="color:#ffffff">
-      [stretch]<br>
-type=directory<br>
-personality=linux<br>
-directory=/srv/chroot/stretch
+      <th style="color:#ffffff">sudo apt update
       
   </thead>
   </table>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Log into your schroot shell from the terminal,</li>
+
+  <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>upgrade all packages,</li>
           </ul> 
-<table style="width:100%;">
+ <table style="width:100%;">
   <thead>
     <tr>
-      <th style="color:#ffffff">
-      sudo schroot -c stretch
+      <th style="color:#ffffff">sudo apt dist-upgrade,
       
   </thead>
   </table>
-
-          <p style="margin-left:40px;margin-bottom:20px;color: black;font-size:15px;">See <a href="https://wiki.debian.org/Schroot" style="color: black;"><span style="text-decoration:underline;">https://wiki.debian.org/Schroot</span></a> for alternate methods.</p>
-          <h4>Setup Builder</h4>
- <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Setup the builder within the schroot shell like this;</p>
-<ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Clone the repository</li>
-          </ul>  
-<table style="width:100%;">
-  <thead>
-    <tr>
-      <th style="color:#ffffff">
-      git clone https://github.com/sugarlabs/rpi23-gen-image
-      
-  </thead>
-  </table>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Install dependencies by going through the README.md file and executing the commands described,</li>
+    <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>install Sugar,</li>
           </ul> 
+ <table style="width:100%;">
+  <thead>
+    <tr>
+      <th style="color:#ffffff">sudo apt install sucrose
+      
+  </thead>
+  </table>
+  <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>log out,</li>
+          <li>log in with the Sugar desktop selected.</li>
+          </ul> 
+        <span class="anchor1" id="3h"></span>
+         <h3>Pre-built Images</h3>
+            <hr>
+             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">There are no pre-built images for Raspbian with Sugar.</p>
+          <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Report issues to <a href="https://github.com/sugarlabs/rpi23-gen-image" style="color: black;"><span style="text-decoration: underline;">https://github.com/sugarlabs/rpi23-gen-image</span></a></p>
+          <span class="anchor1" id="4h"></span>
+         <h3>Using Sugar Activities without Sugar Desktop</h3>
+            <hr>
+             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;text-align:justify;">Debian packaging of Sugar Activities adds them to the Education menu, so they can be used from desktops other than Sugar.</p>
+          
 
-
-
-             <h4>Run Builder</h4>
-<ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Change your directory to the cloned repo and run this command to start the building process:</li>
-          </ul>
-          <table style="width:100%;">
+          <span class="anchor1" id="5h"></span>
+         <h3>Using Sugar on a headless Raspberry Pi</h3>
+            <hr>
+             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">You have a Raspberry Pi but you've run out of keyboards, mice, and HDMI displays. Use the 'net.</p>
+             <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>On the Raspberry Pi:</li>
+          </ul> 
+ <table style="width:100%;">
   <thead>
     <tr>
       <th style="color:#ffffff">
-      sh rpi23-gen-image.sh
+      sudo apt install xrdp<br/>
+adduser guest<br/>
+echo sugar >> /home/guest/.xsession
       
   </thead>
   </table>
-<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">This takes some time as the scripts start downloading and configuring packages to build an image.</p>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Once the process is complete in the terminal, navigate to this directory:</li>
-          </ul>
-          <table style="width:100%;">
+  <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>On your other computer:</li>
+          </ul> 
+ <table style="width:100%;">
   <thead>
     <tr>
       <th style="color:#ffffff">
-      ~/rpi23-gen-image/images/stretch
+      rdesktop -g 1200x900 -u guest -p guest IP
       
   </thead>
   </table>
-<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">to find the image that was built.</p>
-<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Some changes have been made to the original repo: https://github.com/drtyhlpr/rpi23-gen-image which can be viewed in the commit history.</p>
+<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">See <a href="https://www.element14.com/community/docs/DOC-78170/l/connecting-to-a-remote-desktop-on-the-raspberry-pi" style="color: black;"><span style="text-decoration: underline;">Connecting to a remote desktop on the Raspberry Pi.</span></a></p>
 
-             <h4>Adding the automatic login feature</h4>
-<ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>While the image is building, navigate to the following directory:</li>
-          </ul>
-          <table style="width:100%;">
+<span class="anchor1" id="6h"></span>
+         <h3>Turtle Art/Blocks</h3>
+            <hr>
+             
+             <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>You can download <a href="https://wiki.sugarlabs.org/go/Activities/Turtle_Art" style="color: black;"><span style="text-decoration: underline;">Activities/Turtle Art</span></a> and use it on the normal desktop. You can either download it through the package manager (and get version 98):</li>
+          </ul> 
+ <table style="width:100%;">
   <thead>
     <tr>
       <th style="color:#ffffff">
-      ~/rpi23-gen-image/images/stretch/build/chroot/etc
+      sudo apt-get install sugar-turtleart-activity
       
   </thead>
   </table>
-          <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">and depending on the stage of the build process wait for a folder named 'lightdm' to appear.</p>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Then open this file with nano/gedit and with root priviledges:</li>
-          </ul>
-          <table style="width:100%;">
-  <thead>
-    <tr>
-      <th style="color:#ffffff;text-align:justify;">
-      ~/rpi23-gen-image/images/stretch/build/chroot/etc/lightdmlightdm.conf.dpkg-new
-      
-  </thead>
-  </table>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Add/uncomment the following lines and configure them as shown below:</li>
-          </ul>
-          <table style="width:100%;">
+  <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Turtle art will be added to the Education section of the apps menu.</p>
+  <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>Or you could get the latest version using git:</li>
+          </ul> 
+ <table style="width:100%;">
   <thead>
     <tr>
       <th style="color:#ffffff">
-      autologin-session = sugar<br>
-[Seat:*]<br>
-#type=xlocal<br>
-pam-service=lightdm<br>
-pam-autologin-service=lightdm-autologin<br>
-autologin-user=pi #(change this if you have configured a different user)<br>
-autologin-password=raspberry #(change this if you have configured a different password)<br>
-autologin-user-timeout=0<br>
-session-wrapper=/etc/X11/Xsession<br>
-greeter-session=lightdm-greeter
+      git clone https://github.com/sugarlabs/activity-turtleart-gtk2.git turtleart<br/>
+   cd turtleart
       
   </thead>
   </table>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Save the file and wait for the build process to complete.</li>
-          </ul>
-          <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
-          <li>Boot into your image with this configuration and autologin should work fine.</li>
-          </ul>
-
-
+   <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>And use the following to start Turtle Art:</li>
+          </ul> 
+ <table style="width:100%;">
+  <thead>
+    <tr>
+      <th style="color:#ffffff">
+      python turtleblocks.py
+      
+  </thead>
+  </table>
+<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;"><b>NOTE:</b> you may encounter an error related to the summary field in the activity.info. If so, open the activity/activity.info file and move the summary field from the bottom of the file, to being the line below the title field</p>
+<span class="anchor1" id="7h"></span>
+         <h3>Sugarizer</h3>
+            <hr>
+             <p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;"><a href="http://sugarizer.org/" style="color: black;"><span style="text-decoration: underline;">Sugarizer</span></a> is a HTML5 version of Sugar. It has a basic journal and full web activity support.</p>
+             <ul style="list-style-type:disc;margin-left:40px;margin-bottom:20px;">
+          <li>You can configure Sugarizer to auto-start by setting your <i>~/.xinitrc</i> to:</li>
+          </ul> 
+ <table style="width:100%;">
+  <thead>
+    <tr>
+      <th style="color:#ffffff">
+      epiphany server.sugarizer.org
+      
+  </thead>
+  </table>
+  
+  
+<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">(<b>Note:</b> there are a few issues with the browser icons... but sugarizer works well)</p>
+<p style="margin-left:40px;margin-top:25px;margin-bottom:20px;color: black;font-size:15px;">Alternatively, you can download the <a href="http://sugarizer.org/org.olpc-france.sugarizer.zip" style="color: black;"><span style="text-decoration: underline;">Sugarizer client zip</span></a> and have it locally on your pi.</p>
           </div>
         </div>
         </div>      

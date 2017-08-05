@@ -21,11 +21,11 @@ var h = document.querySelector('.logo1').innerHTML;
 h = h.replace(/033cd2/g, COLORS[color][0]);
 h = h.replace(/78e600/g, COLORS[color][1]);
 document.querySelector('.logo1').innerHTML = h;
-
-// var h = document.querySelector('.logo2').innerHTML;
-// h = h.replace(/033cd2/g, COLORS[color][0]);
-// h = h.replace(/78e600/g, COLORS[color][1]);
-// document.querySelector('.logo2').innerHTML = h;
+if(document.getElementById("secondHeader").style.display!="none"){
+var h = document.querySelector('.logo2').innerHTML;
+h = h.replace(/033cd2/g, COLORS[color][0]);
+h = h.replace(/78e600/g, COLORS[color][1]);
+document.querySelector('.logo2').innerHTML = h;}
 // var h = document.querySelector('.logo3').innerHTML;
 // h = h.replace(/033cd2/g, COLORS[color][0]);
 // h = h.replace(/78e600/g, COLORS[color][1]);
@@ -161,7 +161,36 @@ var fullHeight = function() {
 	});
 };
 
-});
+// Opera 8.0+
+var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 
+// Firefox 1.0+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+// Safari 3.0+ "[object HTMLElementConstructor]" 
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+// Internet Explorer 6-11
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+// Edge 20+
+var isEdge = !isIE && !!window.StyleMedia;
+
+// Chrome 1+
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+
+if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome){
+document.getElementById("loaderDiv").style.display="block";
+document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
+document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
+
+}
+if(!isOpera && !isFirefox && !isSafari && !isIE && !isEdge && !isChrome){
+  document.getElementById("ftctn").style.display="none";
+document.getElementById("myBtn2").style.display="none";
+
+}
+});
 
 

@@ -26,7 +26,7 @@
       
       <!-- body -->
       <div class="modal-body">
-         <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:100%;"></iframe>
+         <iframe id="myiframe1" src="" style="border:0; width:100%; height:100%;"></iframe>
 
       </div>
       <!-- body -->
@@ -178,7 +178,7 @@
         <div class="col-md-12" style="position:absolute;bottom:0;right:0;">
         <div class="chat-window pull-right" id="chat_window_1" >
           <div class="panel panel-default" >
-                <div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
+                <a href="#"><div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
 
                     <div class="col-md-10" style="padding-left:60px;margin-left:0px;padding-bottom:0px;">
                         <h3 class="panel-title" style="font-size:16px;color:#000000;">Chat on our IRC channel!&nbsp;<a href="{{ site.baseurl }}/about_irc" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
@@ -188,13 +188,13 @@
                         <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;font-size:16px;"></span></a>
                         <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1" style="color:#655E7A;font-size:16px;"></span></a>
                     </div>
-                </div>
+                </div></a>
                 
                 <div class="panel-body msg_container_base" style="display:none;">
                     
                     
                      
-                     <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" style="border:0; width:100%; height:400px;"></iframe>
+                     <iframe id="myiframe2" src="" style="border:0; width:100%; height:400px;"></iframe>
                     
                     
                   
@@ -274,6 +274,20 @@ $(document).on('click', '.panel-heading span.icon_minim', function (e) {
     return false;
 });
 
+$(document).on('click', '#panel1', function (e) {
+    var $this = $(".panel-heading span.icon_minim");
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.removeClass('ion-plus-round').addClass('ion-minus-round');
+    }
+    return false;
+});
+
 $(document).on('focus', '.panel-footer input.chat_input', function (e) {
     var $this = $(this);
     if ($('#minim_chat_window').hasClass('panel-collapsed')) {
@@ -327,6 +341,7 @@ function showSlides() {
     setTimeout(function(){showSlides();}, 5000); // Change image every 2 seconds
 }
 </script>
+<script  type="text/javascript" src="{{ site.baseurl }}/js/vendor/modernizr-2.6.2.min.js"></script>
 <script  type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
 <script  type="text/javascript" src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
 <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
@@ -405,6 +420,29 @@ function showSlides() {
 
 
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+<script type="text/javascript">
+             $(document).ready(function () {
+                 $("#sidebar").niceScroll({
+                     cursorcolor: '#53619d',
+                     cursorwidth: 4,
+                     cursorborder: 'none'
+                 });
+
+                 $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                 });
+
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').addClass('active');
+                     $('.overlay').fadeIn();
+                     $('.collapse.in').toggleClass('in');
+                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                 });
+             });
+         </script>
+    
 
 
     

@@ -1,7 +1,7 @@
 
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/dist/css/social-share-kit.css" type="text/css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css" type="text/css" /> 
+<!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css" type="text/css" />  -->
 <link rel="stylesheet" href="{{ site.baseurl }}/css/ionicons.min.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
@@ -9,7 +9,7 @@
 
 
 <!-- Header Start -->
-<header class="large">
+<header class="large" id="firstHeader" >
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -119,3 +119,87 @@
     </div>
   </div>
 </header><!-- header close -->
+
+<div class="container" id="secondHeader" >
+  <div class="row">
+    <div class="col-md-12">
+
+    <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="ion-arrow-left-a"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <h3>Sugar Labs</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                   
+                    <li >
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Home</span><span class="caret"></span></a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="#"><span style="color:#ffffff">About</span></a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Pages</span><span class="caret"></span></a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span style="color:#ffffff">Portfolio</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span style="color:#ffffff">Contact</span></a>
+                    </li>
+                </ul>
+
+            
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default navbar-fixed-top" style="padding-bottom: 50px;background: #fff;border: none;border-radius: 0;margin-bottom: 40px;box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);">
+                    <div class="container-fluid" >
+
+                        <div class="navbar-header" style="padding:0 0 0 0;margin:0 0 0 0;">
+                        <div id="navh1" class="logo2" style="width:270px;height:30px;left:10px;">
+              <a href="{{ site.baseurl }}/">{% include logo.svg %}</a>
+            </div>
+                             <!-- <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" style="left:0px;position:fixed"> -->
+                                <span id="sidebarCollapse" style="right:10px;position:fixed;font-size:30px;"><i class="ion-navicon-round"></i></span>
+                                
+                            <!-- </button> -->
+                            <!-- <div id="navh1" class="logo1" style="width:300px;height:40px;margin-bottom:10px;margin-top:0px;">
+              <a href="{{ site.baseurl }}/">{% include logo.svg %}</a>
+            </div> -->
+            
+                            
+
+                        </div>
+                        
+
+
+                        
+                    </div>
+                </nav>
+
+               
+            </div>
+        </div>
+
+
+
+        <div class="overlay"></div>
+    </div>
+    </div>
+    </div>

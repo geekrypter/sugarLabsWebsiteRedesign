@@ -2859,7 +2859,7 @@ h1:before {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-#sidebar {
+#secondHeader #sidebar {
     width: 250px;
     position: fixed;
     top: 0;
@@ -2873,11 +2873,11 @@ h1:before {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-#sidebar.active {
+#secondHeader #sidebar.active {
     left: 0;
 }
 
-#dismiss {
+#secondHeader #dismiss {
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -2891,12 +2891,12 @@ h1:before {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-#dismiss:hover {
+#secondHeader #dismiss:hover {
     background: #fff;
     color: #7386D5;
 }
 
-.overlay {
+#secondHeader .overlay {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -2905,42 +2905,42 @@ h1:before {
     display: none;
 }
 
-#sidebar .sidebar-header {
+#secondHeader #sidebar .sidebar-header {
     padding: 20px;
     background: #655E7A;
 }
 
-#sidebar ul.components {
+#secondHeader #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
 }
 
-#sidebar ul p {
+#secondHeader #sidebar ul p {
     color: #fff;
     padding: 10px;
 }
 
-#sidebar ul li a {
+#secondHeader #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
 }
-#sidebar ul li a:hover {
+#secondHeader #sidebar ul li a:hover {
     color: #7386D5;
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#secondHeader #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
     background: #332F41;
 }
 
 
-a[data-toggle="collapse"] {
+#secondHeader a[data-toggle="collapse"] {
     position: relative;
 }
 
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+#secondHeader a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     content: '\e259';
     display: block;
     position: absolute;
@@ -2948,33 +2948,33 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
 }
-a[aria-expanded="true"]::before {
+#secondHeader a[aria-expanded="true"]::before {
     content: '\e260';
 }
 
 
-ul ul a {
+#secondHeader ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #332F41;
 }
 
-ul.CTAs {
+#secondHeader ul.CTAs {
     padding: 20px;
 }
 
-ul.CTAs a {
+#secondHeader ul.CTAs a {
     text-align: center;
     font-size: 0.9em !important;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
 }
-a.download {
+#secondHeader a.download {
     background: #fff;
     color: #7386D5;
 }
-a.article, a.article:hover {
+#secondHeader a.article, #secondHeader a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
@@ -2983,7 +2983,7 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-#content {
+#secondHeader #content {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
@@ -3003,3 +3003,10 @@ a.article, a.article:hover {
     display: block;
   }
   }
+
+@media only screen and (max-width: 811px) {
+  #loaderDiv h1{
+  font-size: 20px;
+}
+  }
+

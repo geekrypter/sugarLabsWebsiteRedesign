@@ -2326,13 +2326,13 @@ hr {
 
 #mc_embed_signup{background:#282828; clear:left; font:14px; }
 
-table {
+#custom_table table {
   background: #1d192c;
   border-radius: 0.25em;
   border-collapse: collapse;
   margin: 1em;
 }
-th {
+#custom_table th {
   border-bottom: 2px solid #364043;
   color: #E2B842;
   font-size: 0.99em;
@@ -2340,21 +2340,21 @@ th {
   padding: 0.5em 1em;
   text-align: left;
 }
-td {
+#custom_table td {
   color: #fff;
   font-weight: 400;
   padding: 0.65em 1em;
 }
-td ul{
+#custom_table td ul{
   padding: 0em 2em;
 }
-.disabled td {
+#custom_table .disabled td {
   color: #4F5F64;
 }
-tbody tr {
+#custom_table tbody tr {
   transition: background 0.25s ease;
 }
-tbody tr:hover {
+#custom_table tbody tr:hover {
   background: #595565;
 }
 
@@ -2801,6 +2801,7 @@ h1:before {
   text-align: center;
   overflow: hidden;
   margin-bottom: 1.3em;
+  margin-top:30px;margin-bottom:0px;
 }
 
 .tag {
@@ -3007,6 +3008,43 @@ h1:before {
 @media only screen and (max-width: 811px) {
   #loaderDiv h1{
   font-size: 20px;
+}
+  }
+.form-control {width:120px;}
+.popover {max-width:400px;}
+
+#google-custom-search {
+  margin-top: 50px;
+}
+
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button,
+.gsc-selected-option-container {
+  box-sizing: content-box; 
+  line-height: normal;
+}
+.searchBoxStyle{
+  margin-bottom:50px;padding-left:50px;padding-right:50px;
+}
+@media only screen and (max-width: 767px) {
+  .searchBoxStyle{
+  margin-bottom:20px;padding-left:5px;padding-right:5px;
+}
+  }
+    @media only screen and (max-width: 1260px) {
+  .section-title1 {
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 1.3em;
+  padding-top:80px;margin-bottom:0px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
+.cta{
+  margin-top:80px;padding-bottom:10px;
 }
   }
 

@@ -36,11 +36,17 @@ $( ".widget h4" ).click(
     }); 
 
 $('[data-toggle="tooltip"]').tooltip(); 
-$('[data-toggle="popover"]').popover();
+// $('[data-toggle="popover"]').popover();
 $('.popover-dismiss').popover({
   trigger: 'focus'
 }) 
-
+$("[data-toggle=popover]").popover({
+    html: true, 
+  content: function() {
+          return $('#popover-content').html();
+        },
+        container: 'body'
+});
  
 var _originalSize = $(window).width() + $(window).height()
 $(window).resize(function(){
@@ -181,7 +187,7 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 
 
 if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome){
-// document.getElementById("loaderDiv").style.display="block";
+document.getElementById("loaderDiv").style.display="block";
 document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
 document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
 

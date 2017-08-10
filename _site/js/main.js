@@ -36,17 +36,17 @@ $( ".widget h4" ).click(
     }); 
 
 $('[data-toggle="tooltip"]').tooltip(); 
-// $('[data-toggle="popover"]').popover();
+$('[data-toggle="popover"]').popover();
 $('.popover-dismiss').popover({
   trigger: 'focus'
 }) 
-$("[data-toggle=popover]").popover({
-    html: true, 
-  content: function() {
-          return $('#popover-content').html();
-        },
-        container: 'body'
-});
+// $("[data-toggle=popover]").popover({
+//     html: true, 
+//   content: function() {
+//           return $('#popover-content').html();
+//         },
+//         container: 'body'
+// });
  
 var _originalSize = $(window).width() + $(window).height()
 $(window).resize(function(){

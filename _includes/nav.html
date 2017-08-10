@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1" style="padding-bottom:0px;margin-bottom: 0px;">
               <ul class="nav navbar-nav navbar-right abc">
                 <!-- <li><a href="{{ site.baseurl }}/">Home</a></li> -->
-                <li><a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="left" data-html="true" href="#" id="login"><span class="ion-android-search" style="font-size:20px;"></a></li>
+                <li><a href="{{ site.baseurl }}/search"><span class="ion-android-search" style="font-size:20px;"></a></li>
                 <li><a href="{{ site.baseurl }}/about_us">About</a></li>
                 <li><a href="http://server.sugarizer.org">Try Now</a></li>
                 <li class="dropdown">
@@ -113,17 +113,7 @@
                   </ul>
                 </li>
               </ul>
-              <div id="popover-content" class="hide">
-      <form role="search" method="get" action="{{ site.baseurl }}/search">
-        <input id="searchString" name="searchString"
-                         placeholder="" type="text">
-                  <button type="submit" class="btn btn-custom">
-                                <span class="ion-android-search">
-                                    <span class="sr-only">Search</span>
-                                </span>
-                            </button>
-      </form>
-    </div>
+              
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
@@ -151,7 +141,8 @@
                    <!-- <li>
                         <a href="{{ site.baseurl }}/"><span style="color:#ffffff">Home</span></a>
                     </li> -->
-                    <li><a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="left" data-html="true" href="#" id="login"><span class="ion-android-search" style="font-size:20px;color:#ffffff"></a></li>
+                    <li><a href="{{ site.baseurl }}/search"><span class="ion-android-search" style="font-size:20px;color:#ffffff"></a></li>
+
                     <li>
                         <a href="{{ site.baseurl }}/about_us"><span style="color:#ffffff">About</span></a>
                     </li>
@@ -233,7 +224,9 @@
                             <li><a href="http://planet.sugarlabs.org">Blog Archive</a></li>
                         </ul>
                     </li>
+
                 </ul>
+
 
             
             </nav>

@@ -187,12 +187,13 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 
 
 if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome){
-document.getElementById("loaderDiv").style.display="block";
+
 document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
 document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
 
 }
 if(!isOpera && !isFirefox && !isSafari && !isIE && !isEdge && !isChrome){
+  document.getElementById("loaderDiv").style.display="none";
   document.getElementById("ftctn").style.display="none";
 document.getElementById("myBtn2").style.display="none";
 

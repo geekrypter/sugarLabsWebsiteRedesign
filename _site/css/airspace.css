@@ -1818,7 +1818,7 @@ px      68    160    252    344    436    */
 
 .loader {
   position: fixed;
-  display: none;
+  display: block;
   left: 0px;
   top: 0px;
   width: 100%;

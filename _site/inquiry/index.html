@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
  		<link id="defaultIcon1" rel="shortcut icon" href="https://www.sugarlabs.org/assets/favicon_06.png" />
-    <title>Sugar & Inquiry - Sugar Labs</title>
+    <title>Sugar and Inquiry - Sugar Labs</title>
  
     <link href="/css/googleFonts.css" rel="stylesheet" type="text/css" >
     <meta name="robots" content="index,follow,NOODP" />
@@ -640,9 +640,9 @@ $(window).load(function() {
   </div>
   
 </footer>
-<div id="mcw1" class="container-popup" style="padding-top:60px;"></div>
+<!-- <div id="mcw1" class="container-popup" style="padding-top:60px;"></div>
  <div id="mcw2" class="popup" style="padding-top:62px;text-align:center;">
- Chat on our IRC channel!<span id="close" class="ion-close-round icon_close" style="color:#000000;"></span>
+ Chat on our IRC channel!<span id="close" class="ion-close-round icon_close" style="color:#000000;"></span> -->
   <!-- <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" class="ifr"></iframe> -->
 
 </div>
@@ -701,15 +701,15 @@ $(window).load(function() {
 
 <script  type="text/javascript">
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)&&(document.getElementById("mcw1").style.display == "none")&&(document.getElementById("mcw2").style.display == "none")) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+// function scrollFunction() {
+//     if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)&&(document.getElementById("mcw1").style.display == "none")&&(document.getElementById("mcw2").style.display == "none")) {
+//         document.getElementById("myBtn").style.display = "block";
+//     } else {
+//         document.getElementById("myBtn").style.display = "none";
+//     }
+// }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -717,20 +717,20 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 function chatFunction() {
-    document.getElementById("mcw1").style.display = "block";
-    document.getElementById("mcw2").style.display = "block";
+    // document.getElementById("mcw1").style.display = "block";
+    // document.getElementById("mcw2").style.display = "block";
     document.getElementById("myBtn2").style.display = "none";
-    document.getElementById("myBtn").style.display = "none";
+    // document.getElementById("myBtn").style.display = "none";
     
 }
 
   $(document).ready(function() {
     $("#close").click(function() {
 
-      document.getElementById("mcw1").style.display = "none";
-    document.getElementById("mcw2").style.display = "none";
+    //   document.getElementById("mcw1").style.display = "none";
+    // document.getElementById("mcw2").style.display = "none";
       document.getElementById("myBtn2").style.display = "block";
-      document.getElementById("myBtn").style.display = "block";
+      // document.getElementById("myBtn").style.display = "block";
     });
     return false;
   });
@@ -785,15 +785,36 @@ $(document).on('click', '.icon_close', function (e) {
     return false;
 });
   $(document).on('click', '#close', function (e) {
-    document.getElementById("mcw1").style.display = "none";
-    document.getElementById("mcw2").style.display = "none";
+    // document.getElementById("mcw1").style.display = "none";
+    // document.getElementById("mcw2").style.display = "none";
       document.getElementById("myBtn2").style.display = "block";
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } 
+    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //     document.getElementById("myBtn").style.display = "block";
+    // } 
     return false;
 });
 
+$(document).on("scroll", function () {
+            if ($(document).scrollTop() > 10) {
+                $("header").removeClass("large").addClass("small");
+                $("#1h").removeClass("anchor1").addClass("anchor2");
+                $("#2h").removeClass("anchor1").addClass("anchor2");
+                $("#3h").removeClass("anchor1").addClass("anchor2");
+                $("#4h").removeClass("anchor1").addClass("anchor2");
+                $("#5h").removeClass("anchor1").addClass("anchor2");
+                $("#6h").removeClass("anchor1").addClass("anchor2");
+                $("#7h").removeClass("anchor1").addClass("anchor2");
+            } else {
+                $("header").removeClass("small").addClass("large");
+                $("#1h").removeClass("anchor2").addClass("anchor1");
+                $("#2h").removeClass("anchor2").addClass("anchor1");
+                $("#3h").removeClass("anchor2").addClass("anchor1");
+                $("#4h").removeClass("anchor2").addClass("anchor1");
+                $("#5h").removeClass("anchor2").addClass("anchor1");
+                $("#6h").removeClass("anchor2").addClass("anchor1");
+                $("#7h").removeClass("anchor2").addClass("anchor1");
+            }
+        });
 </script>
 <script  type="text/javascript">
 var slideIndex = 0;
@@ -816,12 +837,13 @@ function showSlides() {
     setTimeout(function(){showSlides();}, 5000); // Change image every 2 seconds
 }
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 <script  type="text/javascript" src="/js/vendor/modernizr-2.6.2.min.js"></script>
 <script  type="text/javascript" src="/js/plugins.js"></script>
 <script  type="text/javascript" src="/js/owl.carousel.min.js"></script>
 <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
         $(document).on("scroll", function () {
             if ($(document).scrollTop() > 10) {
                 $("header").removeClass("large").addClass("small");
@@ -843,7 +865,7 @@ function showSlides() {
                 $("#7h").removeClass("anchor2").addClass("anchor1");
             }
         });
-    </script>
+    </script> -->
 
 <script type="text/javascript">
 // Bootstrap Material Style button  by Bootstrapthemes.co
@@ -884,7 +906,7 @@ function showSlides() {
 
 
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script> -->
 <script type="text/javascript">
              $(document).ready(function () {
                  $("#sidebar").niceScroll({
@@ -906,6 +928,7 @@ function showSlides() {
                  });
              });
          </script>
+
     
 
 

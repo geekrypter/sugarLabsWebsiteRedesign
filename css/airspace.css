@@ -2946,7 +2946,7 @@ h1:before {
     display: block;
     position: absolute;
     right: 20px;
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Varela Round';
     font-size: 0.6em;
 }
 #secondHeader a[aria-expanded="true"]::before {

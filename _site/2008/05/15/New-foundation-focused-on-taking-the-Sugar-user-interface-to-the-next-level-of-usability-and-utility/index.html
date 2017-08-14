@@ -235,7 +235,7 @@ $(window).load(function() {
                     </li>
                   
                     <li >
-                        <a href="#getSugarSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Get Sugar</span><span class="caret"></span></a>
+                        <a href="#getSugarSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Get Sugar</span></a>
                         <ul class="collapse list-unstyled" id="getSugarSubmenu">
                             <li ><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation" style="color:#0099FF">SOAS</a></li>
                     
@@ -257,7 +257,7 @@ $(window).load(function() {
                     </li>
                     <li >
                         
-                        <a href="#downloadSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Download</span><span class="caret"></span></a>
+                        <a href="#downloadSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Download</span></a>
                         <ul class="collapse list-unstyled" id="downloadSubmenu">
                             <li ><a href="#" style="color:#0099FF">SOAS</a></li>
                     <li ><a href="#" style="color:#0099FF">Chromebooks</a></li>
@@ -275,7 +275,7 @@ $(window).load(function() {
                         <a href="https://help.sugarlabs.org/"><span style="color:#ffffff">Use</span></a>
                     </li>
                     <li >
-                        <a href="#buySubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Buy</span><span class="caret"></span></a>
+                        <a href="#buySubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Buy</span></a>
                         <ul class="collapse list-unstyled" id="buySubmenu">
                             <li><a href="http://www.recycleusb.com" style="color:#0099FF">Sugar Sticks</a></li>
                     <li><a href="#" style="color:#0099FF">Sugarizer Server (Raspberry Pi)</a></li>
@@ -287,7 +287,7 @@ $(window).load(function() {
                     </li>
                     <li >
                         
-                        <a href="#joinUsSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Join Us</span><span class="caret"></span></a>
+                        <a href="#joinUsSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Join Us</span></a>
                         <ul class="collapse list-unstyled" id="joinUsSubmenu">
                             <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" style="color:#0099FF">Community Mailing Lists</a></li>
                     <li><a href="#" style="color:#0099FF">Developer's Guide</a></li>
@@ -303,7 +303,7 @@ $(window).load(function() {
                     </li>
                     <li >
                         
-                        <a href="#blogSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Blog</span><span class="caret"></span></a>
+                        <a href="#blogSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Blog</span></a>
                         <ul class="collapse list-unstyled" id="blogSubmenu">
                             <li><a href="http://planet.sugarlabs.org">Blog Archive</a></li>
                         </ul>
@@ -626,7 +626,7 @@ be of benefit to everyone.”</p>
                 <a href="#"><div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
 
                     <div class="col-md-10" style="padding-left:60px;margin-left:0px;padding-bottom:0px;">
-                        <h3 class="panel-title" style="font-size:16px;color:#000000;">Chat on our IRC channel!&nbsp;<a href="/about-irc" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
+                        <h3 class="panel-title" style="font-size:16px;color:#000000;">Chat on our IRC channel!&nbsp;<a href="#" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span id="aboutIRC" class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
                     </div>
                     <div class="col-md-2" style="text-align: right; padding-right:0px;">
                         
@@ -807,6 +807,11 @@ $(document).on("scroll", function () {
                 $("#7h").removeClass("anchor2").addClass("anchor1");
             }
         });
+$(document).on('click', '#aboutIRC', function (e) {
+    window.location.href = '/about-irc';
+    
+    return false;
+});
 </script>
 <script  type="text/javascript">
 var slideIndex = 0;
@@ -917,7 +922,18 @@ function showSlides() {
              });
          </script> -->
 
-    
+
+    <script  type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102776855-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+       
 
 
     

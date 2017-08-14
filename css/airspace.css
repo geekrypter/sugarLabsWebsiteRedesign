@@ -1124,8 +1124,8 @@ footer .footer-manu ul li a:hover {
 }
 .anchor2{
   display: block;
-  height: 40px; /*same height as header*/
-  margin-top: -40px; /*same height as header*/
+  height: 100px; /*same height as header*/
+  margin-top: -100px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -2940,7 +2940,7 @@ h1:before {
 }
 
 #secondHeader a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
+    content: '\25BC';
     display: block;
     position: absolute;
     right: 20px;
@@ -2948,7 +2948,7 @@ h1:before {
     font-size: 0.6em;
 }
 #secondHeader a[aria-expanded="true"]::before {
-    content: '\e260';
+    content: '\25B2';
 }
 
 

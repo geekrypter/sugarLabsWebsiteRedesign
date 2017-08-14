@@ -475,7 +475,7 @@ Other names are trademarks of their respective owners.</p>
       <!-- footer -->
       <div class="modal-footer">
       
-        <button class="btn btn-secondary"
+        <button id="chatClose" class="btn btn-secondary"
                 data-dismiss="modal" style="background-color:#655E7A;color:#ffffff">
           <i class="ion-close-round"></i>&nbsp;Close
         </button>
@@ -780,6 +780,12 @@ $(document).on('click', '#new_chat', function (e) {
 });
 $(document).on('click', '.icon_close', function (e) {
     $( "#chat_window_1" ).remove();
+    document.getElementById("myiframe2").src = '';
+    return false;
+});
+$(document).on('click', '#chatClose', function (e) {
+    
+    document.getElementById("myiframe1").src = '';
     return false;
 });
   $(document).on('click', '#close', function (e) {

@@ -17,7 +17,22 @@ header.large{ height: 100px;
  }
 header.large #navh{ width: 300px; height: 40px; 
  }
-
+header.large img{ width: 300px; height: 100px;  }
+header.small img{ width: 150px; height: 50px;  }
+/*#navh3{ width:250px;height:40px;left:10px;background-color: #000000  }
+#navh3 img{ width:200px;height:40px; margin-bottom: 0px;padding-bottom: 0px; }*/
+#navh{
+  display: none;
+}
+#navh2{
+  display: none;
+}
+/*#navh1{
+  display: none;
+}*/
+/*#navh3{
+  display: none;
+}*/
 #navh{
   transition: all 0.3s;
    -ms-transition: all 0.3s;

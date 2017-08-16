@@ -3062,4 +3062,11 @@ input.gsc-input,
   margin-top:80px;padding-bottom:10px;
 }
   }
-
+#contributeHeader{
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  #contributeHeader{
+  text-align: left;
+}
+}

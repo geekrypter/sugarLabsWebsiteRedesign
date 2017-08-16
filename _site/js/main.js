@@ -190,21 +190,21 @@ if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome || isOtherdevi
 
 document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
 document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
-if(isIE){
-  document.getElementById("navh2").style.display="block";
+// if(isIE){
+  // document.getElementById("navh2").style.display="block";
   // document.getElementById("navh3").style.display="block";
-}
-else{
-  document.getElementById("navh").style.display="block";
+// }
+// else{
+  // document.getElementById("navh").style.display="block";
   // document.getElementById("navh1").style.display="block";
-}
+// }
 }
 if(!isOpera && !isFirefox  && !isSafari && !isIE && !isEdge && !isChrome &&!isOtherdevice){
   document.getElementById("loaderDiv").style.display="none";
   document.getElementById("ftctn").style.display="none";
 document.getElementById("myBtn2").style.display="none";
-document.getElementById("navh2").style.display="block";
-document.getElementById("navh").style.display="none";
+// document.getElementById("navh2").style.display="block";
+// document.getElementById("navh").style.display="none";
 // document.getElementById("navh3").style.display="block";
 // document.getElementById("navh1").style.display="none";
 }

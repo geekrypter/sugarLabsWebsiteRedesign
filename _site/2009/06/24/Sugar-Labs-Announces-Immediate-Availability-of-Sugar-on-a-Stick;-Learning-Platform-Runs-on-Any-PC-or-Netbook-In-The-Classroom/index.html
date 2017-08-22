@@ -472,10 +472,13 @@ booth 7.2a 110a.</p>
 
       <!-- footer -->
       <div class="modal-footer">
-      
         <button id="chatClose" class="btn btn-secondary"
+                data-dismiss="modal" style="background-color:#655E7A;color:#ffffff;float:left">
+          <i class="ion-close-round"></i>
+        </button>
+        <button id="chatMinimize" class="btn btn-secondary"
                 data-dismiss="modal" style="background-color:#655E7A;color:#ffffff">
-          <i class="ion-close-round"></i>&nbsp;Close
+          <i class="ion-minus-round"></i>
         </button>
         
       </div>
@@ -789,6 +792,11 @@ $(document).on('click', '#chatClose', function (e) {
     
     document.getElementById("myiframe1").src = '';
     document.getElementById("myBtn2").style.display = "none";
+    return false;
+});
+$(document).on('click', '#chatMinimize', function (e) {
+    
+    
     return false;
 });
   $(document).on('click', '#close', function (e) {

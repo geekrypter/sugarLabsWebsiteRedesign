@@ -35,11 +35,64 @@ $( ".widget h4" ).click(
       $(this).parent().toggleClass('active');
     }); 
 
-$('[data-toggle="tooltip"]').tooltip(); 
-$('[data-toggle="popover"]').popover();
-$('.popover-dismiss').popover({
-  trigger: 'focus'
-}) 
+// Opera 8.0+
+var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+// Firefox 1.0+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+// Safari 3.0+ "[object HTMLElementConstructor]" 
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+// Internet Explorer 6-11
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+// Edge 20+
+var isEdge = !isIE && !!window.StyleMedia;
+
+// Chrome 1+
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+var isOtherdevice= navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
+var isSmallWidth=0;
+if(window.innerWidth<768)
+{
+  isSmallWidth=1;
+}
+
+if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome || isOtherdevice || isSmallWidth){
+
+document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
+document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
+if(isIE){
+  // document.getElementById("navh2").style.display="block";
+  $('#navh2').css('display', 'block');
+  $('#navh3').css('display', 'block');
+  // document.getElementById("navh3").style.display="block";
+}
+else{
+  // document.getElementById("navh").style.display="block";
+  $('#navh').css('display', 'block');
+  $('#navh1').css('display', 'block');
+  // document.getElementById("navh1").style.display="block";
+}
+}
+if(!isOpera && !isFirefox &&!isSafari && !isIE && !isEdge && !isChrome &&!isOtherdevice &&!isSmallWidth){
+//   document.getElementById("loaderDiv").style.display="none";
+//   document.getElementById("ftctn").style.display="none";
+// document.getElementById("myBtn2").style.display="none";
+$('#loaderDiv').css('display', 'none');
+$('#ftctn').css('display', 'none');
+$('#myBtn2').css('display', 'none');
+// document.getElementById("navh2").style.display="block";
+// document.getElementById("navh").style.display="none";
+$('#navh2').css('display', 'block');
+$('#navh').css('display', 'none');
+$('#navh3').css('display', 'block');
+$('#navh1').css('display', 'none');
+// document.getElementById("navh3").style.display="block";
+// document.getElementById("navh1").style.display="none";
+}
+
 // $("[data-toggle=popover]").popover({
 //     html: true, 
 //   content: function() {
@@ -48,15 +101,15 @@ $('.popover-dismiss').popover({
 //         container: 'body'
 // });
  
-var _originalSize = $(window).width() + $(window).height()
-$(window).resize(function(){
-	if($(window).width() + $(window).height() != _originalSize){
-	  $(".ifr").css("height","50%");  
-	}
-	else{
-	  $(".ifr").css("height","100%");  
-	}
-});
+// var _originalSize = $(window).width() + $(window).height()
+// $(window).resize(function(){
+// 	if($(window).width() + $(window).height() != _originalSize){
+// 	  $(".ifr").css("height","50%");  
+// 	}
+// 	else{
+// 	  $(".ifr").css("height","100%");  
+// 	}
+// });
 
 var $this = $(".panel-heading span.icon_minim");
 
@@ -64,9 +117,13 @@ $this.addClass('panel-collapsed');
 
 $this.removeClass('ion-minus-round').addClass('ion-plus-round');
 
+$('[data-toggle="tooltip"]').tooltip(); 
+$('[data-toggle="popover"]').popover();
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+}) 
 
-
-$("#portfolio-contant-active").mixItUp();
+// $("#portfolio-contant-active").mixItUp();
 
 $("#testimonial-slider1").owlCarousel({
     paginationSpeed : 500,      
@@ -80,11 +137,11 @@ $("#testimonial-slider2").owlCarousel({
     autoPlay: 3000,
 });
         
-$("#testimonial-slider3").owlCarousel({
-    paginationSpeed : 500,      
-    singleItem:true,
-    autoPlay: 3000,
-});
+// $("#testimonial-slider3").owlCarousel({
+//     paginationSpeed : 500,      
+//     singleItem:true,
+//     autoPlay: 3000,
+// });
 // $('#oc1').on('click',function(){
 // $('#testimonial-slider3').trigger('owl.next');
 // })
@@ -114,50 +171,50 @@ $("#testimonial-slider3").owlCarousel({
 // })
 
 
-$("#testimonial-slider4").owlCarousel({
-    paginationSpeed : 500,      
-    singleItem:true,
-    autoPlay: 3000,
-});
-$("#testimonial-slider5").owlCarousel({
-    paginationSpeed : 500,      
-    singleItem:true,
-    autoPlay: 3000,
-});
-$("#testimonial-slider6").owlCarousel({
-    paginationSpeed : 500,      
-    singleItem:true,
-    autoPlay: 3000,
-});
+// $("#testimonial-slider4").owlCarousel({
+//     paginationSpeed : 500,      
+//     singleItem:true,
+//     autoPlay: 3000,
+// });
+// $("#testimonial-slider5").owlCarousel({
+//     paginationSpeed : 500,      
+//     singleItem:true,
+//     autoPlay: 3000,
+// });
+// $("#testimonial-slider6").owlCarousel({
+//     paginationSpeed : 500,      
+//     singleItem:true,
+//     autoPlay: 3000,
+// });
 
-$("#testimonial-slider7").owlCarousel({
-    paginationSpeed : 500,      
-    singleItem:true,
-    autoPlay: 3000,
-});
+// $("#testimonial-slider7").owlCarousel({
+//     paginationSpeed : 500,      
+//     singleItem:true,
+//     autoPlay: 3000,
+// });
 
-$("#clients-logo").owlCarousel({
+$("#social-media-logos").owlCarousel({
 	autoPlay: 3000,
 	items : 5,
 	itemsDesktop : [1199,5],
 	itemsDesktopSmall : [979,5],
 });
 
-$("#works-logo").owlCarousel({
-	autoPlay: 3000,
-	items : 5,
-	itemsDesktop : [1199,5],
-	itemsDesktopSmall : [979,5],
-});
+// $("#works-logo").owlCarousel({
+// 	autoPlay: 3000,
+// 	items : 5,
+// 	itemsDesktop : [1199,5],
+// 	itemsDesktopSmall : [979,5],
+// });
 
-// google map
-	var map;
-	function initMap() {
-	  map = new google.maps.Map(document.getElementById('map'), {
-	    center: {lat: -34.397, lng: 150.644},
-	    zoom: 8
-	  });
-	}
+// // google map
+// 	var map;
+// 	function initMap() {
+// 	  map = new google.maps.Map(document.getElementById('map'), {
+// 	    center: {lat: -34.397, lng: 150.644},
+// 	    zoom: 8
+// 	  });
+// 	}
 
 		
 var fullHeight = function() {
@@ -167,58 +224,13 @@ var fullHeight = function() {
 	});
 };
 
-// Opera 8.0+
-var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-
-// Firefox 1.0+
-var isFirefox = typeof InstallTrigger !== 'undefined';
-
-// Safari 3.0+ "[object HTMLElementConstructor]" 
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-
-// Internet Explorer 6-11
-var isIE = /*@cc_on!@*/false || !!document.documentMode;
-
-// Edge 20+
-var isEdge = !isIE && !!window.StyleMedia;
-
-// Chrome 1+
-var isChrome = !!window.chrome && !!window.chrome.webstore;
-var isOtherdevice= navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
-
-if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome || isOtherdevice){
-
-document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
-document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
-if(isIE){
-  // document.getElementById("navh2").style.display="block";
-  $('#navh2').css('display', 'block');
-  $('#navh3').css('display', 'block');
-  // document.getElementById("navh3").style.display="block";
+if(window.name=="closed"){
+  document.getElementById("myiframe1").src = '';
+  document.getElementById("myiframe2").src = '';
+  $('#ftctn').css('display', 'none');
+   $('#myBtn2').css('display', 'none');
 }
-else{
-  // document.getElementById("navh").style.display="block";
-  $('#navh').css('display', 'block');
-  $('#navh1').css('display', 'block');
-  // document.getElementById("navh1").style.display="block";
-}
-}
-if(!isOpera && !isFirefox &&!isSafari && !isIE && !isEdge && !isChrome &&!isOtherdevice){
-//   document.getElementById("loaderDiv").style.display="none";
-//   document.getElementById("ftctn").style.display="none";
-// document.getElementById("myBtn2").style.display="none";
-$('#loaderDiv').css('display', 'none');
-$('#ftctn').css('display', 'none');
-$('#myBtn2').css('display', 'none');
-// document.getElementById("navh2").style.display="block";
-// document.getElementById("navh").style.display="none";
-$('#navh2').css('display', 'block');
-$('#navh').css('display', 'none');
-$('#navh3').css('display', 'block');
-$('#navh1').css('display', 'none');
-// document.getElementById("navh3").style.display="block";
-// document.getElementById("navh1").style.display="none";
-}
+
 });
 
 

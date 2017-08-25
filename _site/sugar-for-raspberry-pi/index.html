@@ -46,17 +46,22 @@
     <!-- CSS -->
 
    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    
+    <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" type="text/css" href="/css/airspace.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/minified/airspace.css" />
+
     
     <!-- <link rel="stylesheet" href="/css/animate.css" type="text/css" /> -->
 <link rel="stylesheet" type="text/css" href="/assets/dist/css/social-share-kit.css" />
 <!-- <link rel="stylesheet" href="/css/normalize.css" type="text/css" />  -->
 <link rel="stylesheet" type="text/css" href="/css/ionicons.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" /> -->
+
 <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" />
 <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-<link  rel="stylesheet" type="text/css" href="/css/mailchimp_styling.css" />
+<!-- <link  rel="stylesheet" type="text/css" href="/css/mailchimp_styling.css" /> -->
      
 
 
@@ -65,10 +70,20 @@
   <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
     
-    <script  type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
-    <script  type="text/javascript" src="/js/bootstrap.min.js"></script>
-        
-    <script  type="text/javascript" src="/js/main.js" defer></script>
+    <!-- <script  type="text/javascript" src="/js/jquery-1.10.2.min.js"></script> -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+    <!-- <script  type="text/javascript" src="/js/bootstrap.min.js"></script> -->
+        <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/js/bootstrap.min.js"><\/script>')}</script>
+    <script  type="text/javascript" src="/js/minified/main.js" defer></script>
+
+
 
     <link rel="canonical" href="https://geekrypter.github.io/sugarLabsWebsiteRedesign/" />
     <link rel="alternate" type="application/rss+xml" title="http://planet.sugarlabs.org/" />
@@ -129,76 +144,64 @@ $(window).load(function() {
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li ><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation" style="color:#0099FF">SOAS</a></li>
+                    <li ><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">SOAS</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header"></li>
-                    <li ><a href="http://wiki.sugarlabs.org/go/Fedora" style="color:#0099FF">On Fedora</a></li>
-                     <li ><a href="http://wiki.sugarlabs.org/go/Debian" style="color:#0099FF">On Debian</a></li>
-                     <li ><a href="http://wiki.sugarlabs.org/go/Ubuntu" style="color:#0099FF">On Ubuntu</a></li>
-                    <li ><a href="http://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F" style="color:#0099FF">On Other Distros</a></li>
+                    <li ><a href="http://wiki.sugarlabs.org/go/Fedora" >On Fedora</a></li>
+                     <li ><a href="http://wiki.sugarlabs.org/go/Debian" >On Debian</a></li>
+                     <li ><a href="http://wiki.sugarlabs.org/go/Ubuntu" >On Ubuntu</a></li>
+                    <li ><a href="http://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F" >On Other Distros</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header"></li>
-                    <li><a href="http://server.sugarizer.org/" style="color:#0099FF">Sugarizer Online</a></li>
+                    <li><a href="http://server.sugarizer.org/" >Sugarizer Online</a></li>
                    
 
-                    <li><a href="http://sugarizer.org/" style="color:#0099FF">On App</a></li>
+                    <li><a href="http://sugarizer.org/" >On App</a></li>
 
-                    <li><a href="http://sugarizer.org/" style="color:#0099FF">Set up server</a></li>
+                    <li><a href="http://sugarizer.org/" >Set up server</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header"></li>
-                    <li><a href="http://wiki.laptop.org/go/Release_notes/13.2.8" style="color:#0099FF">On XO</a></li>
-                    <li><a href="/sugar-for-raspberry-pi" style="color:#0099FF">On Raspberry Pi</a></li>
+                    <li><a href="http://wiki.laptop.org/go/Release_notes/13.2.8" >On XO</a></li>
+                    <li><a href="/sugar-for-raspberry-pi" >On Raspberry Pi</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li ><a href="#" style="color:#0099FF">SOAS</a></li>
-                    <li ><a href="#" style="color:#0099FF">Chromebooks</a></li>
-                    <li ><a href="#" style="color:#0099FF">Linux Distros</a></li>
+                    <li ><a href="#" >SOAS</a></li>
+                    <li ><a href="#" >Chromebooks</a></li>
+                    <li ><a href="#" >Linux Distros</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header"></li>
-                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
-                    <li><a href="#" style="color:#0099FF">Sugar Handbook</a></li>
+                    <li><a href="https://github.com/walterbender/training" >Activity - Learn Sugar</a></li>
+                    <li><a href="#" >Sugar Handbook</a></li>
 
-                    <li><a href="http://activities.sugarlabs.org" style="color:#0099FF">Activities Library</a></li>
+                    <li><a href="http://activities.sugarlabs.org" >Activities Library</a></li>
 
-                    <li><a href="#" style="color:#0099FF">EBook Library</a></li>
+                    <li><a href="#" >EBook Library</a></li>
                   </ul>
                 </li>
                 <li><a href="https://help.sugarlabs.org/">Use</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="http://www.recycleusb.com" style="color:#0099FF">Sugar Sticks</a></li>
-                    <li><a href="#" style="color:#0099FF">Sugarizer Server (Raspberry Pi)</a></li>
-                    <li><a href="#" style="color:#0099FF">Pre-installed pi3 Desktops</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
-                    <li><a href="#" style="color:#0099FF">Other Offers</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" style="color:#0099FF">Community Mailing Lists</a></li>
-                    <li><a href="#" style="color:#0099FF">Developer's Guide</a></li>
-                    <li><a href="#" style="color:#0099FF">Start a local lab</a></li>
+                    <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" >Community Mailing Lists</a></li>
+                    <li><a href="#" >Developer's Guide</a></li>
+                    <li><a href="#" >Start a local lab</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header"></li>
-                    <li><a href="http://translate.sugarlabs.org" style="color:#0099FF">Contribute to Translation</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Usability</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Software</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Central Organisation</a></li>
+                    <li><a href="http://translate.sugarlabs.org" >Contribute to Translation</a></li>
+                    <li><a href="#" >Contribute to Usability</a></li>
+                    <li><a href="#" >Contribute to Software</a></li>
+                    <li><a href="#" >Contribute to Central Organisation</a></li>
 
-                    <li><a href="#" style="color:#0099FF">Related Projects</a></li>
+                    <li><a href="#" >Related Projects</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="http://planet.sugarlabs.org" style="color:#0099FF">Blog Archive</a></li>
+                    <li><a href="http://planet.sugarlabs.org" >Blog Archive</a></li>
                   </ul>
                 </li>
               </ul>
@@ -230,85 +233,75 @@ $(window).load(function() {
                    <!-- <li>
                         <a href="/"><span style="color:#ffffff">Home</span></a>
                     </li> -->
-                    <li><a href="/search"><span class="ion-android-search" style="font-size:20px;color:#ffffff"></a></li>
+                    <li><a href="/search"><span class="ion-android-search customFontSize3 customSpanColor2"></a></li>
 
                     <li>
-                        <a href="/about-us"><span style="color:#ffffff">About</span></a>
+                        <a href="/about-us"><span class="customSpanColor2">About</span></a>
                     </li>
                     <li>
-                        <a href="http://server.sugarizer.org"><span style="color:#ffffff">Try Now</span></a>
+                        <a href="http://server.sugarizer.org"><span class="customSpanColor2">Try Now</span></a>
                     </li>
                   
                     <li >
-                        <a href="#getSugarSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Get Sugar</span></a>
+                        <a href="#getSugarSubmenu" data-toggle="collapse" aria-expanded="false"><span class="customSpanColor2">Get Sugar</span></a>
                         <ul class="collapse list-unstyled" id="getSugarSubmenu">
-                            <li ><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation" style="color:#0099FF">SOAS</a></li>
+                            <li ><a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation" class="hrefCustomColor">SOAS</a></li>
                     
-                    <li ><a href="http://wiki.sugarlabs.org/go/Fedora" style="color:#0099FF">On Fedora</a></li>
-                     <li ><a href="http://wiki.sugarlabs.org/go/Debian" style="color:#0099FF">On Debian</a></li>
-                     <li ><a href="http://wiki.sugarlabs.org/go/Ubuntu" style="color:#0099FF">On Ubuntu</a></li>
-                    <li ><a href="http://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F" style="color:#0099FF">On Other Distros</a></li>
+                    <li ><a href="http://wiki.sugarlabs.org/go/Fedora" class="hrefCustomColor">On Fedora</a></li>
+                     <li ><a href="http://wiki.sugarlabs.org/go/Debian" class="hrefCustomColor">On Debian</a></li>
+                     <li ><a href="http://wiki.sugarlabs.org/go/Ubuntu" class="hrefCustomColor">On Ubuntu</a></li>
+                    <li ><a href="http://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F" class="hrefCustomColor">On Other Distros</a></li>
                    
-                    <li><a href="http://server.sugarizer.org/" style="color:#0099FF">Sugarizer Online</a></li>
+                    <li><a href="http://server.sugarizer.org/" class="hrefCustomColor">Sugarizer Online</a></li>
                    
 
-                    <li><a href="http://sugarizer.org/" style="color:#0099FF">On App</a></li>
+                    <li><a href="http://sugarizer.org/" class="hrefCustomColor">On App</a></li>
 
-                    <li><a href="http://sugarizer.org/" style="color:#0099FF">Set up server</a></li>
+                    <li><a href="http://sugarizer.org/" class="hrefCustomColor">Set up server</a></li>
                     
-                    <li><a href="http://wiki.laptop.org/go/Release_notes/13.2.8" style="color:#0099FF">On XO</a></li>
-                    <li><a href="#" style="color:#0099FF">On Raspberry Pi</a></li>
+                    <li><a href="http://wiki.laptop.org/go/Release_notes/13.2.8" class="hrefCustomColor">On XO</a></li>
+                    <li><a href="#" class="hrefCustomColor">On Raspberry Pi</a></li>
                         </ul>
                     </li>
                     <li >
                         
-                        <a href="#downloadSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Download</span></a>
+                        <a href="#downloadSubmenu" data-toggle="collapse" aria-expanded="false"><span class="customSpanColor2">Download</span></a>
                         <ul class="collapse list-unstyled" id="downloadSubmenu">
-                            <li ><a href="#" style="color:#0099FF">SOAS</a></li>
-                    <li ><a href="#" style="color:#0099FF">Chromebooks</a></li>
-                    <li ><a href="#" style="color:#0099FF">Linux Distros</a></li>
+                            <li ><a href="#" class="hrefCustomColor">SOAS</a></li>
+                    <li ><a href="#" class="hrefCustomColor">Chromebooks</a></li>
+                    <li ><a href="#" class="hrefCustomColor">Linux Distros</a></li>
                     
-                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
-                    <li><a href="#" style="color:#0099FF">Sugar Handbook</a></li>
+                    <li><a href="https://github.com/walterbender/training" class="hrefCustomColor">Activity - Learn Sugar</a></li>
+                    <li><a href="#" class="hrefCustomColor">Sugar Handbook</a></li>
 
-                    <li><a href="http://activities.sugarlabs.org" style="color:#0099FF">Activities Library</a></li>
+                    <li><a href="http://activities.sugarlabs.org" class="hrefCustomColor">Activities Library</a></li>
 
-                    <li><a href="#" style="color:#0099FF">EBook Library</a></li>
+                    <li><a href="#" class="hrefCustomColor">EBook Library</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="https://help.sugarlabs.org/"><span style="color:#ffffff">Use</span></a>
+                        <a href="https://help.sugarlabs.org/"><span class="customSpanColor2">Use</span></a>
                     </li>
-                    <li >
-                        <a href="#buySubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Buy</span></a>
-                        <ul class="collapse list-unstyled" id="buySubmenu">
-                            <li><a href="http://www.recycleusb.com" style="color:#0099FF">Sugar Sticks</a></li>
-                    <li><a href="#" style="color:#0099FF">Sugarizer Server (Raspberry Pi)</a></li>
-                    <li><a href="#" style="color:#0099FF">Pre-installed pi3 Desktops</a></li>
-                  
-                    <li><a href="https://github.com/walterbender/training" style="color:#0099FF">Activity - Learn Sugar</a></li>
-                    <li><a href="#" style="color:#0099FF">Other Offers</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        
-                        <a href="#joinUsSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Join Us</span></a>
-                        <ul class="collapse list-unstyled" id="joinUsSubmenu">
-                            <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" style="color:#0099FF">Community Mailing Lists</a></li>
-                    <li><a href="#" style="color:#0099FF">Developer's Guide</a></li>
-                    <li><a href="#" style="color:#0099FF">Start a local lab</a></li>
                     
-                    <li><a href="http://translate.sugarlabs.org" style="color:#0099FF">Contribute to Translation</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Usability</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Software</a></li>
-                    <li><a href="#" style="color:#0099FF">Contribute to Central Organisation</a></li>
+                    <li >
+                        
+                        <a href="#joinUsSubmenu" data-toggle="collapse" aria-expanded="false"><span class="customSpanColor2">Join Us</span></a>
+                        <ul class="collapse list-unstyled" id="joinUsSubmenu">
+                            <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" class="hrefCustomColor">Community Mailing Lists</a></li>
+                    <li><a href="#" class="hrefCustomColor">Developer's Guide</a></li>
+                    <li><a href="#" class="hrefCustomColor">Start a local lab</a></li>
+                    
+                    <li><a href="http://translate.sugarlabs.org" class="hrefCustomColor">Contribute to Translation</a></li>
+                    <li><a href="#" class="hrefCustomColor">Contribute to Usability</a></li>
+                    <li><a href="#" class="hrefCustomColor">Contribute to Software</a></li>
+                    <li><a href="#" class="hrefCustomColor">Contribute to Central Organisation</a></li>
 
-                    <li><a href="#" style="color:#0099FF">Related Projects</a></li>
+                    <li><a href="#" class="hrefCustomColor">Related Projects</a></li>
                         </ul>
                     </li>
                     <li >
                         
-                        <a href="#blogSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#ffffff">Blog</span></a>
+                        <a href="#blogSubmenu" data-toggle="collapse" aria-expanded="false"><span class="customSpanColor2">Blog</span></a>
                         <ul class="collapse list-unstyled" id="blogSubmenu">
                             <li><a href="http://planet.sugarlabs.org">Blog Archive</a></li>
                         </ul>
@@ -425,14 +418,14 @@ $(window).load(function() {
             <div class="col-md-12" >
                 <div class="row">
                     <div class="col-md-8 col-md-push-2">
-                        <div class="price-box to-animate customBox" >
-                            <h2 class="pricing-plan text-center">Other methods to get Sugar on Raspberry Pi?</h2>
+                        <div class="border-box customBox" >
+                            <h2 class="text-center">Other methods to get Sugar on Raspberry Pi?</h2>
                             <hr>
-                            <ul class="pricing-info  listDiscStyle">
-                                <li class="price" >using <a href="https://wiki.sugarlabs.org/go/Raspbian" class="hrefCustomColor">Raspbian</a>, the most common operating system on a Raspberry Pi, a derivative of Debian</li>
-                                <li class="price" >using <a href="https://wiki.sugarlabs.org/go/Fedora" class="hrefCustomColor">Fedora</a></li>
-                                <li class="price" >using <a href="https://wiki.sugarlabs.org/go/Debian" class="hrefCustomColor">Debian</a>, or see <a href="https://wiki.sugarlabs.org/go/Debian/Raspberry_Pi" class="hrefCustomColor">Debian/Raspberry Pi</a> for how to install a prototype image with one or two activities</li>
-                                <li class="price" >using <a href="https://wiki.sugarlabs.org/go/Ubuntu" class="hrefCustomColor">Ubuntu</a>, or see <a href="https://wiki.sugarlabs.org/go/Ubuntu_on_rpi3" class="hrefCustomColor">Ubuntu on rpi3</a> for a test report on how to install the MATE desktop and Sugar.</li>
+                            <ul class="listDiscStyle">
+                                <li class="listFont" >using <a href="https://wiki.sugarlabs.org/go/Raspbian" class="hrefCustomColor">Raspbian</a>, the most common operating system on a Raspberry Pi, a derivative of Debian</li>
+                                <li class="listFont" >using <a href="https://wiki.sugarlabs.org/go/Fedora" class="hrefCustomColor">Fedora</a></li>
+                                <li class="listFont" >using <a href="https://wiki.sugarlabs.org/go/Debian" class="hrefCustomColor">Debian</a>, or see <a href="https://wiki.sugarlabs.org/go/Debian/Raspberry_Pi" class="hrefCustomColor">Debian/Raspberry Pi</a> for how to install a prototype image with eight activities</li>
+                                <li class="listFont" >using <a href="https://wiki.sugarlabs.org/go/Ubuntu" class="hrefCustomColor">Ubuntu</a>, or see <a href="https://wiki.sugarlabs.org/go/Ubuntu_on_rpi3" class="hrefCustomColor">Ubuntu on rpi3</a> for a test report on how to install the MATE desktop and Sugar.</li>
                             </ul>
                         </div>
                     </div>
@@ -466,7 +459,7 @@ $(window).load(function() {
     <div class="container">
         <div class="row">
             <div class="col-md-12" >
-            <a href="/" ><button type="button" class="btn bt-raised btn-custom bt bt-ripple" style="margin-bottom:3px;">Return to main page</button></a>
+            <a href="/" ><button type="button" class="btn bt-raised btn-custom bt" style="margin-bottom:3px;">Return to main page</button></a>
             </div>
         </div>
     </div>
@@ -647,9 +640,7 @@ $(window).load(function() {
     <div class="row" >
       <div class="col-md-12" style="margin-top:12px;">
         <p style="text-align:left;font-size:13px;">
-    Original Website: Copyright &copy; Sugar Labs&reg; Website Authors, available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC 4.0 license.</a></br>
-  
-    Redesigned Website: Copyright &copy; Seetarama Raju <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.</br>
+    Copyright &copy; Sugar Labs&reg; available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.</br>
     Website base template: Designed and developed by Themefisher
   </p>
       </div>
@@ -665,16 +656,14 @@ $(window).load(function() {
  Chat on our IRC channel!<span id="close" class="ion-close-round icon_close" style="color:#000000;"></span> -->
   <!-- <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" class="ifr"></iframe> -->
 
-</div>
+<!-- </div> -->
  <div id="ftctn" class="container" style="padding-left:0px;>
-
     <div class="row">
     
         <div class="col-md-12" style="position:absolute;bottom:0;right:0;">
         <div class="chat-window pull-right" id="chat_window_1" >
           <div class="panel panel-default" >
                 <a href="#"><div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
-
                     <div class="col-md-10" style="padding-left:60px;margin-left:0px;padding-bottom:0px;">
                         <h3 class="panel-title" style="font-size:16px;color:#000000;">Chat on our IRC channel!&nbsp;<a href="#" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span id="aboutIRC" class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
                     </div>
@@ -707,26 +696,34 @@ $(window).load(function() {
 <a href="https://github.com/sugarlabs" class="ssk ssk-github ssk-lg"></a>
     <a href="https://twitter.com/sugar_labs" class="ssk ssk-twitter ssk-lg"></a>
      <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-instagram instagram_colour ssk-lg">
-
      </a>
       <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-youtube youtube_colour ssk-lg">
-
      </a>
    
-
 </div>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
-<script  type="text/javascript" src="/js/vendor/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery.nicescroll == 'undefined') {
+    document.write('<script src="/js/jquery-nicescroll.min.js"><\/script>');
+}
+</script>
+<script  type="text/javascript" src="/js/modernizr.min.js"></script>
+<!-- <script  type="text/javascript" src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js"></script> -->
+<!-- <script>try{Modernizr} catch(e) {document.write('<script src="/js/vendor/modernizr-2.6.2.min.js"><\/script>')}</script> -->
+
 <script  type="text/javascript" src="/js/plugins.js"></script>
 <script  type="text/javascript" src="/js/owl.carousel.min.js"></script>
 <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    
-
+<!-- <script  type="text/javascript" src="/js/waypoints.js"></script> -->
+<script type="text/javascript">
+if (typeof jQuery.waypoints == 'undefined') {
+    // document.write('<script src="/js/waypoints.js"><\/script>');
+    window.alert(5+6);
+}
+</script>
 <script  type="text/javascript">
 // When the user scrolls down 20px from the top of the document, show the button
 // window.onscroll = function() {scrollFunction()};
-
 // function scrollFunction() {
 //     if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)&&(document.getElementById("mcw1").style.display == "none")&&(document.getElementById("mcw2").style.display == "none")) {
 //         document.getElementById("myBtn").style.display = "block";
@@ -734,31 +731,28 @@ $(window).load(function() {
 //         document.getElementById("myBtn").style.display = "none";
 //     }
 // }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-function chatFunction() {
+// function chatFunction() {
     // document.getElementById("mcw1").style.display = "block";
     // document.getElementById("mcw2").style.display = "block";
-    document.getElementById("myBtn2").style.display = "none";
+    // document.getElementById("myBtn2").style.display = "none";
     // document.getElementById("myBtn").style.display = "none";
     
-}
+// }
  $(document).ready(function () {
                  $("#sidebar").niceScroll({
                      cursorcolor: '#53619d',
                      cursorwidth: 4,
                      cursorborder: 'none'
                  });
-
                  $('#dismiss, .overlay').on('click', function () {
                     $('#sidebar').removeClass('active');
                     $('.overlay').fadeOut();
                  });
-
                  $('#sidebarCollapse').on('click', function () {
                      $('#sidebar').addClass('active');
                      $('.overlay').fadeIn();
@@ -766,17 +760,15 @@ function chatFunction() {
                      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
                  });
              });
-  $(document).ready(function() {
-    $("#close").click(function() {
-
-    //   document.getElementById("mcw1").style.display = "none";
-    // document.getElementById("mcw2").style.display = "none";
-      document.getElementById("myBtn2").style.display = "block";
-      // document.getElementById("myBtn").style.display = "block";
-    });
-    return false;
-  });
-
+  // $(document).ready(function() {
+  //   $("#close").click(function() {
+  //   //   document.getElementById("mcw1").style.display = "none";
+  //   // document.getElementById("mcw2").style.display = "none";
+  //     document.getElementById("myBtn2").style.display = "block";
+  //     // document.getElementById("myBtn").style.display = "block";
+  //   });
+  //   return false;
+  // });
 $(document).on('click', '.panel-heading span.icon_minim', function (e) {
     var $this = $(this);
     if (!$this.hasClass('panel-collapsed')) {
@@ -790,7 +782,6 @@ $(document).on('click', '.panel-heading span.icon_minim', function (e) {
     }
     return false;
 });
-
 $(document).on('click', '#panel1', function (e) {
     var $this = $(".panel-heading span.icon_minim");
     if (!$this.hasClass('panel-collapsed')) {
@@ -804,33 +795,36 @@ $(document).on('click', '#panel1', function (e) {
     }
     return false;
 });
-
-$(document).on('focus', '.panel-footer input.chat_input', function (e) {
-    var $this = $(this);
-    if ($('#minim_chat_window').hasClass('panel-collapsed')) {
-        $this.parents('.panel').find('.panel-body').slideDown();
-        $('#minim_chat_window').removeClass('panel-collapsed');
-        // $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
-    }
-    return false;
-});
-$(document).on('click', '#new_chat', function (e) {
-    var size = $( ".chat-window:last-child" ).css("margin-left");
-     size_total = parseInt(size) + 400;
-    alert(size_total);
-    var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
-    clone.css("margin-left", size_total);
-    return false;
-});
+// $(document).on('focus', '.panel-footer input.chat_input', function (e) {
+//     var $this = $(this);
+//     if ($('#minim_chat_window').hasClass('panel-collapsed')) {
+//         $this.parents('.panel').find('.panel-body').slideDown();
+//         $('#minim_chat_window').removeClass('panel-collapsed');
+//         // $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+//     }
+//     return false;
+// });
+// $(document).on('click', '#new_chat', function (e) {
+//     var size = $( ".chat-window:last-child" ).css("margin-left");
+//      size_total = parseInt(size) + 400;
+//     alert(size_total);
+//     var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
+//     clone.css("margin-left", size_total);
+//     return false;
+// });
 $(document).on('click', '.icon_close', function (e) {
-    $( "#chat_window_1" ).remove();
+    // $( "#chat_window_1" ).remove();
+    $('#ftctn').css('display', 'none');
+    window.name="closed";
     document.getElementById("myiframe2").src = '';
     return false;
 });
 $(document).on('click', '#chatClose', function (e) {
     
     document.getElementById("myiframe1").src = '';
-    document.getElementById("myBtn2").style.display = "none";
+    // document.getElementById("myBtn2").style.display = "none";
+    $('#myBtn2').css('display', 'none');
+    window.name="closed";
     return false;
 });
 $(document).on('click', '#chatMinimize', function (e) {
@@ -838,35 +832,42 @@ $(document).on('click', '#chatMinimize', function (e) {
     
     return false;
 });
-  $(document).on('click', '#close', function (e) {
-    // document.getElementById("mcw1").style.display = "none";
-    // document.getElementById("mcw2").style.display = "none";
-      document.getElementById("myBtn2").style.display = "block";
-    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    //     document.getElementById("myBtn").style.display = "block";
-    // } 
-    return false;
-});
-
+//   $(document).on('click', '#close', function (e) {
+//     // document.getElementById("mcw1").style.display = "none";
+//     // document.getElementById("mcw2").style.display = "none";
+//       document.getElementById("myBtn2").style.display = "block";
+//     //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     //     document.getElementById("myBtn").style.display = "block";
+//     // } 
+//     return false;
+// });
 $(document).on("scroll", function () {
             if ($(document).scrollTop() > 10) {
                 $("header").removeClass("large").addClass("small");
-                $("#1h").removeClass("anchor1").addClass("anchor2");
-                $("#2h").removeClass("anchor1").addClass("anchor2");
-                $("#3h").removeClass("anchor1").addClass("anchor2");
-                $("#4h").removeClass("anchor1").addClass("anchor2");
-                $("#5h").removeClass("anchor1").addClass("anchor2");
-                $("#6h").removeClass("anchor1").addClass("anchor2");
-                $("#7h").removeClass("anchor1").addClass("anchor2");
+                $('header').css('background', '#282828');
+                $('header .navbar-default').css('background', '#282828');
+                $('header .navbar-default .navbar-nav li a').css('color', '#ffffff');
+                $('.dropdown-menu li a').css('color', '#0099ff');
+                // $("#1h").removeClass("anchor1").addClass("anchor2");
+                // $("#2h").removeClass("anchor1").addClass("anchor2");
+                // $("#3h").removeClass("anchor1").addClass("anchor2");
+                // $("#4h").removeClass("anchor1").addClass("anchor2");
+                // $("#5h").removeClass("anchor1").addClass("anchor2");
+                // $("#6h").removeClass("anchor1").addClass("anchor2");
+                // $("#7h").removeClass("anchor1").addClass("anchor2");
             } else {
                 $("header").removeClass("small").addClass("large");
-                $("#1h").removeClass("anchor2").addClass("anchor1");
-                $("#2h").removeClass("anchor2").addClass("anchor1");
-                $("#3h").removeClass("anchor2").addClass("anchor1");
-                $("#4h").removeClass("anchor2").addClass("anchor1");
-                $("#5h").removeClass("anchor2").addClass("anchor1");
-                $("#6h").removeClass("anchor2").addClass("anchor1");
-                $("#7h").removeClass("anchor2").addClass("anchor1");
+                 $('header').css('background', '#fff');
+                $('header .navbar-default').css('background', 'white');
+                $('header .navbar-default .navbar-nav li a').css('color', '#333333');
+                $('.dropdown-menu li a').css('color', '#0099ff');
+                // $("#1h").removeClass("anchor2").addClass("anchor1");
+                // $("#2h").removeClass("anchor2").addClass("anchor1");
+                // $("#3h").removeClass("anchor2").addClass("anchor1");
+                // $("#4h").removeClass("anchor2").addClass("anchor1");
+                // $("#5h").removeClass("anchor2").addClass("anchor1");
+                // $("#6h").removeClass("anchor2").addClass("anchor1");
+                // $("#7h").removeClass("anchor2").addClass("anchor1");
             }
         });
 $(document).on('click', '#aboutIRC', function (e) {
@@ -874,11 +875,9 @@ $(document).on('click', '#aboutIRC', function (e) {
     
     return false;
 });
-</script>
-<script  type="text/javascript">
+
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -896,8 +895,6 @@ function showSlides() {
     setTimeout(function(){showSlides();}, 5000); // Change image every 2 seconds
 }
 </script>
-
-
 <!-- <script type="text/javascript">
         $(document).on("scroll", function () {
             if ($(document).scrollTop() > 10) {
@@ -921,13 +918,11 @@ function showSlides() {
             }
         });
     </script> -->
-
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 // Bootstrap Material Style button  by Bootstrapthemes.co
 (function($) {
   $(".bt-ripple").click(function(e) {
     var rippler = $(this);
-
     // create .ink element if it doesn't exist
     if (rippler.find(".ripple").length == 0) {
       rippler.append("<span class='ripple'></span>");
@@ -960,7 +955,7 @@ function showSlides() {
 })(jQuery);  
 
 
-</script>
+</script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script> -->
 <!-- <script type="text/javascript">
              $(document).ready(function () {
@@ -969,12 +964,10 @@ function showSlides() {
                      cursorwidth: 4,
                      cursorborder: 'none'
                  });
-
                  $('#dismiss, .overlay').on('click', function () {
                     $('#sidebar').removeClass('active');
                     $('.overlay').fadeOut();
                  });
-
                  $('#sidebarCollapse').on('click', function () {
                      $('#sidebar').addClass('active');
                      $('.overlay').fadeIn();
@@ -990,15 +983,9 @@ function showSlides() {
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-102776855-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-       
-
-
-    
 
 
 

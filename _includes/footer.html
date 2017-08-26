@@ -1,517 +1,307 @@
+<!-- Chat button for screens with width <= 991px -->
 <button id="myBtn2" title="IRC chat" data-toggle="modal" data-target="#fsModal"><span class="ion-ios-chatbubble" style="font-size:22px;"></span></button>
 
-<!-- modal -->
-<div id="fsModal"
-     class="modal animated bounceIn"
-     tabindex="-1"
-     role="dialog"
-     aria-labelledby="myModalLabel"
-     aria-hidden="true">
-
-  <!-- dialog -->
-  <div class="modal-dialog">
-
-    <!-- content -->
-    <div class="modal-content">
-
-      <!-- header -->
-      <div class="modal-header">
-        <h1 id="myModalLabel"
-            class="modal-title center-text">
-          Chat on our IRC channel!
-          <a href="#" tabindex="0" data-toggle="popover" title="What is IRC?" data-content="<a href '{{ site.baseurl }}/about-irc'>Click here to find out more!</a>" data-html="true" data-placement="bottom" data-trigger="focus"><span class="ion-ios-information" style="color:#ffffff;font-size:20px;"></span></a>
-        </h1>
-      </div>
-      <!-- header -->
-      
-      <!-- body -->
-      <div class="modal-body">
-         <iframe id="myiframe1" src="" style="border:0; width:100%; height:100%;"></iframe>
-
-      </div>
-      <!-- body -->
-
-      <!-- footer -->
-      <div class="modal-footer">
-        <button id="chatClose" class="btn btn-secondary"
+<!-- Chat window for screens with width <= 991px -->
+<div id="fsModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 id="myModalLabel" class="modal-title center-text">
+                Chat on our IRC channel!
+                <a href="#" tabindex="0" data-toggle="popover" title="What is IRC?" data-content="<a href '{{ site.baseurl }}/about-irc'>Click here to find out more!</a>" data-html="true" data-placement="bottom" data-trigger="focus"><span class="ion-ios-information" style="color:#ffffff;font-size:20px;"></span></a>
+                </h1>
+            </div>
+            <div class="modal-body">
+                <iframe id="myiframe1" src="" style="border:0; width:100%; height:100%;"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button id="chatClose" class="btn btn-secondary"
                 data-dismiss="modal" style="background-color:#655E7A;color:#ffffff;float:left">
-          <i class="ion-close-round"></i>
-        </button>
-        <button id="chatMinimize" class="btn btn-secondary"
+                <i class="ion-close-round"></i>
+                </button>
+                <button id="chatMinimize" class="btn btn-secondary"
                 data-dismiss="modal" style="background-color:#655E7A;color:#ffffff">
-          <i class="ion-minus-round"></i>
-        </button>
-        
-      </div>
-      <!-- footer -->
-
+                <i class="ion-minus-round"></i>
+                </button>
+            </div>
+        </div>
     </div>
-    <!-- content -->
-
-  </div>
-  <!-- dialog -->
-
 </div>
-<!-- modal -->
 
-
-
+<!-- Footer -->
 <footer  style="background-color:#282828;padding-top:5px;">
- <h4 style="text-align:right;margin-right:20px;">
-  <a href="#" onclick="topFunction()" style="color: #0099FF;">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
-  <div class="container fold_1">
-<div class="row">
-      <div class="col-md-12" >
-    
+    <h4 style="text-align:right;margin-right:20px;"><a href="#" onclick="topFunction()" style="color: #0099FF;">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
+    <div class="container fold_1">
         <div class="row">
-        <div class="col-md-2 widget">
-              <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;"><b>Sugar Labs</b></h4>
-                <article class="widget_content">
-                    <ul style="text-align:left;">
-                       <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/about-us">About Us</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Get Involved</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="#">Support Sugar</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/contact-us">Contact Us</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/students">For Students</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/school-administrators">For School Administrators</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/parents">For Parents</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="https://developer.sugarlabs.org">For Developers</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/sugar-stories">Sugar Stories</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/music-blocks">Music Blocks</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/turtle-blocks-js">Turtle Blocks JS</a></li>
-                 </ul>
-                 </article>
-        </div>
-            <div class="col-md-2 widget">
-             <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;text-align:left;"><b>Development</b></h4>
-                <article class="widget_content">
-                   <ul style="text-align:left;">
-                        <li style="margin-bottom:5px;font-size:15px;"><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="https://help.sugarlabs.org/en/">Documentation</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="http://chat.sugarlabs.org:9090/">IRC Channels</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="https://socialhelp.sugarlabs.org">Bug Tracker</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Development_Team/Source_Code">Development code</a></li>
-            <li style="margin-bottom:5px;font-size:15px;"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
-                 </ul>
-                 </article>
-        </div>
-            <div class="col-md-2 widget">
-                <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;"><b>Resources</b></h4>
-                <article class="widget_content">
-                <ul style="text-align:left;">
-                    <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/more" >Culture and pedagogy</a></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/press" >Press Resources</a></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="http://schoolserver.org/" >School Server Resources</a></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="http://planet.sugarlabs.org" >Planet Sugar Labs</a></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/about-libre-software-culture" >Libre Software Culture</a></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/about-irc" >About IRC</a></li>
-                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/sugar-lesson-plans" >Sugar Lesson Plans</a></li>
-                        </ul>
-                </article>
-        </div>
-        <div class="col-md-6">
-        <div class="row">
-      <div class="col-md-12" >
-        <div class="row">
-        
-        <div class="col-md-5 to-animate col-md-push-3" style="margin-top:10px;">
-          <div class="row">
-         <div id="own-ssk" class="ssk-group">
-         <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-icon ssk-facebook ssk-lg"></a>
-<a href="https://github.com/sugarlabs" class="ssk ssk-icon ssk-github ssk-lg"></a>
-    <a href="https://twitter.com/sugar_labs" class="ssk ssk-icon ssk-twitter ssk-lg"></a>
-     <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-icon ssk-instagram ssk-lg"></a>
-    <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-icon ssk-youtube ssk-lg">
-
-     </a>
-    
-    </div>
-    </br>
- 
-</div>
-        </div>
-        </div>
-        </br>
-        <div class="row">
-        
-        <div class="col-md-9 col-md-push-3">
-         <!-- Begin MailChimp Signup Form -->
-
-<div id="mc_embed_signup">
-<form action="//sugarlabs.us16.list-manage.com/subscribe/post?u=23c6df6118693ee743df3e0a4&amp;id=11cb7e5c96" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  <label for="mce-EMAIL"><h4><span style="color:#ffffff"><b>Subscribe to our newsletter</b></span></h4></label>
-  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_23c6df6118693ee743df3e0a4_11cb7e5c96" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-        </div>
-        </div>
-        </br>
-        <div class="row">
-       
-        <div id="contributeHeader" class="col-md-12">
-
-        <h4 ><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #0099FF;"></span><span style="font-size:17px;color: #0099FF;">Contribute to website</span></b></a></h4>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </br>
-    <div class="row" >
-      <div class="col-md-12" style="margin-top:12px;">
-        <p style="text-align:left;font-size:13px;">
-    Copyright &copy; Sugar Labs&reg; available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.</br>
-    Website base template: Designed and developed by Themefisher
-  </p>
-      </div>
-
-    </div>
-    </div>
-    </div>
-  </div>
-  
-</footer>
-<!-- <div id="mcw1" class="container-popup" style="padding-top:60px;"></div>
- <div id="mcw2" class="popup" style="padding-top:62px;text-align:center;">
- Chat on our IRC channel!<span id="close" class="ion-close-round icon_close" style="color:#000000;"></span> -->
-  <!-- <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar" class="ifr"></iframe> -->
-
-<!-- </div> -->
- <div id="ftctn" class="container" style="padding-left:0px;>
-    <div class="row">
-    
-        <div class="col-md-12" style="position:absolute;bottom:0;right:0;">
-        <div class="chat-window pull-right" id="chat_window_1" >
-          <div class="panel panel-default" >
-                <a href="#"><div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
-                    <div class="col-md-10" style="padding-left:60px;margin-left:0px;padding-bottom:0px;">
-                        <h3 class="panel-title" style="font-size:16px;color:#000000;">Chat on our IRC channel!&nbsp;<a href="#" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span id="aboutIRC" class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
+            <div class="col-md-12" >
+                <div class="row">
+                    <div class="col-md-2 widget">
+                        <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;"><b>Sugar Labs</b></h4>
+                        <article class="widget_content">
+                            <ul style="text-align:left;">
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/about-us">About Us</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Get Involved</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="#">Support Sugar</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/contact-us">Contact Us</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/students">For Students</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/school-administrators">For School Administrators</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/parents">For Parents</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="https://developer.sugarlabs.org">For Developers</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/sugar-stories">Sugar Stories</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/music-blocks">Music Blocks</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/turtle-blocks-js">Turtle Blocks JS</a></li>
+                            </ul>
+                        </article>
                     </div>
-                    <div class="col-md-2" style="text-align: right; padding-right:0px;">
-                        
-                        <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;font-size:16px;"></span></a>
-                        <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1" style="color:#655E7A;font-size:16px;"></span></a>
+                    <div class="col-md-2 widget">
+                        <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;text-align:left;"><b>Development</b></h4>
+                        <article class="widget_content">
+                            <ul style="text-align:left;">
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="http://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="https://help.sugarlabs.org/en/">Documentation</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="http://chat.sugarlabs.org:9090/">IRC Channels</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="https://socialhelp.sugarlabs.org">Bug Tracker</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Development_Team/Source_Code">Development code</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
+                            </ul>
+                        </article>
                     </div>
-                </div></a>
-                
-                <div class="panel-body msg_container_base" style="display:none;">
-                    
-                    
-                     
-                     <iframe id="myiframe2" src="" style="border:0; width:100%; height:400px;"></iframe>
-                    
-                    
-                  
+                    <div class="col-md-2 widget">
+                        <h4 style="margin-bottom:14px;color:#ffffff;margin-top:10px;text-align:left;"><b>Resources</b></h4>
+                        <article class="widget_content">
+                            <ul style="text-align:left;">
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/more" >Culture and pedagogy</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/press" >Press Resources</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="http://schoolserver.org/" >School Server Resources</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="http://planet.sugarlabs.org" >Planet Sugar Labs</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/about-libre-software-culture" >Libre Software Culture</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/about-irc" >About IRC</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/sugar-lesson-plans" >Sugar Lesson Plans</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12" >
+                                <div class="row">
+                                    <div class="col-md-5 to-animate col-md-push-3" style="margin-top:10px;">
+                                        <div class="row">
+                                            <div id="own-ssk" class="ssk-group">
+                                                <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-icon ssk-facebook ssk-lg"></a>
+                                                <a href="https://github.com/sugarlabs" class="ssk ssk-icon ssk-github ssk-lg"></a>
+                                                <a href="https://twitter.com/sugar_labs" class="ssk ssk-icon ssk-twitter ssk-lg"></a>
+                                                <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-icon ssk-instagram ssk-lg"></a>
+                                                <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-icon ssk-youtube ssk-lg"></a>
+                                            </div>
+                                            </br>
+                                        </div>
+                                    </div>
+                                </div>
+                                </br>
+                                <div class="row">
+                                    <div class="col-md-9 col-md-push-3">
+                                        <div id="mc_embed_signup">
+                                            <form action="//sugarlabs.us16.list-manage.com/subscribe/post?u=23c6df6118693ee743df3e0a4&amp;id=11cb7e5c96" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                                <div id="mc_embed_signup_scroll">
+                                                    <label for="mce-EMAIL"><h4><span style="color:#ffffff"><b>Subscribe to our newsletter</b></span></h4></label>
+                                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_23c6df6118693ee743df3e0a4_11cb7e5c96" tabindex="-1" value=""></div>
+                                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                </br>
+                                <div class="row">
+                                    <div id="contributeHeader" class="col-md-12">
+                                        <h4 ><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #0099FF;"></span><span style="font-size:17px;color: #0099FF;">Contribute to website</span></b></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-               
-        </div>
-        </div>
+                </br>
+                <div class="row" >
+                    <div class="col-md-12" style="margin-top:12px;">
+                        <p style="text-align:left;font-size:13px;">
+                        Copyright &copy; Sugar Labs&reg; available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.</br>
+                        Website base template: Designed and developed by Themefisher
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    
+</footer>
+
+<!-- Chat window for screens with width > 991px-->
+<div id="ftctn" class="container" style="padding-left:0px;">
+    <div class="row">
+        <div class="col-md-12" style="position:absolute;bottom:0;right:0;">
+            <div class="chat-window pull-right" id="chat_window_1" >
+                <div class="panel panel-default" >
+                    <a href="#"><div id="panel1" class="panel-heading top-bar" style="padding-left:0px;margin-left:0px;">
+                        <div class="col-md-10" style="padding-left:60px;margin-left:0px;padding-bottom:0px;">
+                            <h3 class="panel-title" style="font-size:16px;color:#000000;">Chat on our IRC channel!&nbsp;<a href="#" data-toggle="tooltip" title="What is IRC?" data-placement="top"><span id="aboutIRC" class="ion-ios-information" style="color:#655E7A;font-size:18px;"></span></a></h3>
+                        </div>
+                        <div class="col-md-2" style="text-align: right; padding-right:0px;">
+                            <a href="#"><span id="minim_chat_window" class="ion-minus-round icon_minim" style="color:#655E7A;font-size:16px;"></span></a>
+                            <a href="#"><span class="ion-close-round icon_close" data-id="chat_window_1" style="color:#655E7A;font-size:16px;"></span></a>
+                        </div>
+                        </div>
+                    </a>
+                    <div class="panel-body msg_container_base" style="display:none;">
+                        <iframe id="myiframe2" src="" style="border:0; width:100%; height:400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- FLoating social media icons -->
 <div id="mobile-ssk" class="ssk-sticky ssk-left ssk-center ssk-group">
-<a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-facebook ssk-lg"></a>
-<a href="https://github.com/sugarlabs" class="ssk ssk-github ssk-lg"></a>
+    <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ssk ssk-facebook ssk-lg"></a>
+    <a href="https://github.com/sugarlabs" class="ssk ssk-github ssk-lg"></a>
     <a href="https://twitter.com/sugar_labs" class="ssk ssk-twitter ssk-lg"></a>
-     <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-instagram instagram_colour ssk-lg">
-     </a>
-      <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-youtube youtube_colour ssk-lg">
-     </a>
-   
+    <a href="https://www.instagram.com/sugarlabsforall/" class="ssk ssk-instagram instagram_colour ssk-lg">
+    </a>
+    <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ssk ssk-youtube youtube_colour ssk-lg">
+    </a>
 </div>
+
+<!-- Javascript files -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 <script type="text/javascript">
 if (typeof jQuery.nicescroll == 'undefined') {
-    document.write('<script src="{{ site.baseurl }}/js/jquery-nicescroll.min.js"><\/script>');
+    document.write('<script src="{{ site.baseurl }}/js/jquery-nicescroll.js"><\/script>');
 }
 </script>
 <script  type="text/javascript" src="{{ site.baseurl }}/js/modernizr.min.js"></script>
-<!-- <script  type="text/javascript" src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js"></script> -->
-<!-- <script>try{Modernizr} catch(e) {document.write('<script src="{{ site.baseurl }}/js/vendor/modernizr-2.6.2.min.js"><\/script>')}</script> -->
-
-<script  type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
+<script  type="text/javascript" src="{{ site.baseurl }}/js/minified/plugins.js"></script>
 <script  type="text/javascript" src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
 <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<!-- <script  type="text/javascript" src="{{ site.baseurl }}/js/waypoints.js"></script> -->
 <script type="text/javascript">
 if (typeof jQuery.waypoints == 'undefined') {
-    // document.write('<script src="{{ site.baseurl }}/js/waypoints.js"><\/script>');
-    window.alert(5+6);
+    document.write('<script src="{{ site.baseurl }}/js/waypoints.js"><\/script>');
 }
 </script>
+
+<!-- Inline Javascript scripts -->
 <script  type="text/javascript">
-// When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function() {scrollFunction()};
-// function scrollFunction() {
-//     if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)&&(document.getElementById("mcw1").style.display == "none")&&(document.getElementById("mcw2").style.display == "none")) {
-//         document.getElementById("myBtn").style.display = "block";
-//     } else {
-//         document.getElementById("myBtn").style.display = "none";
-//     }
-// }
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-// function chatFunction() {
-    // document.getElementById("mcw1").style.display = "block";
-    // document.getElementById("mcw2").style.display = "block";
-    // document.getElementById("myBtn2").style.display = "none";
-    // document.getElementById("myBtn").style.display = "none";
-    
-// }
- $(document).ready(function () {
-                 $("#sidebar").niceScroll({
-                     cursorcolor: '#53619d',
-                     cursorwidth: 4,
-                     cursorborder: 'none'
-                 });
-                 $('#dismiss, .overlay').on('click', function () {
-                    $('#sidebar').removeClass('active');
-                    $('.overlay').fadeOut();
-                 });
-                 $('#sidebarCollapse').on('click', function () {
-                     $('#sidebar').addClass('active');
-                     $('.overlay').fadeIn();
-                     $('.collapse.in').toggleClass('in');
-                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                 });
-             });
-  // $(document).ready(function() {
-  //   $("#close").click(function() {
-  //   //   document.getElementById("mcw1").style.display = "none";
-  //   // document.getElementById("mcw2").style.display = "none";
-  //     document.getElementById("myBtn2").style.display = "block";
-  //     // document.getElementById("myBtn").style.display = "block";
-  //   });
-  //   return false;
-  // });
-$(document).on('click', '.panel-heading span.icon_minim', function (e) {
-    var $this = $(this);
-    if (!$this.hasClass('panel-collapsed')) {
-        $this.parents('.panel').find('.panel-body').slideUp();
-        $this.addClass('panel-collapsed');
-        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
-    } else {
-        $this.parents('.panel').find('.panel-body').slideDown();
-        $this.removeClass('panel-collapsed');
-        $this.removeClass('ion-plus-round').addClass('ion-minus-round');
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
-    return false;
-});
-$(document).on('click', '#panel1', function (e) {
-    var $this = $(".panel-heading span.icon_minim");
-    if (!$this.hasClass('panel-collapsed')) {
-        $this.parents('.panel').find('.panel-body').slideUp();
-        $this.addClass('panel-collapsed');
-        $this.removeClass('ion-minus-round').addClass('ion-plus-round');
-    } else {
-        $this.parents('.panel').find('.panel-body').slideDown();
-        $this.removeClass('panel-collapsed');
-        $this.removeClass('ion-plus-round').addClass('ion-minus-round');
-    }
-    return false;
-});
-// $(document).on('focus', '.panel-footer input.chat_input', function (e) {
-//     var $this = $(this);
-//     if ($('#minim_chat_window').hasClass('panel-collapsed')) {
-//         $this.parents('.panel').find('.panel-body').slideDown();
-//         $('#minim_chat_window').removeClass('panel-collapsed');
-//         // $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
-//     }
-//     return false;
-// });
-// $(document).on('click', '#new_chat', function (e) {
-//     var size = $( ".chat-window:last-child" ).css("margin-left");
-//      size_total = parseInt(size) + 400;
-//     alert(size_total);
-//     var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
-//     clone.css("margin-left", size_total);
-//     return false;
-// });
-$(document).on('click', '.icon_close', function (e) {
-    // $( "#chat_window_1" ).remove();
-    $('#ftctn').css('display', 'none');
-    window.name="closed";
-    document.getElementById("myiframe2").src = '';
-    return false;
-});
-$(document).on('click', '#chatClose', function (e) {
-    
-    document.getElementById("myiframe1").src = '';
-    // document.getElementById("myBtn2").style.display = "none";
-    $('#myBtn2').css('display', 'none');
-    window.name="closed";
-    return false;
-});
-$(document).on('click', '#chatMinimize', function (e) {
-    
-    
-    return false;
-});
-//   $(document).on('click', '#close', function (e) {
-//     // document.getElementById("mcw1").style.display = "none";
-//     // document.getElementById("mcw2").style.display = "none";
-//       document.getElementById("myBtn2").style.display = "block";
-//     //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     //     document.getElementById("myBtn").style.display = "block";
-//     // } 
-//     return false;
-// });
-$(document).on("scroll", function () {
-            if ($(document).scrollTop() > 10) {
-                $("header").removeClass("large").addClass("small");
-                $('header').css('background', '#282828');
-                $('header .navbar-default').css('background', '#282828');
-                $('header .navbar-default .navbar-nav li a').css('color', '#ffffff');
-                $('.dropdown-menu li a').css('color', '#0099ff');
-                // $("#1h").removeClass("anchor1").addClass("anchor2");
-                // $("#2h").removeClass("anchor1").addClass("anchor2");
-                // $("#3h").removeClass("anchor1").addClass("anchor2");
-                // $("#4h").removeClass("anchor1").addClass("anchor2");
-                // $("#5h").removeClass("anchor1").addClass("anchor2");
-                // $("#6h").removeClass("anchor1").addClass("anchor2");
-                // $("#7h").removeClass("anchor1").addClass("anchor2");
-            } else {
-                $("header").removeClass("small").addClass("large");
-                 $('header').css('background', '#fff');
-                $('header .navbar-default').css('background', 'white');
-                $('header .navbar-default .navbar-nav li a').css('color', '#333333');
-                $('.dropdown-menu li a').css('color', '#0099ff');
-                // $("#1h").removeClass("anchor2").addClass("anchor1");
-                // $("#2h").removeClass("anchor2").addClass("anchor1");
-                // $("#3h").removeClass("anchor2").addClass("anchor1");
-                // $("#4h").removeClass("anchor2").addClass("anchor1");
-                // $("#5h").removeClass("anchor2").addClass("anchor1");
-                // $("#6h").removeClass("anchor2").addClass("anchor1");
-                // $("#7h").removeClass("anchor2").addClass("anchor1");
-            }
+    $(document).ready(function () {
+        $("#sidebar").niceScroll({
+        cursorcolor: '#53619d',
+        cursorwidth: 4,
+        cursorborder: 'none'
         });
-$(document).on('click', '#aboutIRC', function (e) {
-    window.location.href = '{{ site.baseurl }}/about-irc';
-    
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').fadeOut();
+        });
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').fadeIn();
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+    $(document).on('click', '.panel-heading span.icon_minim', function (e) {
+        var $this = $(this);
+        if (!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+        } 
+        else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.removeClass('ion-plus-round').addClass('ion-minus-round');
+        }
+        return false;
+    });
+    $(document).on('click', '#panel1', function (e) {
+        var $this = $(".panel-heading span.icon_minim");
+        if (!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.removeClass('ion-minus-round').addClass('ion-plus-round');
+        } 
+        else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.removeClass('ion-plus-round').addClass('ion-minus-round');
+        }
     return false;
-});
-
-var slideIndex = 0;
-showSlides();
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot1");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+    });
+    $(document).on('click', '.icon_close', function (e) {
+        $('#ftctn').css('display', 'none');
+        window.name="closed";
+        document.getElementById("myiframe2").src = '';
+        return false;
+    });
+    $(document).on('click', '#chatClose', function (e) {
+        document.getElementById("myiframe1").src = '';
+        $('#myBtn2').css('display', 'none');
+        window.name="closed";
+        return false;
+    });
+    $(document).on('click', '#chatMinimize', function (e) {
+        return false;
+    });
+    $(document).on("scroll", function () {
+        if ($(document).scrollTop() > 10) {
+            $("header").removeClass("large").addClass("small");
+            $('header').css('background', '#282828');
+            $('header .navbar-default').css('background', '#282828');
+            $('header .navbar-default .navbar-nav li a').css('color', '#ffffff');
+            $('.dropdown-menu li a').css('color', '#0099ff');
+        } 
+        else {
+            $("header").removeClass("small").addClass("large");
+            $('header').css('background', '#fff');
+            $('header .navbar-default').css('background', 'white');
+            $('header .navbar-default .navbar-nav li a').css('color', '#333333');
+            $('.dropdown-menu li a').css('color', '#0099ff');
+        }
+    });
+    $(document).on('click', '#aboutIRC', function (e) {
+        window.location.href = '{{ site.baseurl }}/about-irc';
+        return false;
+    });
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot1");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active1", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active1";
+        setTimeout(function(){showSlides();}, 5000);
     }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active1", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active1";
-    setTimeout(function(){showSlides();}, 5000); // Change image every 2 seconds
-}
 </script>
-<!-- <script type="text/javascript">
-        $(document).on("scroll", function () {
-            if ($(document).scrollTop() > 10) {
-                $("header").removeClass("large").addClass("small");
-                $("#1h").removeClass("anchor1").addClass("anchor2");
-                $("#2h").removeClass("anchor1").addClass("anchor2");
-                $("#3h").removeClass("anchor1").addClass("anchor2");
-                $("#4h").removeClass("anchor1").addClass("anchor2");
-                $("#5h").removeClass("anchor1").addClass("anchor2");
-                $("#6h").removeClass("anchor1").addClass("anchor2");
-                $("#7h").removeClass("anchor1").addClass("anchor2");
-            } else {
-                $("header").removeClass("small").addClass("large");
-                $("#1h").removeClass("anchor2").addClass("anchor1");
-                $("#2h").removeClass("anchor2").addClass("anchor1");
-                $("#3h").removeClass("anchor2").addClass("anchor1");
-                $("#4h").removeClass("anchor2").addClass("anchor1");
-                $("#5h").removeClass("anchor2").addClass("anchor1");
-                $("#6h").removeClass("anchor2").addClass("anchor1");
-                $("#7h").removeClass("anchor2").addClass("anchor1");
-            }
-        });
-    </script> -->
-<!-- <script type="text/javascript">
-// Bootstrap Material Style button  by Bootstrapthemes.co
-(function($) {
-  $(".bt-ripple").click(function(e) {
-    var rippler = $(this);
-    // create .ink element if it doesn't exist
-    if (rippler.find(".ripple").length == 0) {
-      rippler.append("<span class='ripple'></span>");
-    }
 
-    var ink = rippler.find(".ripple");
-
-    // prevent quick double clicks
-    ink.removeClass("animate");
-
-    // set .ripple diametr
-    if (!ink.height() && !ink.width()) {
-      var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
-      ink.css({
-        height: d,
-        width: d
-      });
-    }
-
-    // get click coordinates
-    var x = e.pageX - rippler.offset().left - ink.width() / 2;
-    var y = e.pageY - rippler.offset().top - ink.height() / 2;
-
-    // set .ripple position and add class .animate
-    ink.css({
-      top: y + 'px',
-      left: x + 'px'
-    }).addClass("animate");
-  });
-})(jQuery);  
-
-
-</script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script> -->
-<!-- <script type="text/javascript">
-             $(document).ready(function () {
-                 $("#sidebar").niceScroll({
-                     cursorcolor: '#53619d',
-                     cursorwidth: 4,
-                     cursorborder: 'none'
-                 });
-                 $('#dismiss, .overlay').on('click', function () {
-                    $('#sidebar').removeClass('active');
-                    $('.overlay').fadeOut();
-                 });
-                 $('#sidebarCollapse').on('click', function () {
-                     $('#sidebar').addClass('active');
-                     $('.overlay').fadeIn();
-                     $('.collapse.in').toggleClass('in');
-                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                 });
-             });
-         </script> -->
-
-
-    <script  type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-102776855-1', 'auto');
-  ga('send', 'pageview');
+<script  type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-102776855-1', 'auto');
+    ga('send', 'pageview');
 </script>

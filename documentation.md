@@ -5,7 +5,7 @@
 * Project Name - **Giving Sugar Labs Website a New Look**.
 * Organisation - **Sugar Labs**.
 * Developer - **Pericherla Seetarama Raju**.
-* Project Mentors - **Samson Goddy, Hrishi, Walter Bender**.
+* Project Mentors - **Samson Goddy, Hrishi Patel, Walter Bender**.
 * As part of - **Google Summer Of Code(GSOC) 2017**
 
 ## About the website / project
@@ -37,9 +37,9 @@ Base template has been designed and developed by Themefisher. For a preview, che
 
 ### Nav bar / Header:
 We have 3 header designs based on the screen sizes:
-1. >1260px
-2. >=768px and <=1260px
-3. <767px
+1. greater than 1260px
+2. greater than or equal to 768px and less than or equal to 1260px
+3. less than 767px
 
 ### Disabling:
 For other browsers apart from those mentioned below, the IRC chat, loader, dynamic logo (color changing) is disabled.

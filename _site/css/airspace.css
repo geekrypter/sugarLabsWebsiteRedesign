@@ -2680,6 +2680,9 @@ input.gsc-input,
 .customSpanColor2{
   color: #ffffff;
 }
+.borderNone{
+  border: none !important;
+}
 .lastButtonMargin{
   margin-bottom:3px;
 }
@@ -2696,9 +2699,35 @@ input.gsc-input,
 .customPadding2{
   padding-bottom:40px !important;
 }
+.customPadding3{
+  padding-top:10px !important;
+}
+.customPadding4{
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+.customPadding5{
+  padding-top:50px !important;
+  padding-bottom:0px !important;
+}
 .customMargin2{
   margin-left:40px !important;
   margin-bottom:20px !important;
+}
+.customMargin3{
+  margin-bottom:5px !important;
+}
+.customMargin4{
+  margin-bottom:15px !important;
+}
+.customMargin5{
+  margin-bottom:10px !important;
+}
+.customMargin6{
+  margin-left:40px !important;
+}
+.customMargin7{
+  margin-top:40px !important;
 }
 .customMarPadCombo1{
 margin-bottom:0px !important;
@@ -2711,6 +2740,19 @@ margin-bottom:0px !important;
 margin-top:0px !important;
 padding-bottom:0px !important;
 padding-top:0px !important;
+}
+.customMarPadCombo3{
+margin-bottom:10px !important;
+padding-bottom:10px !important;
+padding-top:50px !important;
+}
+.customMarPadCombo4{
+padding-top:0px !important;
+margin-top:0px !important;
+margin-bottom:10px !important;
+}
+.fullWidth{
+  width: 100% !important;
 }
 /* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
 #mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 0}

@@ -81,6 +81,31 @@ $(document).ready(function(){
         singleItem:true,
         autoPlay: 3000,
     }); 
+    $("#testimonial-slider3").owlCarousel({
+        paginationSpeed : 500,      
+        singleItem:true,
+        autoPlay: 3000,
+    });
+    $("#testimonial-slider4").owlCarousel({
+        paginationSpeed : 500,      
+        singleItem:true,
+        autoPlay: 3000,
+    });
+    $("#testimonial-slider5").owlCarousel({
+        paginationSpeed : 500,      
+        singleItem:true,
+        autoPlay: 3000,
+    });
+    $("#testimonial-slider6").owlCarousel({
+        paginationSpeed : 500,      
+        singleItem:true,
+        autoPlay: 3000,
+    });
+    $("#testimonial-slider7").owlCarousel({
+        paginationSpeed : 500,      
+        singleItem:true,
+        autoPlay: 3000,
+    });
     $("#social-media-logos").owlCarousel({
     	autoPlay: 3000,
     	items : 5,

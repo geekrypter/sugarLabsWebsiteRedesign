@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
  		<link id="defaultIcon1" rel="shortcut icon" href="https://www.sugarlabs.org/assets/favicon_06.png" />
-        <title>Sugar Labs anuncia la disponibilidad inmediata de Sugar On A Stick (Sugar en un pendrive). El plataforma de aprendizaje funciona en casi cualquier PC o portátil que hay en el aula.</title>
+        <title>Project Documentation</title>
         <link href="/css/googleFonts.css" rel="stylesheet" type="text/css" >
         <meta name="robots" content="index,follow,NOODP" />
         <meta name="description" Content="At Sugar Labs, we make FOSS tools that learners use to explore, discover, create, and reflect. We encourage our users to take responsibility for their learning." />
@@ -242,73 +242,342 @@
 </div>
 
 
-<h1>Sugar Labs anuncia la disponibilidad inmediata de Sugar On A Stick (Sugar en un pendrive). El plataforma de aprendizaje funciona en casi cualquier PC o portátil que hay en el aula.</h1>
-<p>Jun 24 2009</p>
+<h1 id="project-documentation">Project Documentation</h1>
 
-<p>LinuxTag, Berlín, 24 de junio de 2009: Sugar Labs™, proveedor sin fines de
-lucro de la plataforma de aprendizaje de Sugar a más de un millón de niños en
-todo el mundo, anuncia la disponibilidad inmediata de Sugar on a Stick (SoaS)
-v1 Strawberry (Fresa). Disponible para su descarga gratuita en
-<a href="www.sugarlabs.org">www.sugarlabs.org</a>, SoaS se pueden cargar en una pendrive
-USB de 1 GB y se utiliza para reiniciar casi cualquier PC, o usar directamente
-en el portátil y entrar Sugar, el ambiente premiado de aprendizaje. Funciona
-en los últimos equipos Mac con un la ayuda de un CD y en Windows usando la
-virtualización. Sugar on a Stick está diseñado para trabajar con un servidor
-de colegio que puede proporcionar la distribución de contenidos, el recojo de
-tareas, los servicios de copia de seguridad, la integración de Moodle, y la
-filtración el acceso al Internet. El Strawberry de hoy está listo para
-probarse en las escuelas. <a href="mailto:feedback@sugarlabs.org">Comentarios</a> se
-incorporará en la próxima versión, disponible a finales de 2009.</p>
+<h2 id="basic-information">Basic Information</h2>
 
-<p>“Un año después de su fundación, Sugar Labs es el cumplimiento de su promesa
-de educación para su segundo millón de estudiantes”, comentó Walter Bender,
-fundador y director ejecutivo. “Sugar es preferido porque es un excelente
-experiencia de aprendizaje para los niños pequeños: divertido y económica.
-“Sugar on a Stick es una gran manera de probar Sugar sin tocar el disco duro
-de la computadora. También, es muy adecuado para las computadoras más lentas,
-más antiguas y para las portátiles pequeñas de baja potencia. Existe una
-versión para la OLPC XO-1 y se suministran con los nuevas computadoras
-portátiles XO-1.5 en el otoño.”</p>
+<ul>
+  <li>Project Name - <strong>Giving Sugar Labs Website a New Look</strong>.</li>
+  <li>Organisation - <strong>Sugar Labs</strong>.</li>
+  <li>Developer - <strong>Pericherla Seetarama Raju</strong>.</li>
+  <li>Project Mentors - <strong>Samson Goddy, Hrishi, Walter Bender</strong>.</li>
+  <li>As part of - <strong>Google Summer Of Code(GSOC) 2017</strong></li>
+</ul>
 
-<p>Sugar on a Stick ofrece una coherente y consistente experiencia. Reduce
-costos, proporcionando flexibilidad en opciones de tipos de computadoras,
-permitiendo que las escuelas mantengan sus inversiones exsitentes en sus
-aparatos. Para los que tienen computadora en casa, pueden traer el Sugar on a
-Stick a casa. Cada estudiante tiene un ambiente de computación coherente y
-comparable que los padres pueden compartir también. También proporciona acceso
-fuera de línea a aplicaciones y contenido para los alumnos que no tienen
-acceso al Internet en casa.</p>
+<h2 id="about-the-website--project">About the website / project</h2>
 
-<p>Como parte de un esfuerzo continuo para hacerlo Sugar on a Stick listo para
-las aulas, Sugar Labs ha recibido una subvención de 20.000 dólares de la
-Fundación de Beneficencia Gould para aplicar un proyecto piloto de Sugar en la
-Academia Gardner, una escuela primaria ubicada en una de las más cultural y
-lingüísticamente diversas secciones de Boston, Massachusetts.</p>
+<h3 id="introduction">Introduction</h3>
+<p>This repository contains the code for the redesigned version of “www.sugarlabs.org”. This repository is used for the development of the GSOC 2017 project <strong>Giving Sugar Labs Website a New Look</strong> under the organization <strong>Sugar Labs</strong>. All the changes made are always posted at <a href="https://github.com/sugarlabs/www-sugarlabs/issues/63">https://github.com/sugarlabs/www-sugarlabs/issues/63</a>. The repository of the original website is located at <a href="https://github.com/sugarlabs/www-sugarlabs">https://github.com/sugarlabs/www-sugarlabs</a>. Even though it can be observed that the repository is not a fork of the original website’s repository, the new code has been added on a fork version. The code uses the same Jekyll environment as that of the original website’s code. Do check out the code!</p>
 
-<p>Actividades dirigidas al aprendizaje están in el corizon de Sugar. Sugar on a
-Stick incluye 40 Actividades de interés para los jóvenes estudiantes tales
-como Leer, Escribir, Pintura, y Etoys. Cientos de Actividades están
-disponibles para su descarga gratuita en la <a href="http://activities.sugarlabs.org">biblioteca de la Actividades de
-Sugar</a>. La mayoría de los “Sugarized”
-Actividades se han incorporado la colaboración de estudiantes. Los alumnos y
-profesores juntos trabajan, jugan y aprenden en las mismas actividades. La
-plataforma de aprendizaje de Sugar está abierta. Por lo tanto, Sugar utiliza
-el trabajo de otros proyectos de código abierto. El software existente para
-los niños se puede integrar a Sugar. Por ejemplo, el reconocido GCompris,
-junto con 100 actividades desarrolladas en los últimos cinco años por Bruno
-Coudoin, fueron añadidos recientemente al Sugar; incluye actividades como el
-Ajedrez, Geografía, y Sudoku. Los maestros y los padres de familia interesados
-en los Actividades de Sugar y su interfaz moderna pueden ver videos cortos en
-el recientemente inaugurado canal de <a href="http://www.dailymotion.com/sugarlabs">Sugar Labs
-Dailymotion</a>.</p>
+<h3 id="major-features">Major Features:</h3>
+<p>We have integrated 3 major feautres with the help of third party services:</p>
+<ol>
+  <li>Website users tracking - We have used the <a href="https://analytics.google.com/">Google Analytics</a> service to track user on the website and get a more detailed analysis on the users usage.</li>
+  <li>IRC chat - We have used the <a href="https://kiwiirc.com">Kiwi IRC</a> service to enable users to chat on our IRC channels in the website itself.</li>
+  <li>Newsletter subscription through email - We have used the <a href="https://mailchimp.com">Mailchimp</a> service to let users to subscribe to our newsletters through their emails.</li>
+</ol>
 
-<p>Los visitantes a LinuxTag son bienvenidos a hablar con azúcar Labs
-contribuyentes en el mostrador 7.2a 110a</p>
+<h3 id="internal-urls">Internal URLs:</h3>
+<p>All internal URLs are referenced through absolute paths and not relative paths.</p>
 
+<h3 id="languages-and-technologies">Languages and Technologies:</h3>
+<p>HTML
+CSS
+Javascript
+JQuery
+Bootstrap</p>
 
+<h3 id="libraries-used">Libraries used:</h3>
+<p>All libraries, dependencies and license information is available in the licenseInformation.txt file.</p>
 
-<p><a href="/press">Return to press information</a></p>
-<p><a href='/'>Return to main page</a></p>
+<h3 id="base-template">Base template:</h3>
+<p>Base template has been designed and developed by Themefisher. For a preview, check out this link - https://luminousrubyist.github.io/airspace-jekyll/</p>
+
+<h3 id="nav-bar--header">Nav bar / Header:</h3>
+<p>We have 3 header designs based on the screen sizes:</p>
+<ol>
+  <li>
+    <blockquote>
+      <p>1260px</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>=768px and &lt;=1260px</p>
+    </blockquote>
+  </li>
+  <li>&lt;767px</li>
+</ol>
+
+<h3 id="disabling">Disabling:</h3>
+<p>For other browsers apart from those mentioned below, the IRC chat, loader, dynamic logo (color changing) is disabled.</p>
+<ol>
+  <li>Safari</li>
+  <li>Chrome</li>
+  <li>Opera</li>
+  <li>Firefox</li>
+  <li>Edge</li>
+  <li>Internet Explorer</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Small devices browsers like on Android</td>
+          <td>BlackBerry</td>
+          <td>iPhone</td>
+          <td>iPad</td>
+          <td>iPod</td>
+          <td>Opera Mini</td>
+          <td>IEMobile</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>The dynamic logo (color changing) is also disabled for Internet Explorer.</p>
+
+<h3 id="logo">Logo:</h3>
+<p>We render 2 types of logos based on the browsers:</p>
+<ol>
+  <li>Dynamic logo (color changing)</li>
+  <li>Static logo</li>
+</ol>
+
+<p>The dynamic logo is enabled for:</p>
+<ol>
+  <li>Safari</li>
+  <li>Chrome</li>
+  <li>Opera</li>
+  <li>Firefox</li>
+  <li>Edge</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Small devices browsers like on Android</td>
+          <td>BlackBerry</td>
+          <td>iPhone</td>
+          <td>iPad</td>
+          <td>iPod</td>
+          <td>Opera Mini</td>
+          <td>IEMobile</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>However due to several issues, we disabled the dynamic logo and render static logo for all the other browsers.</p>
+
+<h3 id="loader">Loader:</h3>
+<p>The loader is enabled for:</p>
+<ol>
+  <li>Safari</li>
+  <li>Chrome</li>
+  <li>Opera</li>
+  <li>Firefox</li>
+  <li>Edge</li>
+  <li>Internet Explorer</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Small devices browsers like on Android</td>
+          <td>BlackBerry</td>
+          <td>iPhone</td>
+          <td>iPad</td>
+          <td>iPod</td>
+          <td>Opera Mini</td>
+          <td>IEMobile</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>To reduce animations, we disabled the loader for all the other browsers.</p>
+
+<h3 id="font">Font:</h3>
+<p>The font being is the Google font, Varela round. When we call the font sheet directly, it is not properly rendered on certain browsers, so we hosted the required font sheets in the directory itself. For more details, please refer to the  <strong>How to add/change new font?</strong> subsection in the <strong>Answers to few questions</strong> section.</p>
+
+<h3 id="chat-window">Chat window:</h3>
+<p>We have used the <a href="https://kiwiirc.com">Kiwi IRC</a> service to enable users to chat on our IRC channels in the website itself.
+The chat window is enabled for:</p>
+<ol>
+  <li>Safari</li>
+  <li>Chrome</li>
+  <li>Opera</li>
+  <li>Firefox</li>
+  <li>Edge</li>
+  <li>Internet Explorer</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Small devices browsers like on Android</td>
+          <td>BlackBerry</td>
+          <td>iPhone</td>
+          <td>iPad</td>
+          <td>iPod</td>
+          <td>Opera Mini</td>
+          <td>IEMobile</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>The service renders many requests, so to reduce the burden, we disabled the loader for all the other browsers.</p>
+
+<h2 id="description-of-file-and-folders-present-in-the-code-repository">Description of file and folders present in the code repository</h2>
+
+<h3 id="assets-folder">Assets folder:</h3>
+<p>This folder contains all image assets, SVG assets and any other assets.</p>
+
+<h3 id="root-folder">Root folder:</h3>
+<p>This will contain:</p>
+<ol>
+  <li>All html pages</li>
+  <li>.htaccess file</li>
+  <li>README file</li>
+  <li>licenseInformation.txt</li>
+  <li>sitemap.txt</li>
+  <li>robots.txt</li>
+  <li>Jekyll related files</li>
+  <li>Other folders</li>
+</ol>
+
+<h3 id="css-folder">css folder:</h3>
+<p>This folder contains all CSS files.</p>
+
+<h3 id="js-folder">js folder:</h3>
+<p>This folder contains all Javascript files.</p>
+
+<h3 id="fonts-folder">fonts folder:</h3>
+<p>This folder contains all fonts related files.</p>
+
+<h3 id="press-folder">press folder:</h3>
+<p>This folder contains all press related information of Sugar Labs.</p>
+
+<h3 id="en_us-folder">en_US folder:</h3>
+<p>This folder contains profile.md file which contains the infomration of all Sugar Labs contributors.</p>
+
+<h3 id="remaining-folders">Remaining folders:</h3>
+<p>All the remaining folders are as per Jekyll structure.</p>
+
+<h2 id="design-layout-of-website--project">Design layout of website / project</h2>
+
+<p>The following pages share a similar design:
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/about-us
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/about-irc
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/about-libre-software-culture
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/booting-soas
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/contact-us
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/inquiry
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/more
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/music-blocks
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/press
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/search
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-forraspberry-pi
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/turtle-blocks-js</p>
+
+<p>The following pages share a similar design:
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/parents
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/school-administrators
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/students
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-for-raspbian
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-lesson-plans
+https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-stories</p>
+
+<p>The relevant page can be checked to adopt a similar design.</p>
+
+<h2 id="developers">Developers</h2>
+
+<h3 id="code-and-contribution">Code and Contribution</h3>
+<p>The code has been restructured, unnecessary code has been removed, comments were added wherever required, proper indentation was provided, and simple names were used which makes it a contributor-friendly codebase. So, hope on and contribute now!</p>
+
+<h3 id="feedbacksuggestions-and-issues">Feedback/Suggestions and Issues</h3>
+<p>Feedback/Suggestions are always welcome and do mention any issues found. They can be provided through:
+1)Issues section of this repository
+2)<a href="https://github.com/sugarlabs/www-sugarlabs/issues/63">https://github.com/sugarlabs/www-sugarlabs/issues/63</a></p>
+
+<h3 id="how-to-run-the-code">How to run the code</h3>
+<p>Install Ruby and the Gem package manager (pre-installed in Mac OS X) and install <code class="highlighter-rouge">jekyll</code> and its related packages available in the Github hosted version by running, from this directory:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>bundle install;
+</code></pre>
+</div>
+
+<p>Jekyll can run a local web server that rebuilds each time you save a page while editing:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll serve --incremental;
+</code></pre>
+</div>
+
+<p>Then open <a href="http://localhost:4000">http://localhost:4000</a></p>
+
+<p>If some changes are not visible (when saving a page while editing), please restart the Jekyll local web server and reload <a href="http://localhost:4000">http://localhost:4000</a>.</p>
+
+<h2 id="important-points-to-be-noted">Important points to be noted</h2>
+
+<ol>
+  <li>Whenever a new commit is made and the changes are made to any one of airspace.css, main.js, or plugins.js files, try to use a minification service and add the minified version of new code in their minified versions in respective “minified” folder.</li>
+  <li>Whenever font is to be changed/added, follow the instructions in <strong>How to add/change new font?</strong> subsection in <strong>How to add/change new font?</strong> section.</li>
+  <li>Few dependencies do not work well with other dependencies, so make sure to test before updating the dependencies.</li>
+</ol>
+
+<h2 id="answers-to-few-questions">Answers to few questions</h2>
+
+<h3 id="how-to-remove-loader">How to remove loader?</h3>
+<ol>
+  <li>Go to index.html page</li>
+  <li>Under the Loader section (check comments), remove the whole section.</li>
+</ol>
+
+<h3 id="how-to-remove-chat-window">How to remove chat window?</h3>
+<ol>
+  <li>Go to footer.html page</li>
+  <li>Under the Chat window for screens with width &lt;= 991px section (check comments), remove the whole section.</li>
+  <li>Under the Chat window for screens with width &gt; 991px section (check comments), remove the whole section.</li>
+</ol>
+
+<h3 id="how-to-change-irc-service">How to change IRC service?</h3>
+<ol>
+  <li>Go to main.js file.</li>
+  <li>The request url of the new IRC service can be written in the disabling part of the file (where iframe sources are entered)</li>
+</ol>
+
+<h3 id="how-to-disable-search-functionality">How to disable search functionality?</h3>
+<ol>
+  <li>Go to search.html file.</li>
+  <li>Under the Search functionality Javascript code section (check comments), remove the whole section.</li>
+</ol>
+
+<h3 id="how-to-alter-disabling">How to alter disabling?</h3>
+<ol>
+  <li>Go to main.js file.</li>
+  <li>There you can check out the disabling code and can change accordingly.</li>
+</ol>
+
+<h3 id="how-to-change-background-image-in-main-page">How to change background image in main page?</h3>
+<ol>
+  <li>Go to airspace.css file.</li>
+  <li>Under the #slider css part, enter the url of new background image in the “background” attribute.</li>
+</ol>
+
+<h3 id="how-to-add-new-page">How to add new page?</h3>
+<ol>
+  <li>Create a new html page in the root directory.</li>
+  <li>Enter the required intial information for the new page. (Take the help of the intial information available for other html pages)</li>
+  <li>In the sitemap.txt file, add the declaration of the new page (take the help of other page declarations)</li>
+</ol>
+
+<h3 id="how-to-change-video-thumbnail">How to change video thumbnail?</h3>
+<ol>
+  <li>Go to index.html file.</li>
+  <li>Under the About Sugar section (check comments), add the new thumbnail url to the poster attribute of the html video tag.</li>
+</ol>
+
+<h3 id="how-to-addchange-new-font">How to add/change new font?</h3>
+<ol>
+  <li>Go to <a href="https://www.fontsquirrel.com/">fontsquirrel</a></li>
+  <li>Search the required font and go the specified page.</li>
+  <li>UNder Webfont Kit, enable all Font formats and click Download @font-face kit.</li>
+  <li>Add all the format files generated to the Fonts folder.</li>
+  <li>Go to the googlefonts.css file and add those references.</li>
+</ol>
 
 
 <!-- Chat button for screens with width <= 991px -->

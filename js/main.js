@@ -43,7 +43,10 @@ $(document).ready(function(){
         isSmallWidth=1;
     }
     if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome || isOtherdevice || isSmallWidth){
-        $('#loaderDiv').css('display', 'block')
+        $('#loaderDiv').css('display', 'block');
+        $('#animationPart1').addClass('start');
+        $('#animationPart2').addClass('start');
+        $('#animationPart3').addClass('start');
         document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
         document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
         if(isIE){
@@ -119,7 +122,7 @@ $(document).ready(function(){
     		$('.js-fullheight').css('height', $(window).height());
     	});
     };
-    if(window.name=="closed"){
+    if(window.name=="websiteChatClosed"){
         document.getElementById("myiframe1").src = '';
         document.getElementById("myiframe2").src = '';
         $('#ftctn').css('display', 'none');

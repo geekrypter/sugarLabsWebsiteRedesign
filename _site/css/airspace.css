@@ -1,13 +1,4 @@
-/*
- * This is the main css file that ships with the airspace theme.
- * In airspace, it is called style.css
- * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
- * The original style.css is now called airspace.css
- * 
- */
 
-
-/* var text-decoration */
 /*--
   Common Css
 --*/
@@ -139,9 +130,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 
 }
-/*---------------------------------------------
-          Index Start
------------------------------------------------*/
+
 /*--
   Slider Start
 --*/
@@ -424,9 +413,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #social-media-logos-section .social-media-logos-img {
   padding: 0px 50px;
 }
-/*---------------------------------------------
-          Work Start
------------------------------------------------*/
+
 /*--
   Slider-work Start
 --*/
@@ -669,13 +656,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   padding: 40px 0px;
 }
-/*---------------------------------------------
-          Work Close
------------------------------------------------*/
-/*=============================================*/
-/*---------------------------------------------
-           Contact Start
------------------------------------------------*/
+
 /*--
   slider-contact Start
 --*/
@@ -822,9 +803,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   padding: 40px 0px;
 }
-/*---------------------------------------------
-          Contact Close
------------------------------------------------*/
+
 /*--------- Heading------------*/
 .heading {
   padding-bottom: 60px;
@@ -1248,13 +1227,7 @@ px      68    160    252    344    436    528    620    712    */
 }
 
 
-  /*---------------------------------------------
-          Index Close 
------------------------------------------------*/
-  /*=============================================*/
-  /*---------------------------------------------
-          Work Start 
------------------------------------------------*/
+
   /*--
   slider-work Start 
 --*/
@@ -1323,13 +1296,7 @@ px      68    160    252    344    436    528    620    712    */
 }
 
 
-  /*---------------------------------------------
-          Work close 
------------------------------------------------*/
-  /*=============================================*/
-  /*---------------------------------------------
-          contact start 
------------------------------------------------*/
+
   #wrapper-contact .block {
     padding-bottom: 50px;
   }
@@ -1339,9 +1306,7 @@ px      68    160    252    344    436    528    620    712    */
   #features-contact .block ul li {
     width: 49%;
   }
-  /*---------------------------------------------
-          contact close 
------------------------------------------------*/
+
 #mobile-ssk{
   display: none !important;
 }
@@ -1680,13 +1645,7 @@ header.large li{ margin-top: 0px; }
     display: block;
     width: 100%;
   }
-  /*---------------------------------------------
-          Work close 
------------------------------------------------*/
-  /*=============================================*/
-  /*---------------------------------------------
-          contact Start 
------------------------------------------------*/
+
   /*--
   slider-contact Start 
 --*/
@@ -1841,7 +1800,6 @@ px      68    160    252    344    436    */
 
   background-color: #332F41;
 
-    /*background-image: radial-gradient(circle farthest-corner at center, #332f41 0%,#1d192c  100%);*/
 
 }
 
@@ -1865,9 +1823,6 @@ px      68    160    252    344    436    */
   margin-left: -100px;
 }
 
-
-/*-----------------------------------------------------------------------*/
-/* change border radius for the tab , apply corners on top*/
 
 #exTab3 .nav-pills > li > a {
   border-radius: 30px 30px 30px 30px ;
@@ -2005,8 +1960,6 @@ hr {
   background: #595565;
 }
 
-/* + BUTTONS
-===================================== */
 
 .bt {
   font-family: 'Varela Round', sans-serif;
@@ -2056,97 +2009,6 @@ hr {
 }
 
 
-
-
-/* + RIPPLE EFFECT
-===================================== */
-
-.bt-ripple {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.ripple {
-    display: block;
-    position: absolute;
-    pointer-events: none;
-    border-radius: 50%;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    background: #ffffff;
-    opacity: 1;
-}
-
-.ripple.animate {
-    -webkit-animation: ripple .5s linear;
-    -moz-animation: ripple .5s linear;
-    -o-animation: ripple .5s linear;
-    animation: ripple .5s linear;
-}
-
-@keyframes ripple {
-    100% {
-        opacity: 0;
-        -moz-transform: scale(2.5);
-        -ms-transform: scale(2.5);
-        -o-transform: scale(2.5);
-        -webkit-transform: scale(2.5);
-        transform: scale(2.5);
-    }
-}
-
-@-webkit-keyframes ripple {
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(2.5);
-        -moz-transform: scale(2.5);
-        -ms-transform: scale(2.5);
-        -o-transform: scale(2.5);
-        transform: scale(2.5);
-    }
-}
-
-@-moz-keyframes ripple {
-    100% {
-        opacity: 0;
-        -moz-transform: scale(2.5);
-        -ms-transform: scale(2.5);
-        -o-transform: scale(2.5);
-        -webkit-transform: scale(2.5);
-        transform: scale(2.5);
-    }
-}
-
-@-ms-keyframes ripple {
-    100% {
-        opacity: 0;
-        -ms-transform: scale(2.5);
-        transform: scale(2.5);
-    }
-}
-
-@-o-keyframes ripple {
-    100% {
-        opacity: 0;
-        -o-transform: scale(2.5);
-        -moz-transform: scale(2.5);
-        -ms-transform: scale(2.5);
-        -webkit-transform: scale(2.5);
-        transform: scale(2.5);
-    }
-}
-
-
-/*  Buttons types */
-
 .bt-raised {
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
@@ -2167,10 +2029,6 @@ hr {
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-
-
-/*New changes*/
-
 
 @media only screen and (max-width: 507px) {  
   #longCommand{
@@ -2204,21 +2062,21 @@ word-break: break-all;
   border-radius: 50%;  
 }
 
-.inner.one {
+.inner.one.start {
   left: 0%;
   top: 0%;
   animation: rotate-one 1s linear infinite;
   border-bottom: 3px solid #ffffff;
 }
 
-.inner.two {
+.inner.two.start {
   right: 0%;
   top: 0%;
   animation: rotate-two 1s linear infinite;
   border-right: 3px solid #ffffff;
 }
 
-.inner.three {
+.inner.three.start {
   right: 0%;
   bottom: 0%;
   animation: rotate-three 1s linear infinite;
@@ -2252,16 +2110,7 @@ word-break: break-all;
   }
 }
 
-/*.loader3 {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  right: 50%;
-  width: 200px;
-  height: 40px;
-  perspective: 800px;
-  background-color: #000000;
-}*/
+
 .loader3{
  left: 0;
     line-height: 200px;
@@ -2289,11 +2138,7 @@ h1:before {
 
 }
 
-/*@media only screen and (max-width: 1024px) { 
-.price{
-  font-size: 10px;
-}
-}*/
+
 .customHeaderStyle{
   font-size: 26px;
 }
@@ -2307,11 +2152,7 @@ h1:before {
   height: auto;
 }
   }
-/*  @media only screen and (max-width: 1024px) {  
-.boxDownload{
-  height: 530px;
-}
-  }*/
+
 
 @media only screen and (max-width: 1200px) {  
 
@@ -2325,10 +2166,6 @@ h1:before {
 }
 
   }
-
-
-
-/*Newer changes*/
 
 .section-title1 {
   text-align: center;
@@ -2386,14 +2223,6 @@ h1:before {
 }
 
 
-
-
-
-
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
 #secondHeader #sidebar {
     width: 250px;
     position: fixed;
@@ -2514,10 +2343,6 @@ h1:before {
     color: #fff !important;
 }
 
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
 #secondHeader #content {
     width: 100%;
     padding: 20px;
@@ -2649,17 +2474,13 @@ input.gsc-input,
   .boxDownload2{
   height: 855px;
 }
-/*.boxDownload3{
-  height: auto;
-}*/
+
   }
 @media only screen and (max-width: 991px) {  
 .boxDownload2{
   height: auto;
 }
-/*.boxDownload3{
-  height: auto;
-}*/
+
   }
 
 .leftAlign{
@@ -2751,8 +2572,39 @@ padding-top:0px !important;
 margin-top:0px !important;
 margin-bottom:10px !important;
 }
+.customMarPadCombo5{
+padding:0 0 0 0 !important;
+margin:0 0 0 0 !important;
+}
 .fullWidth{
   width: 100% !important;
+}
+.footerListStyle{
+  margin-bottom:5px;
+  font-size:15px;
+}
+.footerHeaderStyle{
+  margin-bottom:14px;
+  color:#ffffff;
+  margin-top:10px;
+  text-align:left;
+}
+.customHeaderStyle2{
+  padding-bottom: 50px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.customHeaderStyle3{
+right:10px;
+position:fixed;
+font-size:30px;
+}
+.customSpanStyle{
+  color:#ffffff;
+  font-size:20px;
 }
 /* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
 #mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 0}

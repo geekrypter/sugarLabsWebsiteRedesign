@@ -41,7 +41,7 @@
                             <ul style="text-align:left;">
                                 <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/about-us">About Us</a></li>
                                 <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Get Involved</a></li>
-                                <li style="margin-bottom:5px;font-size:15px;"><a href="#">Support Sugar</a></li>
+                                <li style="margin-bottom:5px;font-size:15px;"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Donate">Support Sugar</a></li>
                                 <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/contact-us">Contact Us</a></li>
                                 <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/students">For Students</a></li>
                                 <li style="margin-bottom:5px;font-size:15px;"><a href="{{ site.baseurl }}/school-administrators">For School Administrators</a></li>
@@ -260,17 +260,9 @@ if (typeof jQuery.waypoints == 'undefined') {
     $(document).on("scroll", function () {
         if ($(document).scrollTop() > 10) {
             $("header").removeClass("large").addClass("small");
-            $('header').css('background', '#282828');
-            $('header .navbar-default').css('background', '#282828');
-            $('header .navbar-default .navbar-nav li a').css('color', '#ffffff');
-            $('.dropdown-menu li a').css('color', '#0099ff');
         } 
         else {
             $("header").removeClass("small").addClass("large");
-            $('header').css('background', '#fff');
-            $('header .navbar-default').css('background', 'white');
-            $('header .navbar-default .navbar-nav li a').css('color', '#333333');
-            $('.dropdown-menu li a').css('color', '#0099ff');
         }
     });
     $(document).on('click', '#aboutIRC', function (e) {

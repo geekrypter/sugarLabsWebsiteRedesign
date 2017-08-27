@@ -1347,12 +1347,12 @@ px      68    160    252    344    436    528    620    712    */
 }
 /*Header*/
  header {
-    background-color: #1d192c !important;
+    background-color: #1d192c;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
   }
   header .navbar-default{
-    background-color: #332f41 !important;
+    background-color: #332f41;
   }
  
    header.large{
@@ -1455,12 +1455,12 @@ px      68    160    252    */
 
 
   header {
-    background-color: #1d192c !important;
+    background-color: #1d192c;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
   }
   header .navbar-default{
-    background-color: #332f41 !important;
+    background-color: #332f41;
   }
  
    header.large{
@@ -1832,7 +1832,7 @@ px      68    160    252    344    436    */
 
 .loader {
   position: fixed;
-  display: block;
+  display: none;
   left: 0px;
   top: 0px;
   width: 100%;

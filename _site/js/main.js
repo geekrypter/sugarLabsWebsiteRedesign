@@ -43,6 +43,7 @@ $(document).ready(function(){
         isSmallWidth=1;
     }
     if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome || isOtherdevice || isSmallWidth){
+        $('#loaderDiv').css('display', 'block')
         document.getElementById("myiframe1").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
         document.getElementById("myiframe2").src = 'https://kiwiirc.com/client/irc.kiwiirc.com/?&theme=cli#sugar';
         if(isIE){
@@ -55,7 +56,7 @@ $(document).ready(function(){
         }
     }
     if(!isOpera && !isFirefox &&!isSafari && !isIE && !isEdge &&!isChrome &&!isOtherdevice &&!isSmallWidth){
-        $('#loaderDiv').css('display', 'none');
+        // $('#loaderDiv').css('display', 'none');
         $('#ftctn').css('display', 'none');
         $('#myBtn2').css('display', 'none');
         $('#navh2').css('display', 'block');

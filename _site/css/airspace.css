@@ -1494,6 +1494,7 @@ header.large li{ margin-top: 0px; }
   }
   #slider .block h1 {
     font-size: 20px;
+    font-weight: bold;
   }
   #slider .block p {
     font-size: 13px;

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // Colour changing affect of logo
     var COLORS = [['006E00', '78E600'], ['68008C', '78E600'],
                   ['006E00', '00BEFF'], ['033CD2', '00BEFF'],
                   ['6E008C', '00BEFF'], ['A00000', 'FF7800'],
@@ -20,10 +21,12 @@ $(document).ready(function(){
         h = h.replace(/033cd2/g, COLORS[color][0]);
         h = h.replace(/78e600/g, COLORS[color][1]);
         document.querySelector('.logo2').innerHTML = h;}
+    // Footer links collapse code
     $( ".widget h4" ).click(
         function() {
             $(this).parent().toggleClass('active');
     }); 
+    // Disabling code
     // Opera 8.0+
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
     // Firefox 1.0+
@@ -59,7 +62,6 @@ $(document).ready(function(){
         }
     }
     if(!isOpera && !isFirefox &&!isSafari && !isIE && !isEdge &&!isChrome &&!isOtherdevice &&!isSmallWidth){
-        // $('#loaderDiv').css('display', 'none');
         $('#ftctn').css('display', 'none');
         $('#myBtn2').css('display', 'none');
         $('#navh2').css('display', 'block');
@@ -67,6 +69,7 @@ $(document).ready(function(){
         $('#navh3').css('display', 'block');
         $('#navh1').css('display', 'none');
     }
+    // Chat window related code
     var $this = $(".panel-heading span.icon_minim");
     $this.addClass('panel-collapsed');
     $this.removeClass('ion-minus-round').addClass('ion-plus-round');
@@ -75,6 +78,7 @@ $(document).ready(function(){
     $('.popover-dismiss').popover({
       trigger: 'focus'
     }) 
+    // Slideshows code
     $("#testimonial-slider1").owlCarousel({
         paginationSpeed : 500,      
         singleItem:true,
@@ -122,6 +126,7 @@ $(document).ready(function(){
     		$('.js-fullheight').css('height', $(window).height());
     	});
     };
+    // Code to detect if chat window has been closed and making sure it doent open up in other pages
     if(window.name=="websiteChatClosed"){
         document.getElementById("myiframe1").src = '';
         document.getElementById("myiframe2").src = '';

@@ -10,8 +10,6 @@ header.large #navh{ width: 300px; height: 40px;
  }
 header.large img{ width: 300px; height: 100px;  }
 header.small img{ width: 150px; height: 50px; }
-/*#navh3{ width:250px;height:40px;left:10px;background-color: #000000  }
-#navh3 img{ width:200px;height:40px; margin-bottom: 0px;padding-bottom: 0px; }*/
 #navh{
   display: none;
 }
@@ -154,7 +152,6 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(to left, #8b86a3, #322e40);*/
   background:#5d5a68; 
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */

@@ -236,6 +236,18 @@
 
 <h1 id="project-documentation">Project Documentation</h1>
 
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+  <li>Basic Information</li>
+  <li>About the Website/Project</li>
+  <li>Description of Files and Folders</li>
+  <li>Design Layout of Website/Project</li>
+  <li>Developers</li>
+  <li>Important Points to be Noted</li>
+  <li>Answers to Few Questions</li>
+  <li>Credits</li>
+</ol>
+
 <h2 id="basic-information">Basic Information</h2>
 
 <ul>
@@ -246,76 +258,54 @@
   <li>As part of - <strong>Google Summer Of Code(GSOC) 2017</strong></li>
 </ul>
 
-<h2 id="about-the-website--project">About the website / project</h2>
+<h2 id="about-the-websiteproject">About the Website/Project</h2>
 
 <h3 id="introduction">Introduction</h3>
-<p>This repository contains the code for the redesigned version of “www.sugarlabs.org”. This repository is used for the development of the GSOC 2017 project <strong>Giving Sugar Labs Website a New Look</strong> under the organization <strong>Sugar Labs</strong>. All the changes made are always posted at <a href="https://github.com/sugarlabs/www-sugarlabs/issues/63">https://github.com/sugarlabs/www-sugarlabs/issues/63</a>. The repository of the original website is located at <a href="https://github.com/sugarlabs/www-sugarlabs">https://github.com/sugarlabs/www-sugarlabs</a>. Even though it can be observed that the repository is not a fork of the original website’s repository, the new code has been added on a fork version. The code uses the same Jekyll environment as that of the original website’s code. Do check out the code!</p>
+<p>This repository contains the code for the redesigned version of <a href="www.sugarlabs.org">www.sugarlabs.org</a>. This repository code base was used for the development of the GSOC 2017 project <strong>Giving Sugar Labs Website a New Look</strong> under the organization <strong>Sugar Labs</strong>. The changes made during the <strong>GSOC</strong> period can be viewed at <a href="https://github.com/sugarlabs/www-sugarlabs/issues/63">https://github.com/sugarlabs/www-sugarlabs/issues/63</a>. The repository of the original website is located at <a href="https://github.com/sugarlabs/www-sugarlabs">https://github.com/sugarlabs/www-sugarlabs</a>. The work during <strong>GSOC</strong> was done in the repository <a href="https://github.com/geekrypter/sugarLabsWebsiteRedesign">https://github.com/geekrypter/sugarLabsWebsiteRedesign</a>. A live preview of the website is hosted using <strong>Github pages</strong> and can be viewed at <a href="https://geekrypter.github.io/sugarLabsWebsiteRedesign/">https://geekrypter.github.io/sugarLabsWebsiteRedesign/</a>. The code uses the same Jekyll environment as that of the original website’s code. Do check out the code!</p>
 
-<h3 id="major-features">Major Features:</h3>
-<p>We have integrated 3 major feautres with the help of third party services:</p>
+<h3 id="major-services">Major Services</h3>
+<p>We have integrated 4 major features with the help of third party services:</p>
 <ol>
   <li>Website users tracking - We have used the <a href="https://analytics.google.com/">Google Analytics</a> service to track user on the website and get a more detailed analysis on the users usage.</li>
   <li>IRC chat - We have used the <a href="https://kiwiirc.com">Kiwi IRC</a> service to enable users to chat on our IRC channels in the website itself.</li>
   <li>Newsletter subscription through email - We have used the <a href="https://mailchimp.com">Mailchimp</a> service to let users to subscribe to our newsletters through their emails.</li>
+  <li>Customized search functionality - We have used <a href="https://www.google.co.in/cse">Google custom search engine</a> to provide a customized search for users.</li>
 </ol>
 
-<h3 id="internal-urls">Internal URLs:</h3>
+<h3 id="internal-urls">Internal URLs</h3>
 <p>All internal URLs are referenced through absolute paths and not relative paths.</p>
 
-<h3 id="languages-and-technologies">Languages and Technologies:</h3>
+<h3 id="languages-and-technologies">Languages and Technologies</h3>
 <p>HTML
 CSS
 Javascript
 JQuery
 Bootstrap</p>
 
-<h3 id="libraries-used">Libraries used:</h3>
-<p>All libraries, dependencies and license information is available in the licenseInformation.txt file.</p>
+<h3 id="libraries-used">Libraries used</h3>
+<p>All libraries, dependencies and license related information is available in the <strong>LicenseInformation.txt</strong> file in root directory.</p>
 
-<h3 id="base-template">Base template:</h3>
-<p>Base template has been designed and developed by Themefisher. For a preview, check out this link - https://luminousrubyist.github.io/airspace-jekyll/</p>
+<h3 id="base-template">Base template</h3>
+<p>Base template has been designed and developed by Themefisher. For a preview, check out this link - <a href="https://luminousrubyist.github.io/airspace-jekyll/">https://luminousrubyist.github.io/airspace-jekyll/</a></p>
 
-<h3 id="nav-bar--header">Nav bar / Header:</h3>
+<h3 id="navigation-bar--header">Navigation bar / Header</h3>
 <p>We have 3 header designs based on the screen sizes:</p>
 <ol>
-  <li>greater than 1260px</li>
-  <li>greater than or equal to 768px and less than or equal to 1260px</li>
-  <li>less than 767px</li>
+  <li>header for screen sizes greater than 1260px</li>
+  <li>header for (screen sizes greater than or equal to 768px and  less than or equal to 1260px)</li>
+  <li>header for screen sizes less than 768px</li>
 </ol>
 
-<h3 id="disabling">Disabling:</h3>
-<p>For other browsers apart from those mentioned below, the IRC chat, loader, dynamic logo (color changing) is disabled.</p>
+<h3 id="logo">Logo</h3>
+<p>We render 2 types of logos displayed in the header:</p>
 <ol>
-  <li>Safari</li>
-  <li>Chrome</li>
-  <li>Opera</li>
-  <li>Firefox</li>
-  <li>Edge</li>
-  <li>Internet Explorer</li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Small devices browsers like on Android</td>
-          <td>BlackBerry</td>
-          <td>iPhone</td>
-          <td>iPad</td>
-          <td>iPod</td>
-          <td>Opera Mini</td>
-          <td>IEMobile</td>
-        </tr>
-      </tbody>
-    </table>
+  <li>Dynamic logo</li>
+  <li>Static logo
+    <h4 id="dynamic-logo">Dynamic logo</h4>
+    <p>This is a svg version of <strong>Sugar Labs</strong> logo and we have a code snippet in <strong>main.js</strong> file to alter the svg code and change color of logo randomly everytime.</p>
+    <h4 id="static-logo">Static logo</h4>
+    <p>This is the png version of <strong>Sugar Labs</strong> logo with no color changing functionality.</p>
   </li>
-</ol>
-
-<p>The dynamic logo (color changing) is also disabled for Internet Explorer.</p>
-
-<h3 id="logo">Logo:</h3>
-<p>We render 2 types of logos based on the browsers:</p>
-<ol>
-  <li>Dynamic logo (color changing)</li>
-  <li>Static logo</li>
 </ol>
 
 <p>The dynamic logo is enabled for:</p>
@@ -325,27 +315,14 @@ Bootstrap</p>
   <li>Opera</li>
   <li>Firefox</li>
   <li>Edge</li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Small devices browsers like on Android</td>
-          <td>BlackBerry</td>
-          <td>iPhone</td>
-          <td>iPad</td>
-          <td>iPod</td>
-          <td>Opera Mini</td>
-          <td>IEMobile</td>
-        </tr>
-      </tbody>
-    </table>
+  <li>Small devices browsers like on Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile
+    <h4 id="note">Note</h4>
+    <p>However due to several issues, I disabled the dynamic logo and rendered static logo for all the other browsers.</p>
   </li>
 </ol>
 
-<p>However due to several issues, we disabled the dynamic logo and render static logo for all the other browsers.</p>
-
-<h3 id="loader">Loader:</h3>
-<p>The loader is enabled for:</p>
+<h3 id="disabling">Disabling</h3>
+<p>For other browsers apart from those mentioned below, the IRC chat, loader, dynamic logo are disabled.</p>
 <ol>
   <li>Safari</li>
   <li>Chrome</li>
@@ -353,30 +330,32 @@ Bootstrap</p>
   <li>Firefox</li>
   <li>Edge</li>
   <li>Internet Explorer</li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Small devices browsers like on Android</td>
-          <td>BlackBerry</td>
-          <td>iPhone</td>
-          <td>iPad</td>
-          <td>iPod</td>
-          <td>Opera Mini</td>
-          <td>IEMobile</td>
-        </tr>
-      </tbody>
-    </table>
+  <li>Small devices browsers like on Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile
+    <h4 id="note-1">Note</h4>
+    <p>The dynamic logo is also disabled for Internet Explorer.</p>
   </li>
 </ol>
 
-<p>To reduce animations, we disabled the loader for all the other browsers.</p>
+<h3 id="loader">Loader</h3>
+<p>The loader screen is enabled for:</p>
+<ol>
+  <li>Safari</li>
+  <li>Chrome</li>
+  <li>Opera</li>
+  <li>Firefox</li>
+  <li>Edge</li>
+  <li>Internet Explorer</li>
+  <li>Small devices browsers like on Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile
+    <h4 id="note-2">Note</h4>
+    <p>To reduce animations, we disabled the loader for all the other browsers.</p>
+  </li>
+</ol>
 
 <h3 id="font">Font:</h3>
-<p>The font being is the Google font, Varela round. When we call the font sheet directly, it is not properly rendered on certain browsers, so we hosted the required font sheets in the directory itself. For more details, please refer to the  <strong>How to add/change new font?</strong> subsection in the <strong>Answers to few questions</strong> section.</p>
+<p>The font being used is the Google font, Varela round. When we call the font sheet directly, it is not properly rendered on certain browsers, so we hosted the required font sheets in the <strong>fonts</strong> folder itself. For more details, please refer to the  <strong>How to add/change new font?</strong> subsection in the <strong>Answers to few questions</strong> section.</p>
 
 <h3 id="chat-window">Chat window:</h3>
-<p>We have used the <a href="https://kiwiirc.com">Kiwi IRC</a> service to enable users to chat on our IRC channels in the website itself.
+<p>We have used the <a href="https://kiwiirc.com">Kiwi IRC</a> service to enable users to chat on <strong>Sugar Labs</strong> IRC channels in the website itself.
 The chat window is enabled for:</p>
 <ol>
   <li>Safari</li>
@@ -385,26 +364,13 @@ The chat window is enabled for:</p>
   <li>Firefox</li>
   <li>Edge</li>
   <li>Internet Explorer</li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Small devices browsers like on Android</td>
-          <td>BlackBerry</td>
-          <td>iPhone</td>
-          <td>iPad</td>
-          <td>iPod</td>
-          <td>Opera Mini</td>
-          <td>IEMobile</td>
-        </tr>
-      </tbody>
-    </table>
+  <li>Small devices browsers like on Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile
+    <h4 id="note-3">Note</h4>
+    <p>The service renders many requests, so to reduce the burden, we disabled the loader for all the other browsers.</p>
   </li>
 </ol>
 
-<p>The service renders many requests, so to reduce the burden, we disabled the loader for all the other browsers.</p>
-
-<h2 id="description-of-file-and-folders-present-in-the-code-repository">Description of file and folders present in the code repository</h2>
+<h2 id="description-of-files-and-folders">Description of Files and Folders</h2>
 
 <h3 id="assets-folder">Assets folder:</h3>
 <p>This folder contains all image assets, SVG assets and any other assets.</p>
@@ -414,10 +380,11 @@ The chat window is enabled for:</p>
 <ol>
   <li>All html pages</li>
   <li>.htaccess file</li>
-  <li>README file</li>
-  <li>licenseInformation.txt</li>
-  <li>sitemap.txt</li>
-  <li>robots.txt</li>
+  <li>README.md file</li>
+  <li>LicenseInformation.txt</li>
+  <li>sitemap.txt file</li>
+  <li>robots.txt file</li>
+  <li>documentation.md file</li>
   <li>Jekyll related files</li>
   <li>Other folders</li>
 </ol>
@@ -440,32 +407,32 @@ The chat window is enabled for:</p>
 <h3 id="remaining-folders">Remaining folders:</h3>
 <p>All the remaining folders are as per Jekyll structure.</p>
 
-<h2 id="design-layout-of-website--project">Design layout of website / project</h2>
+<h2 id="design-layout-of-websiteproject">Design Layout of Website/Project</h2>
 
 <p>The following pages share a similar design:
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/about-us
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/about-irc
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/about-libre-software-culture
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/booting-soas
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/contact-us
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/inquiry
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/more
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/music-blocks
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/press
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/search
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-forraspberry-pi
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/turtle-blocks-js</p>
+<strong>index.html
+about-us.html
+about-irc.html
+about-libre-software-culture.html
+booting-soas.html
+contact-us.html
+inquiry.html
+more.html
+music-blocks.html
+press.html
+search.html
+sugar-forraspberry-pi.html
+turtle-blocks-js.html</strong></p>
 
 <p>The following pages share a similar design:
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/parents
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/school-administrators
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/students
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-for-raspbian
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-lesson-plans
-https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-stories</p>
+<strong>parents.html
+school-administrators.html
+students.html
+sugar-for-raspbian.html
+sugar-lesson-plans.html
+sugar-stories.html</strong></p>
 
-<p>The relevant page can be checked to adopt a similar design.</p>
+<p>The relevant pages can be checked to adopt a similar design.</p>
 
 <h2 id="developers">Developers</h2>
 
@@ -478,90 +445,168 @@ https://geekrypter.github.io/sugarLabsWebsiteRedesign/sugar-stories</p>
 2)<a href="https://github.com/sugarlabs/www-sugarlabs/issues/63">https://github.com/sugarlabs/www-sugarlabs/issues/63</a></p>
 
 <h3 id="how-to-run-the-code">How to run the code</h3>
+<h4 id="getting-the-code">Getting the code</h4>
+<p>Clone the repository</p>
+<h3 id="installation">Installation</h3>
 <p>Install Ruby and the Gem package manager (pre-installed in Mac OS X) and install <code class="highlighter-rouge">jekyll</code> and its related packages available in the Github hosted version by running, from this directory:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>bundle install;
-</code></pre>
-</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>bundle install; #### Running Jekyll can run a local web server that rebuilds each time you save a page while editing (Execute the below command from root directory):
 
-<p>Jekyll can run a local web server that rebuilds each time you save a page while editing:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>jekyll serve --incremental;
+jekyll serve --incremental;
 </code></pre>
 </div>
 
 <p>Then open <a href="http://localhost:4000">http://localhost:4000</a></p>
+<h4 id="note-4">Note</h4>
+<p>If some changes are not visible (after saving a page while editing), please restart the Jekyll local web server and reload <a href="http://localhost:4000">http://localhost:4000</a>.</p>
 
-<p>If some changes are not visible (when saving a page while editing), please restart the Jekyll local web server and reload <a href="http://localhost:4000">http://localhost:4000</a>.</p>
-
-<h2 id="important-points-to-be-noted">Important points to be noted</h2>
+<h2 id="important-points-to-be-noted">Important Points to be Noted</h2>
 
 <ol>
-  <li>Whenever a new commit is made and the changes are made to any one of airspace.css, main.js, or plugins.js files, try to use a minification service and add the minified version of new code in their minified versions in respective “minified” folder.</li>
-  <li>Whenever font is to be changed/added, follow the instructions in <strong>How to add/change new font?</strong> subsection in <strong>How to add/change new font?</strong> section.</li>
-  <li>Few dependencies do not work well with other dependencies, so make sure to test before updating the dependencies.</li>
+  <li>Whenever the code is changed, please ensure that the relevant code changes are reflected in <strong>main.js</strong> file (For example, if a slideshow is disabled, make sure the id of the slideshow element/section is also disabled in the <strong>main.js</strong> file if it exists).</li>
+  <li>Whenever a new commit is made and the changes are made to any one of airspace.css, main.js, or plugins.js files, try to use a minification service and add the minified version of new code in respective <strong>minified</strong> folder. (css and js folders have a <strong>minified</strong> folder)</li>
+  <li>Few dependencies/libraries do not work well with other dependencies/libraries, so make sure to test before updating the dependencies/libraries.</li>
+  <li>Whenever the website hosting is shifted to another url/domain, please ensure to change the internal url references and also the <strong>sitemap.txt</strong> file.</li>
+  <li>Do check <strong>Answers to few questions</strong> section to get answers to few of the questions you might have or for steps to be followed.</li>
+  <li>Be careful when changing the cache control code present in the <strong>.htaccess</strong> file.</li>
+  <li>Whenever the dependency/library versions are changed, please update the local files of those dependencies as these local files are referenced when the cdn does not work.</li>
+  <li>The current website uses customized versions of few social media icons (service provided by <a href="http://socialsharekit.com">Social Share Kit</a>). So we use the local files of the service and do our customizations in the css file of the service (<strong>/assets/dist/css/social-share-kit.css</strong> file in our case). Please be careful when updating the files of this service. (Also refer to <strong>How to change social media icon colors?</strong> subsection in <strong>Answers to few questions</strong> section)</li>
 </ol>
 
-<h2 id="answers-to-few-questions">Answers to few questions</h2>
+<h2 id="answers-to-few-questions">Answers to Few Questions</h2>
 
 <h3 id="how-to-remove-loader">How to remove loader?</h3>
 <ol>
-  <li>Go to index.html page</li>
-  <li>Under the Loader section (check comments), remove the whole section.</li>
+  <li>Go to <strong>index.html</strong> file.</li>
+  <li>Go to the <strong>Loader section</strong> (check comments) and remove the whole section.</li>
 </ol>
 
 <h3 id="how-to-remove-chat-window">How to remove chat window?</h3>
 <ol>
-  <li>Go to footer.html page</li>
-  <li>Under the Chat window for screens with width &lt;= 991px section (check comments), remove the whole section.</li>
-  <li>Under the Chat window for screens with width &gt; 991px section (check comments), remove the whole section.</li>
+  <li>Go to <strong>footer.html</strong> file.</li>
+  <li>Go to the <strong>Chat window for screens with width &lt;= 991px</strong> section (check comments) and remove the whole section.</li>
+  <li>Go to the <strong>Chat window for screens with width &gt; 991px</strong> section (check comments) and remove the whole section.</li>
 </ol>
 
 <h3 id="how-to-change-irc-service">How to change IRC service?</h3>
 <ol>
-  <li>Go to main.js file.</li>
-  <li>The request url of the new IRC service can be written in the disabling part of the file (where iframe sources are entered)</li>
+  <li>Go to <strong>main.js</strong> file.</li>
+  <li>Go to <strong>Disabling code</strong> section (check comments).</li>
+  <li>The request url of the new IRC service can be written as the source to the <strong>iframes</strong> in place of the existing <a href="https://kiwiirc.com">Kiwi IRC</a> service call.</li>
 </ol>
 
 <h3 id="how-to-disable-search-functionality">How to disable search functionality?</h3>
 <ol>
-  <li>Go to search.html file.</li>
-  <li>Under the Search functionality Javascript code section (check comments), remove the whole section.</li>
+  <li>Go to <strong>search.html</strong> file.</li>
+  <li>Go to the <strong>Search functionality Javascript code</strong> section (check comments) and remove the whole section.</li>
 </ol>
 
 <h3 id="how-to-alter-disabling">How to alter disabling?</h3>
 <ol>
-  <li>Go to main.js file.</li>
-  <li>There you can check out the disabling code and can change accordingly.</li>
+  <li>Go to <strong>main.js</strong> file.</li>
+  <li>Go to <strong>Disabling code</strong> section (check comments) and change the code accordingly.</li>
+  <li>Take a look at the attributes of elements being changed in the <strong>airspace.css</strong> file also and carefully change the code.</li>
 </ol>
 
 <h3 id="how-to-change-background-image-in-main-page">How to change background image in main page?</h3>
 <ol>
   <li>Go to airspace.css file.</li>
-  <li>Under the #slider css part, enter the url of new background image in the “background” attribute.</li>
+  <li>Under the <strong>slider</strong> id css, enter the url of new background image in the <strong>background</strong> attribute.</li>
 </ol>
 
 <h3 id="how-to-add-new-page">How to add new page?</h3>
 <ol>
   <li>Create a new html page in the root directory.</li>
-  <li>Enter the required intial information for the new page. (Take the help of the intial information available for other html pages)</li>
-  <li>In the sitemap.txt file, add the declaration of the new page (take the help of other page declarations)</li>
+  <li>Enter the required intial information for the new page (Take the help of the intial information available in other html pages).</li>
+  <li>In the <strong>sitemap.txt</strong> file, add the declaration of the new page (take the help of other page declarations).</li>
 </ol>
 
 <h3 id="how-to-change-video-thumbnail">How to change video thumbnail?</h3>
 <ol>
-  <li>Go to index.html file.</li>
-  <li>Under the About Sugar section (check comments), add the new thumbnail url to the poster attribute of the html video tag.</li>
+  <li>Go to <strong>index.html</strong> file.</li>
+  <li>Go to the <strong>About Sugar</strong> section (check comments) adn add the new thumbnail url in the <strong>poster</strong> attribute of the <strong>html video tag</strong>.</li>
 </ol>
 
 <h3 id="how-to-addchange-new-font">How to add/change new font?</h3>
 <ol>
-  <li>Go to <a href="https://www.fontsquirrel.com/">fontsquirrel</a></li>
+  <li>Go to <a href="https://www.fontsquirrel.com/">fontsquirrel</a>.</li>
   <li>Search the required font and go the specified page.</li>
-  <li>UNder Webfont Kit, enable all Font formats and click Download @font-face kit.</li>
-  <li>Add all the format files generated to the Fonts folder.</li>
-  <li>Go to the googlefonts.css file and add those references.</li>
+  <li>Under <strong>Webfont Kit</strong>, enable all font formats and click <strong>Download @font-face kit</strong>.</li>
+  <li>Add all the font format files to the <strong>fonts</strong> folder.</li>
+  <li>Go to the <strong>googlefonts.css</strong> file and add those references.</li>
 </ol>
+
+<h3 id="how-to-alter-goggle-custom-search-engine-customizations">How to alter Goggle custom search engine customizations?</h3>
+<ol>
+  <li>Go to <a href="https://www.google.co.in/cse">Google custom search engine</a>.</li>
+  <li>Log in using the “Sugar Labs” account.</li>
+  <li>You can do any customizations and get the final code.</li>
+  <li>Go to <strong>search.html</strong> file.</li>
+  <li>Replace the existing code with the final code under the <strong>Search functionality Javascript code</strong> section (check comments).</li>
+</ol>
+
+<h3 id="how-to-alter-google-analytics-code">How to alter Google analytics code?</h3>
+<ol>
+  <li>Go to <a href="https://analytics.google.com/">Google Analytics</a>.</li>
+  <li>Your account needs admin rights so ask Samson Goddy for admin permissions.</li>
+  <li>Log in using this account.</li>
+  <li>Get the final code from website.</li>
+  <li>Go to <strong>footer.html</strong> file</li>
+  <li>Replace the existing code with the final code under the <strong>Google analytics code</strong> section (check comments).</li>
+</ol>
+
+<h3 id="how-to-change-logo">How to change logo?</h3>
+<ol>
+  <li>Go to <strong>nav.html</strong> file.</li>
+  <li>Please be aware that we have 2 types of headers/navigation bars and for each header we have 2 logos associated(static and dynamic)(refer to <strong>Logo</strong> subsection in <strong>About the website / project</strong> section). Code is written to accommodate both the logos and the necessary disabling is done in <strong>main.js</strong> file.
+    <h4 id="changing-dynamic-logo">Changing dynamic logo</h4>
+  </li>
+  <li>To change the dynamic logo, replace the new svg in space of the existing svg logo path in <strong>nav.html</strong> file.</li>
+  <li>Do this for the 2 header sections in <strong>nav.html</strong> file.</li>
+  <li>Go to <strong>main.js</strong> file.</li>
+  <li>We have code to change colours of dynamic logo under <strong>Colour changing affect of logo</strong> section (check comments).</li>
+  <li>Change/add code there.
+    <h4 id="changing-static-logo">Changing static logo</h4>
+  </li>
+  <li>To change the static logo, replace the new png in space of the existing png logo path in <strong>nav.html</strong> file.</li>
+  <li>Do this for the 2 header sections in <strong>nav.html</strong> file.</li>
+</ol>
+
+<h3 id="how-to-change-cache-control">How to change cache control?</h3>
+<ol>
+  <li>Go to <strong>.htaccess</strong> file</li>
+  <li>Change/Edit the code there.</li>
+</ol>
+
+<h3 id="how-to-change-social-media-icon-colors">How to change social media icon colors?</h3>
+<ol>
+  <li>Go to <strong>footer.html</strong> file.</li>
+  <li>Go to social media icons and check the classes of the relevant icon.</li>
+  <li>Go to <strong>/assets/dist/css/social-share-kit.css</strong> file.</li>
+  <li>Go to the relevant classes and change the <strong>background-color</strong>/<strong>color</strong> attributes of the icon associated classes.</li>
+</ol>
+
+<h2 id="credits">Credits</h2>
+
+<h3 id="license-information">License Information</h3>
+<p>The license information of all the dependencies/libraries used in the code can be found in the <strong>LicenseInformation.txt</strong> file in the root folder.</p>
+
+<h3 id="usage-of-code-snippets">Usage of code snippets:</h3>
+<p>For few parts of the code, I have used code snippets available online. The list of all the code snippets which I referred to are:</p>
+<ol>
+  <li>https://codepen.io/martinvd/pen/xbQJom</li>
+  <li>https://bootstrapious.com/p/bootstrap-sidebar</li>
+  <li>https://bootsnipp.com/snippets/1mo8Z</li>
+  <li>https://www.w3schools.com/howto/howto_js_slideshow.asp</li>
+  <li>http://www.hongkiat.com/blog/css-reflection/</li>
+  <li>https://codepen.io/zachsaffrin/pen/zrxsc</li>
+  <li>https://codepen.io/yewnork/pen/Kpaqeq</li>
+  <li>http://fiddle.jshell.net/jrjacobs24/u76Ltw92/8/light/</li>
+  <li>https://pixelflips.com/blog/anchor-links-with-a-fixed-header</li>
+</ol>
+
+<h3 id="base-template-1">Base template:</h3>
+<p>Base template has been designed and developed by Themefisher. For a preview, check out this link - <a href="https://luminousrubyist.github.io/airspace-jekyll/">https://luminousrubyist.github.io/airspace-jekyll/</a></p>
 
 
 <!-- Chat button for screens with width <= 991px -->
@@ -855,6 +900,7 @@ if (typeof jQuery.waypoints == 'undefined') {
     }
 </script>
 
+<!-- Google analytics code -->
 <script  type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
